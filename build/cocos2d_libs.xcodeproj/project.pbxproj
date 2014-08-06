@@ -1764,6 +1764,7 @@
 		50FCEBCA18C72017004AD434 /* WidgetReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 50FCEB9118C72017004AD434 /* WidgetReader.h */; };
 		50FCEBCB18C72017004AD434 /* WidgetReaderProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 50FCEB9218C72017004AD434 /* WidgetReaderProtocol.h */; };
 		50FCEBCC18C72017004AD434 /* WidgetReaderProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 50FCEB9218C72017004AD434 /* WidgetReaderProtocol.h */; };
+		5DD8167619921FB2006B2804 /* HBnetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DD8167519921FB2006B2804 /* HBnetwork.h */; };
 		9C6814E81990D9070023D951 /* utility_display.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C6814E61990D9070023D951 /* utility_display.cpp */; };
 		9C6814E91990D9070023D951 /* utility_display.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C6814E71990D9070023D951 /* utility_display.h */; };
 		A07A4CAF1783777C0073F6A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1551A342158F2AB200E66CFE /* Foundation.framework */; };
@@ -3035,6 +3036,8 @@
 		5DD8166A19921B9C006B2804 /* RegisterView.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = RegisterView.java; sourceTree = "<group>"; };
 		5DD8166C19921B9C006B2804 /* Highbrow_Login.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Highbrow_Login.framework; sourceTree = "<group>"; };
 		5DD8166D19921B9C006B2804 /* Highbrow_Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Highbrow_Resources.bundle; sourceTree = "<group>"; };
+		5DD8167319921D53006B2804 /* HBnetwork.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HBnetwork.mm; sourceTree = "<group>"; };
+		5DD8167519921FB2006B2804 /* HBnetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBnetwork.h; sourceTree = "<group>"; };
 		9C6814E61990D9070023D951 /* utility_display.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = utility_display.cpp; sourceTree = "<group>"; };
 		9C6814E71990D9070023D951 /* utility_display.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utility_display.h; sourceTree = "<group>"; };
 		A03F2CB81780BD04006731B9 /* libchipmunk Mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libchipmunk Mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -5721,6 +5724,7 @@
 		5DD8167019921B9C006B2804 /* include */ = {
 			isa = PBXGroup;
 			children = (
+				5DD8167519921FB2006B2804 /* HBnetwork.h */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -5728,6 +5732,7 @@
 		5DD8167119921B9C006B2804 /* ios */ = {
 			isa = PBXGroup;
 			children = (
+				5DD8167319921D53006B2804 /* HBnetwork.mm */,
 			);
 			path = ios;
 			sourceTree = "<group>";
@@ -6567,6 +6572,7 @@
 				1AD71EC4180E26E600808F54 /* extension.h in Headers */,
 				1AD71EC8180E26E600808F54 /* Json.h in Headers */,
 				1AD71ECC180E26E600808F54 /* RegionAttachment.h in Headers */,
+				5DD8167619921FB2006B2804 /* HBnetwork.h in Headers */,
 				50ABBDBC1925AB4100A911A9 /* CCTextureAtlas.h in Headers */,
 				1AD71ED0180E26E600808F54 /* Skeleton.h in Headers */,
 				50ABBE541925AB6F00A911A9 /* CCEventDispatcher.h in Headers */,
