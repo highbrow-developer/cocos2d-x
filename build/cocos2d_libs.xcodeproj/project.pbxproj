@@ -3035,6 +3035,7 @@
 		1551A334158F2AB200E66CFE = {
 			isa = PBXGroup;
 			children = (
+				5DD814671992178A006B2804 /* highbrow */,
 				9C6814E51990D89A0023D951 /* utility */,
 				46A15FCC1807A544005B8026 /* AUTHORS */,
 				1A57FFF7180BC5160088DEC7 /* CHANGELOG */,
@@ -4958,6 +4959,54 @@
 				50FCEB8F18C72017004AD434 /* TextReader.h */,
 			);
 			path = TextReader;
+			sourceTree = "<group>";
+		};
+		5DD814671992178A006B2804 /* highbrow */ = {
+			isa = PBXGroup;
+			children = (
+				5DD814991992178B006B2804 /* network */,
+				5DD8149D1992178B006B2804 /* ui */,
+			);
+			name = highbrow;
+			path = ../cocos/highbrow;
+			sourceTree = "<group>";
+		};
+		5DD814991992178B006B2804 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8149A1992178B006B2804 /* android */,
+				5DD8149B1992178B006B2804 /* include */,
+				5DD8149C1992178B006B2804 /* ios */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		5DD8149A1992178B006B2804 /* android */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = android;
+			sourceTree = "<group>";
+		};
+		5DD8149B1992178B006B2804 /* include */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		5DD8149C1992178B006B2804 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		5DD8149D1992178B006B2804 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ui;
 			sourceTree = "<group>";
 		};
 		9C6814E51990D89A0023D951 /* utility */ = {
