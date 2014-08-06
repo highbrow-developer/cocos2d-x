@@ -24,7 +24,7 @@ class CC_DLL HBnetwork
     
     void requestTest();
     
-    int aaa;
+//    int aaa;
     
 };
 
