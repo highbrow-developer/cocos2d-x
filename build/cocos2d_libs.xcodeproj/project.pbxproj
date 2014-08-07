@@ -1764,12 +1764,7 @@
 		50FCEBCA18C72017004AD434 /* WidgetReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 50FCEB9118C72017004AD434 /* WidgetReader.h */; };
 		50FCEBCB18C72017004AD434 /* WidgetReaderProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 50FCEB9218C72017004AD434 /* WidgetReaderProtocol.h */; };
 		50FCEBCC18C72017004AD434 /* WidgetReaderProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 50FCEB9218C72017004AD434 /* WidgetReaderProtocol.h */; };
-<<<<<<< HEAD
-=======
 		5DD8167619921FB2006B2804 /* HBnetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DD8167519921FB2006B2804 /* HBnetwork.h */; };
-		9C6814E81990D9070023D951 /* utility_display.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C6814E61990D9070023D951 /* utility_display.cpp */; };
-		9C6814E91990D9070023D951 /* utility_display.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C6814E71990D9070023D951 /* utility_display.h */; };
->>>>>>> f9d33e957f6064d531638bcb58e4031fe3214615
 		A07A4CAF1783777C0073F6A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1551A342158F2AB200E66CFE /* Foundation.framework */; };
 		B24AA985195A675C007B4522 /* CCFastTMXLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B24AA981195A675C007B4522 /* CCFastTMXLayer.cpp */; };
 		B24AA986195A675C007B4522 /* CCFastTMXLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B24AA981195A675C007B4522 /* CCFastTMXLayer.cpp */; };
@@ -2870,8 +2865,6 @@
 		50FCEB9018C72017004AD434 /* WidgetReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WidgetReader.cpp; sourceTree = "<group>"; };
 		50FCEB9118C72017004AD434 /* WidgetReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WidgetReader.h; sourceTree = "<group>"; };
 		50FCEB9218C72017004AD434 /* WidgetReaderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WidgetReaderProtocol.h; sourceTree = "<group>"; };
-<<<<<<< HEAD
-=======
 		5DD8159619921B9C006B2804 /* AndroidManifest.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = AndroidManifest.xml; sourceTree = "<group>"; };
 		5DD8159919921B9C006B2804 /* AndroidManifest.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = AndroidManifest.xml; sourceTree = "<group>"; };
 		5DD8159F19921B9C006B2804 /* BuildConfig.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = BuildConfig.class; sourceTree = "<group>"; };
@@ -3045,7 +3038,6 @@
 		5DD8167519921FB2006B2804 /* HBnetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBnetwork.h; sourceTree = "<group>"; };
 		9C6814E61990D9070023D951 /* utility_display.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = utility_display.cpp; sourceTree = "<group>"; };
 		9C6814E71990D9070023D951 /* utility_display.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utility_display.h; sourceTree = "<group>"; };
->>>>>>> f9d33e957f6064d531638bcb58e4031fe3214615
 		A03F2CB81780BD04006731B9 /* libchipmunk Mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libchipmunk Mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A03F2D9B1780BDF7006731B9 /* libbox2d Mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libbox2d Mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A03F2ED617814268006731B9 /* libCocosDenshion Mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libCocosDenshion Mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -3213,11 +3205,8 @@
 		1551A334158F2AB200E66CFE = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-=======
 				5DD8159319921B9C006B2804 /* highbrow */,
 				9C6814E51990D89A0023D951 /* utility */,
->>>>>>> f9d33e957f6064d531638bcb58e4031fe3214615
 				46A15FCC1807A544005B8026 /* AUTHORS */,
 				1A57FFF7180BC5160088DEC7 /* CHANGELOG */,
 				50272539190BF1B900AAF4ED /* cocos2d.cpp */,
@@ -5142,8 +5131,6 @@
 			path = TextReader;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
-=======
 		5DD8159319921B9C006B2804 /* highbrow */ = {
 			isa = PBXGroup;
 			children = (
@@ -5765,7 +5752,6 @@
 			path = ../utils;
 			sourceTree = "<group>";
 		};
->>>>>>> f9d33e957f6064d531638bcb58e4031fe3214615
 		B29594B81926D61F003EEF37 /* 3d */ = {
 			isa = PBXGroup;
 			children = (
@@ -8270,7 +8256,7 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/zobyzo/Documents/Highbrow_Cocos/cocos/highbrow/library/ios,
+					"$(COCOSROOT)/cocos/highbrow/library/ios",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "../cocos/cocos2d-prefix.pch";
@@ -8304,7 +8290,7 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/zobyzo/Documents/Highbrow_Cocos/cocos/highbrow/library/ios,
+					"$(COCOSROOT)/cocos/highbrow/library/ios",
 				);
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
