@@ -1764,6 +1764,12 @@
 		50FCEBCA18C72017004AD434 /* WidgetReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 50FCEB9118C72017004AD434 /* WidgetReader.h */; };
 		50FCEBCB18C72017004AD434 /* WidgetReaderProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 50FCEB9218C72017004AD434 /* WidgetReaderProtocol.h */; };
 		50FCEBCC18C72017004AD434 /* WidgetReaderProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 50FCEB9218C72017004AD434 /* WidgetReaderProtocol.h */; };
+<<<<<<< HEAD
+=======
+		5DD8167619921FB2006B2804 /* HBnetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DD8167519921FB2006B2804 /* HBnetwork.h */; };
+		9C6814E81990D9070023D951 /* utility_display.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C6814E61990D9070023D951 /* utility_display.cpp */; };
+		9C6814E91990D9070023D951 /* utility_display.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C6814E71990D9070023D951 /* utility_display.h */; };
+>>>>>>> f9d33e957f6064d531638bcb58e4031fe3214615
 		A07A4CAF1783777C0073F6A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1551A342158F2AB200E66CFE /* Foundation.framework */; };
 		B24AA985195A675C007B4522 /* CCFastTMXLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B24AA981195A675C007B4522 /* CCFastTMXLayer.cpp */; };
 		B24AA986195A675C007B4522 /* CCFastTMXLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B24AA981195A675C007B4522 /* CCFastTMXLayer.cpp */; };
@@ -2864,6 +2870,182 @@
 		50FCEB9018C72017004AD434 /* WidgetReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WidgetReader.cpp; sourceTree = "<group>"; };
 		50FCEB9118C72017004AD434 /* WidgetReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WidgetReader.h; sourceTree = "<group>"; };
 		50FCEB9218C72017004AD434 /* WidgetReaderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WidgetReaderProtocol.h; sourceTree = "<group>"; };
+<<<<<<< HEAD
+=======
+		5DD8159619921B9C006B2804 /* AndroidManifest.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = AndroidManifest.xml; sourceTree = "<group>"; };
+		5DD8159919921B9C006B2804 /* AndroidManifest.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = AndroidManifest.xml; sourceTree = "<group>"; };
+		5DD8159F19921B9C006B2804 /* BuildConfig.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = BuildConfig.class; sourceTree = "<group>"; };
+		5DD815A019921B9C006B2804 /* R$anim.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = R$anim.class; sourceTree = "<group>"; };
+		5DD815A119921B9C006B2804 /* R$attr.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = R$attr.class; sourceTree = "<group>"; };
+		5DD815A219921B9C006B2804 /* R$color.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = R$color.class; sourceTree = "<group>"; };
+		5DD815A319921B9C006B2804 /* R$dimen.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = R$dimen.class; sourceTree = "<group>"; };
+		5DD815A419921B9C006B2804 /* R$drawable.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = R$drawable.class; sourceTree = "<group>"; };
+		5DD815A519921B9C006B2804 /* R$id.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = R$id.class; sourceTree = "<group>"; };
+		5DD815A619921B9C006B2804 /* R$integer.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = R$integer.class; sourceTree = "<group>"; };
+		5DD815A719921B9C006B2804 /* R$layout.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = R$layout.class; sourceTree = "<group>"; };
+		5DD815A819921B9C006B2804 /* R$raw.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = R$raw.class; sourceTree = "<group>"; };
+		5DD815A919921B9C006B2804 /* R$string.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = R$string.class; sourceTree = "<group>"; };
+		5DD815AA19921B9C006B2804 /* R$style.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = R$style.class; sourceTree = "<group>"; };
+		5DD815AB19921B9C006B2804 /* R$styleable.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = R$styleable.class; sourceTree = "<group>"; };
+		5DD815AC19921B9C006B2804 /* R.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = R.class; sourceTree = "<group>"; };
+		5DD815AE19921B9C006B2804 /* BaseGameActivity.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = BaseGameActivity.class; sourceTree = "<group>"; };
+		5DD815AF19921B9C006B2804 /* GameHelper$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GameHelper$1.class; sourceTree = "<group>"; };
+		5DD815B019921B9C006B2804 /* GameHelper$GameHelperListener.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GameHelper$GameHelperListener.class; sourceTree = "<group>"; };
+		5DD815B119921B9C006B2804 /* GameHelper$SignInFailureReason.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GameHelper$SignInFailureReason.class; sourceTree = "<group>"; };
+		5DD815B219921B9C006B2804 /* GameHelper.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GameHelper.class; sourceTree = "<group>"; };
+		5DD815B319921B9C006B2804 /* GameHelperUtils.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GameHelperUtils.class; sourceTree = "<group>"; };
+		5DD815B519921B9C006B2804 /* BitmapLruCache.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = BitmapLruCache.class; sourceTree = "<group>"; };
+		5DD815B619921B9C006B2804 /* NetworkVolley.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = NetworkVolley.class; sourceTree = "<group>"; };
+		5DD815B919921B9C006B2804 /* LoginManager$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = LoginManager$1.class; sourceTree = "<group>"; };
+		5DD815BA19921B9C006B2804 /* LoginManager$2.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = LoginManager$2.class; sourceTree = "<group>"; };
+		5DD815BB19921B9C006B2804 /* LoginManager$3.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = LoginManager$3.class; sourceTree = "<group>"; };
+		5DD815BC19921B9C006B2804 /* LoginManager$4.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = LoginManager$4.class; sourceTree = "<group>"; };
+		5DD815BD19921B9C006B2804 /* LoginManager$5.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = LoginManager$5.class; sourceTree = "<group>"; };
+		5DD815BE19921B9C006B2804 /* LoginManager.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = LoginManager.class; sourceTree = "<group>"; };
+		5DD815BF19921B9C006B2804 /* StringManager.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = StringManager.class; sourceTree = "<group>"; };
+		5DD815C119921B9C006B2804 /* callbackFunc.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = callbackFunc.class; sourceTree = "<group>"; };
+		5DD815C219921B9C006B2804 /* CallbackManager.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = CallbackManager.class; sourceTree = "<group>"; };
+		5DD815C319921B9C006B2804 /* HighbrowActivity$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = HighbrowActivity$1.class; sourceTree = "<group>"; };
+		5DD815C419921B9C006B2804 /* HighbrowActivity$2$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = HighbrowActivity$2$1.class; sourceTree = "<group>"; };
+		5DD815C519921B9C006B2804 /* HighbrowActivity$2.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = HighbrowActivity$2.class; sourceTree = "<group>"; };
+		5DD815C619921B9C006B2804 /* HighbrowActivity$3$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = HighbrowActivity$3$1.class; sourceTree = "<group>"; };
+		5DD815C719921B9C006B2804 /* HighbrowActivity$3$2.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = HighbrowActivity$3$2.class; sourceTree = "<group>"; };
+		5DD815C819921B9C006B2804 /* HighbrowActivity$3.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = HighbrowActivity$3.class; sourceTree = "<group>"; };
+		5DD815C919921B9C006B2804 /* HighbrowActivity$4$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = HighbrowActivity$4$1.class; sourceTree = "<group>"; };
+		5DD815CA19921B9C006B2804 /* HighbrowActivity$4$2.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = HighbrowActivity$4$2.class; sourceTree = "<group>"; };
+		5DD815CB19921B9C006B2804 /* HighbrowActivity$4.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = HighbrowActivity$4.class; sourceTree = "<group>"; };
+		5DD815CC19921B9C006B2804 /* HighbrowActivity$5.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = HighbrowActivity$5.class; sourceTree = "<group>"; };
+		5DD815CD19921B9C006B2804 /* HighbrowActivity$6.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = HighbrowActivity$6.class; sourceTree = "<group>"; };
+		5DD815CE19921B9C006B2804 /* HighbrowActivity$7.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = HighbrowActivity$7.class; sourceTree = "<group>"; };
+		5DD815CF19921B9C006B2804 /* HighbrowActivity$8.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = HighbrowActivity$8.class; sourceTree = "<group>"; };
+		5DD815D019921B9C006B2804 /* HighbrowActivity$9.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = HighbrowActivity$9.class; sourceTree = "<group>"; };
+		5DD815D119921B9C006B2804 /* HighbrowActivity.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = HighbrowActivity.class; sourceTree = "<group>"; };
+		5DD815D219921B9C006B2804 /* TouchLayer.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = TouchLayer.class; sourceTree = "<group>"; };
+		5DD815D419921B9C006B2804 /* LoadingView$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = LoadingView$1.class; sourceTree = "<group>"; };
+		5DD815D519921B9C006B2804 /* LoadingView$2.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = LoadingView$2.class; sourceTree = "<group>"; };
+		5DD815D619921B9C006B2804 /* LoadingView.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = LoadingView.class; sourceTree = "<group>"; };
+		5DD815D719921B9C006B2804 /* LoginView$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = LoginView$1.class; sourceTree = "<group>"; };
+		5DD815D819921B9C006B2804 /* LoginView$2.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = LoginView$2.class; sourceTree = "<group>"; };
+		5DD815D919921B9C006B2804 /* LoginView$3.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = LoginView$3.class; sourceTree = "<group>"; };
+		5DD815DA19921B9C006B2804 /* LoginView$4.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = LoginView$4.class; sourceTree = "<group>"; };
+		5DD815DB19921B9C006B2804 /* LoginView$5.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = LoginView$5.class; sourceTree = "<group>"; };
+		5DD815DC19921B9C006B2804 /* LoginView$6.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = LoginView$6.class; sourceTree = "<group>"; };
+		5DD815DD19921B9C006B2804 /* LoginView$7.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = LoginView$7.class; sourceTree = "<group>"; };
+		5DD815DE19921B9C006B2804 /* LoginView.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = LoginView.class; sourceTree = "<group>"; };
+		5DD815DF19921B9C006B2804 /* PopupView$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = PopupView$1.class; sourceTree = "<group>"; };
+		5DD815E019921B9C006B2804 /* PopupView$2.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = PopupView$2.class; sourceTree = "<group>"; };
+		5DD815E119921B9C006B2804 /* PopupView$3.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = PopupView$3.class; sourceTree = "<group>"; };
+		5DD815E219921B9C006B2804 /* PopupView$4.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = PopupView$4.class; sourceTree = "<group>"; };
+		5DD815E319921B9C006B2804 /* PopupView.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = PopupView.class; sourceTree = "<group>"; };
+		5DD815E419921B9C006B2804 /* ProvisionView$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = ProvisionView$1.class; sourceTree = "<group>"; };
+		5DD815E519921B9C006B2804 /* ProvisionView$2.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = ProvisionView$2.class; sourceTree = "<group>"; };
+		5DD815E619921B9C006B2804 /* ProvisionView$3.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = ProvisionView$3.class; sourceTree = "<group>"; };
+		5DD815E719921B9C006B2804 /* ProvisionView$4.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = ProvisionView$4.class; sourceTree = "<group>"; };
+		5DD815E819921B9C006B2804 /* ProvisionView$5.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = ProvisionView$5.class; sourceTree = "<group>"; };
+		5DD815E919921B9C006B2804 /* ProvisionView$6.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = ProvisionView$6.class; sourceTree = "<group>"; };
+		5DD815EA19921B9C006B2804 /* ProvisionView$7.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = ProvisionView$7.class; sourceTree = "<group>"; };
+		5DD815EB19921B9C006B2804 /* ProvisionView.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = ProvisionView.class; sourceTree = "<group>"; };
+		5DD815EC19921B9C006B2804 /* RegisterView$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = RegisterView$1.class; sourceTree = "<group>"; };
+		5DD815ED19921B9C006B2804 /* RegisterView$10.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = RegisterView$10.class; sourceTree = "<group>"; };
+		5DD815EE19921B9C006B2804 /* RegisterView$2.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = RegisterView$2.class; sourceTree = "<group>"; };
+		5DD815EF19921B9C006B2804 /* RegisterView$3.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = RegisterView$3.class; sourceTree = "<group>"; };
+		5DD815F019921B9C006B2804 /* RegisterView$4.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = RegisterView$4.class; sourceTree = "<group>"; };
+		5DD815F119921B9C006B2804 /* RegisterView$5.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = RegisterView$5.class; sourceTree = "<group>"; };
+		5DD815F219921B9C006B2804 /* RegisterView$6.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = RegisterView$6.class; sourceTree = "<group>"; };
+		5DD815F319921B9C006B2804 /* RegisterView$7.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = RegisterView$7.class; sourceTree = "<group>"; };
+		5DD815F419921B9C006B2804 /* RegisterView$8.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = RegisterView$8.class; sourceTree = "<group>"; };
+		5DD815F519921B9C006B2804 /* RegisterView$9.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = RegisterView$9.class; sourceTree = "<group>"; };
+		5DD815F619921B9C006B2804 /* RegisterView.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = RegisterView.class; sourceTree = "<group>"; };
+		5DD815F719921B9C006B2804 /* highbrow.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = highbrow.jar; sourceTree = "<group>"; };
+		5DD815F819921B9C006B2804 /* jarlist.cache */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jarlist.cache; sourceTree = "<group>"; };
+		5DD815F919921B9C006B2804 /* R.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = R.txt; sourceTree = "<group>"; };
+		5DD815FD19921B9C006B2804 /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
+		5DD815FF19921B9C006B2804 /* bt_blue.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_blue.9.png; sourceTree = "<group>"; };
+		5DD8160019921B9C006B2804 /* bt_exit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_exit.png; sourceTree = "<group>"; };
+		5DD8160119921B9C006B2804 /* bt_facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_facebook.png; sourceTree = "<group>"; };
+		5DD8160219921B9C006B2804 /* bt_google_plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_google_plus.png; sourceTree = "<group>"; };
+		5DD8160319921B9C006B2804 /* bt_grey.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_grey.9.png; sourceTree = "<group>"; };
+		5DD8160419921B9C006B2804 /* bt_id.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_id.png; sourceTree = "<group>"; };
+		5DD8160519921B9C006B2804 /* bt_kakao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_kakao.png; sourceTree = "<group>"; };
+		5DD8160619921B9C006B2804 /* bt_question.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_question.png; sourceTree = "<group>"; };
+		5DD8160719921B9C006B2804 /* bt_red.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_red.9.png; sourceTree = "<group>"; };
+		5DD8160819921B9C006B2804 /* checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked.png; sourceTree = "<group>"; };
+		5DD8160919921B9C006B2804 /* checked_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked_bg.png; sourceTree = "<group>"; };
+		5DD8160A19921B9C006B2804 /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
+		5DD8160B19921B9C006B2804 /* loading_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading_icon.png; sourceTree = "<group>"; };
+		5DD8160C19921B9C006B2804 /* pop.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pop.9.png; sourceTree = "<group>"; };
+		5DD8160D19921B9C006B2804 /* pop_main.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pop_main.9.png; sourceTree = "<group>"; };
+		5DD8160E19921B9C006B2804 /* txt_highbrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = txt_highbrow.png; sourceTree = "<group>"; };
+		5DD8161019921B9C006B2804 /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
+		5DD8161219921B9C006B2804 /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
+		5DD8161819921B9C006B2804 /* BuildConfig.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = BuildConfig.java; sourceTree = "<group>"; };
+		5DD8161919921B9C006B2804 /* R.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = R.java; sourceTree = "<group>"; };
+		5DD8161A19921B9C006B2804 /* ic_launcher-web.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_launcher-web.png"; sourceTree = "<group>"; };
+		5DD8161C19921B9C006B2804 /* volley-1.0.0-SNAPSHOT.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = "volley-1.0.0-SNAPSHOT.jar"; sourceTree = "<group>"; };
+		5DD8161D19921B9C006B2804 /* lint.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = lint.xml; sourceTree = "<group>"; };
+		5DD8161E19921B9C006B2804 /* proguard-project.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "proguard-project.txt"; sourceTree = "<group>"; };
+		5DD8161F19921B9C006B2804 /* project.properties */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = project.properties; sourceTree = "<group>"; };
+		5DD8162219921B9C006B2804 /* tran_in_to_left.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = tran_in_to_left.xml; sourceTree = "<group>"; };
+		5DD8162319921B9C006B2804 /* tran_in_to_right.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = tran_in_to_right.xml; sourceTree = "<group>"; };
+		5DD8162419921B9C006B2804 /* tran_out_to_left.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = tran_out_to_left.xml; sourceTree = "<group>"; };
+		5DD8162519921B9C006B2804 /* tran_out_to_right.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = tran_out_to_right.xml; sourceTree = "<group>"; };
+		5DD8162719921B9C006B2804 /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
+		5DD8162A19921B9C006B2804 /* bt_blue.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_blue.9.png; sourceTree = "<group>"; };
+		5DD8162B19921B9C006B2804 /* bt_exit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_exit.png; sourceTree = "<group>"; };
+		5DD8162C19921B9C006B2804 /* bt_facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_facebook.png; sourceTree = "<group>"; };
+		5DD8162D19921B9C006B2804 /* bt_google_plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_google_plus.png; sourceTree = "<group>"; };
+		5DD8162E19921B9C006B2804 /* bt_grey.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_grey.9.png; sourceTree = "<group>"; };
+		5DD8162F19921B9C006B2804 /* bt_id.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_id.png; sourceTree = "<group>"; };
+		5DD8163019921B9C006B2804 /* bt_kakao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_kakao.png; sourceTree = "<group>"; };
+		5DD8163119921B9C006B2804 /* bt_question.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_question.png; sourceTree = "<group>"; };
+		5DD8163219921B9C006B2804 /* bt_red.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_red.9.png; sourceTree = "<group>"; };
+		5DD8163319921B9C006B2804 /* checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked.png; sourceTree = "<group>"; };
+		5DD8163419921B9C006B2804 /* checked_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked_bg.png; sourceTree = "<group>"; };
+		5DD8163519921B9C006B2804 /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
+		5DD8163619921B9C006B2804 /* loading_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading_icon.png; sourceTree = "<group>"; };
+		5DD8163719921B9C006B2804 /* pop.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pop.9.png; sourceTree = "<group>"; };
+		5DD8163819921B9C006B2804 /* pop_main.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pop_main.9.png; sourceTree = "<group>"; };
+		5DD8163919921B9C006B2804 /* txt_highbrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = txt_highbrow.png; sourceTree = "<group>"; };
+		5DD8163B19921B9C006B2804 /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
+		5DD8163D19921B9C006B2804 /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
+		5DD8163F19921B9C006B2804 /* com_highbrow_activity.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = com_highbrow_activity.xml; sourceTree = "<group>"; };
+		5DD8164019921B9C006B2804 /* com_highbrow_loading_layout.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = com_highbrow_loading_layout.xml; sourceTree = "<group>"; };
+		5DD8164119921B9C006B2804 /* com_highbrow_login_layout.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = com_highbrow_login_layout.xml; sourceTree = "<group>"; };
+		5DD8164219921B9C006B2804 /* com_highbrow_popup_layout.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = com_highbrow_popup_layout.xml; sourceTree = "<group>"; };
+		5DD8164319921B9C006B2804 /* com_highbrow_provision_layout.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = com_highbrow_provision_layout.xml; sourceTree = "<group>"; };
+		5DD8164419921B9C006B2804 /* com_highbrow_register_layout.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = com_highbrow_register_layout.xml; sourceTree = "<group>"; };
+		5DD8164519921B9C006B2804 /* highbrow_kr.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = highbrow_kr.xml; sourceTree = "<group>"; };
+		5DD8164719921B9C006B2804 /* highbrow_kr.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = highbrow_kr.xml; sourceTree = "<group>"; };
+		5DD8164919921B9C006B2804 /* colors.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = colors.xml; sourceTree = "<group>"; };
+		5DD8164A19921B9C006B2804 /* highbrow_strings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = highbrow_strings.xml; sourceTree = "<group>"; };
+		5DD8164B19921B9C006B2804 /* kakao_strings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = kakao_strings.xml; sourceTree = "<group>"; };
+		5DD8164C19921B9C006B2804 /* strings.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = strings.xml; sourceTree = "<group>"; };
+		5DD8164D19921B9C006B2804 /* styles.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = styles.xml; sourceTree = "<group>"; };
+		5DD8164E19921B9C006B2804 /* version.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = version.xml; sourceTree = "<group>"; };
+		5DD8165019921B9C006B2804 /* styles.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = styles.xml; sourceTree = "<group>"; };
+		5DD8165219921B9C006B2804 /* styles.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = styles.xml; sourceTree = "<group>"; };
+		5DD8165719921B9C006B2804 /* BaseGameActivity.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = BaseGameActivity.java; sourceTree = "<group>"; };
+		5DD8165819921B9C006B2804 /* GameHelper.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = GameHelper.java; sourceTree = "<group>"; };
+		5DD8165919921B9C006B2804 /* GameHelperUtils.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = GameHelperUtils.java; sourceTree = "<group>"; };
+		5DD8165B19921B9C006B2804 /* BitmapLruCache.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = BitmapLruCache.java; sourceTree = "<group>"; };
+		5DD8165C19921B9C006B2804 /* NetworkVolley.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = NetworkVolley.java; sourceTree = "<group>"; };
+		5DD8165F19921B9C006B2804 /* LoginManager.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = LoginManager.java; sourceTree = "<group>"; };
+		5DD8166019921B9C006B2804 /* StringManager.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = StringManager.java; sourceTree = "<group>"; };
+		5DD8166219921B9C006B2804 /* CallbackManager.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = CallbackManager.java; sourceTree = "<group>"; };
+		5DD8166319921B9C006B2804 /* HighbrowActivity.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = HighbrowActivity.java; sourceTree = "<group>"; };
+		5DD8166419921B9C006B2804 /* TouchLayer.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = TouchLayer.java; sourceTree = "<group>"; };
+		5DD8166619921B9C006B2804 /* LoadingView.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = LoadingView.java; sourceTree = "<group>"; };
+		5DD8166719921B9C006B2804 /* LoginView.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = LoginView.java; sourceTree = "<group>"; };
+		5DD8166819921B9C006B2804 /* PopupView.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = PopupView.java; sourceTree = "<group>"; };
+		5DD8166919921B9C006B2804 /* ProvisionView.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = ProvisionView.java; sourceTree = "<group>"; };
+		5DD8166A19921B9C006B2804 /* RegisterView.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = RegisterView.java; sourceTree = "<group>"; };
+		5DD8166C19921B9C006B2804 /* Highbrow_Login.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Highbrow_Login.framework; sourceTree = "<group>"; };
+		5DD8166D19921B9C006B2804 /* Highbrow_Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Highbrow_Resources.bundle; sourceTree = "<group>"; };
+		5DD8167319921D53006B2804 /* HBnetwork.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HBnetwork.mm; sourceTree = "<group>"; };
+		5DD8167519921FB2006B2804 /* HBnetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBnetwork.h; sourceTree = "<group>"; };
+		9C6814E61990D9070023D951 /* utility_display.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = utility_display.cpp; sourceTree = "<group>"; };
+		9C6814E71990D9070023D951 /* utility_display.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utility_display.h; sourceTree = "<group>"; };
+>>>>>>> f9d33e957f6064d531638bcb58e4031fe3214615
 		A03F2CB81780BD04006731B9 /* libchipmunk Mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libchipmunk Mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A03F2D9B1780BDF7006731B9 /* libbox2d Mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libbox2d Mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A03F2ED617814268006731B9 /* libCocosDenshion Mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libCocosDenshion Mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -3031,6 +3213,11 @@
 		1551A334158F2AB200E66CFE = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
+=======
+				5DD8159319921B9C006B2804 /* highbrow */,
+				9C6814E51990D89A0023D951 /* utility */,
+>>>>>>> f9d33e957f6064d531638bcb58e4031fe3214615
 				46A15FCC1807A544005B8026 /* AUTHORS */,
 				1A57FFF7180BC5160088DEC7 /* CHANGELOG */,
 				50272539190BF1B900AAF4ED /* cocos2d.cpp */,
@@ -4955,6 +5142,630 @@
 			path = TextReader;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
+=======
+		5DD8159319921B9C006B2804 /* highbrow */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8159419921B9C006B2804 /* library */,
+				5DD8166E19921B9C006B2804 /* network */,
+				5DD8167219921B9C006B2804 /* ui */,
+			);
+			name = highbrow;
+			path = ../cocos/highbrow;
+			sourceTree = "<group>";
+		};
+		5DD8159419921B9C006B2804 /* library */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8159519921B9C006B2804 /* android */,
+				5DD8166B19921B9C006B2804 /* ios */,
+			);
+			path = library;
+			sourceTree = "<group>";
+		};
+		5DD8159519921B9C006B2804 /* android */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8159619921B9C006B2804 /* AndroidManifest.xml */,
+				5DD8159719921B9C006B2804 /* assets */,
+				5DD8159819921B9C006B2804 /* bin */,
+				5DD8161319921B9C006B2804 /* gen */,
+				5DD8161A19921B9C006B2804 /* ic_launcher-web.png */,
+				5DD8161B19921B9C006B2804 /* libs */,
+				5DD8161D19921B9C006B2804 /* lint.xml */,
+				5DD8161E19921B9C006B2804 /* proguard-project.txt */,
+				5DD8161F19921B9C006B2804 /* project.properties */,
+				5DD8162019921B9C006B2804 /* res */,
+				5DD8165319921B9C006B2804 /* src */,
+			);
+			path = android;
+			sourceTree = "<group>";
+		};
+		5DD8159719921B9C006B2804 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		5DD8159819921B9C006B2804 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8159919921B9C006B2804 /* AndroidManifest.xml */,
+				5DD8159A19921B9C006B2804 /* classes */,
+				5DD815F719921B9C006B2804 /* highbrow.jar */,
+				5DD815F819921B9C006B2804 /* jarlist.cache */,
+				5DD815F919921B9C006B2804 /* R.txt */,
+				5DD815FA19921B9C006B2804 /* res */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		5DD8159A19921B9C006B2804 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8159B19921B9C006B2804 /* com */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		5DD8159B19921B9C006B2804 /* com */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8159C19921B9C006B2804 /* highbrow */,
+			);
+			path = com;
+			sourceTree = "<group>";
+		};
+		5DD8159C19921B9C006B2804 /* highbrow */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8159D19921B9C006B2804 /* games */,
+				5DD815AD19921B9C006B2804 /* google */,
+				5DD815B419921B9C006B2804 /* libraries */,
+				5DD815B719921B9C006B2804 /* login */,
+			);
+			path = highbrow;
+			sourceTree = "<group>";
+		};
+		5DD8159D19921B9C006B2804 /* games */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8159E19921B9C006B2804 /* TOF */,
+			);
+			path = games;
+			sourceTree = "<group>";
+		};
+		5DD8159E19921B9C006B2804 /* TOF */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8159F19921B9C006B2804 /* BuildConfig.class */,
+				5DD815A019921B9C006B2804 /* R$anim.class */,
+				5DD815A119921B9C006B2804 /* R$attr.class */,
+				5DD815A219921B9C006B2804 /* R$color.class */,
+				5DD815A319921B9C006B2804 /* R$dimen.class */,
+				5DD815A419921B9C006B2804 /* R$drawable.class */,
+				5DD815A519921B9C006B2804 /* R$id.class */,
+				5DD815A619921B9C006B2804 /* R$integer.class */,
+				5DD815A719921B9C006B2804 /* R$layout.class */,
+				5DD815A819921B9C006B2804 /* R$raw.class */,
+				5DD815A919921B9C006B2804 /* R$string.class */,
+				5DD815AA19921B9C006B2804 /* R$style.class */,
+				5DD815AB19921B9C006B2804 /* R$styleable.class */,
+				5DD815AC19921B9C006B2804 /* R.class */,
+			);
+			path = TOF;
+			sourceTree = "<group>";
+		};
+		5DD815AD19921B9C006B2804 /* google */ = {
+			isa = PBXGroup;
+			children = (
+				5DD815AE19921B9C006B2804 /* BaseGameActivity.class */,
+				5DD815AF19921B9C006B2804 /* GameHelper$1.class */,
+				5DD815B019921B9C006B2804 /* GameHelper$GameHelperListener.class */,
+				5DD815B119921B9C006B2804 /* GameHelper$SignInFailureReason.class */,
+				5DD815B219921B9C006B2804 /* GameHelper.class */,
+				5DD815B319921B9C006B2804 /* GameHelperUtils.class */,
+			);
+			path = google;
+			sourceTree = "<group>";
+		};
+		5DD815B419921B9C006B2804 /* libraries */ = {
+			isa = PBXGroup;
+			children = (
+				5DD815B519921B9C006B2804 /* BitmapLruCache.class */,
+				5DD815B619921B9C006B2804 /* NetworkVolley.class */,
+			);
+			path = libraries;
+			sourceTree = "<group>";
+		};
+		5DD815B719921B9C006B2804 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				5DD815B819921B9C006B2804 /* manager */,
+				5DD815C019921B9C006B2804 /* sources */,
+				5DD815D319921B9C006B2804 /* views */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		5DD815B819921B9C006B2804 /* manager */ = {
+			isa = PBXGroup;
+			children = (
+				5DD815B919921B9C006B2804 /* LoginManager$1.class */,
+				5DD815BA19921B9C006B2804 /* LoginManager$2.class */,
+				5DD815BB19921B9C006B2804 /* LoginManager$3.class */,
+				5DD815BC19921B9C006B2804 /* LoginManager$4.class */,
+				5DD815BD19921B9C006B2804 /* LoginManager$5.class */,
+				5DD815BE19921B9C006B2804 /* LoginManager.class */,
+				5DD815BF19921B9C006B2804 /* StringManager.class */,
+			);
+			path = manager;
+			sourceTree = "<group>";
+		};
+		5DD815C019921B9C006B2804 /* sources */ = {
+			isa = PBXGroup;
+			children = (
+				5DD815C119921B9C006B2804 /* callbackFunc.class */,
+				5DD815C219921B9C006B2804 /* CallbackManager.class */,
+				5DD815C319921B9C006B2804 /* HighbrowActivity$1.class */,
+				5DD815C419921B9C006B2804 /* HighbrowActivity$2$1.class */,
+				5DD815C519921B9C006B2804 /* HighbrowActivity$2.class */,
+				5DD815C619921B9C006B2804 /* HighbrowActivity$3$1.class */,
+				5DD815C719921B9C006B2804 /* HighbrowActivity$3$2.class */,
+				5DD815C819921B9C006B2804 /* HighbrowActivity$3.class */,
+				5DD815C919921B9C006B2804 /* HighbrowActivity$4$1.class */,
+				5DD815CA19921B9C006B2804 /* HighbrowActivity$4$2.class */,
+				5DD815CB19921B9C006B2804 /* HighbrowActivity$4.class */,
+				5DD815CC19921B9C006B2804 /* HighbrowActivity$5.class */,
+				5DD815CD19921B9C006B2804 /* HighbrowActivity$6.class */,
+				5DD815CE19921B9C006B2804 /* HighbrowActivity$7.class */,
+				5DD815CF19921B9C006B2804 /* HighbrowActivity$8.class */,
+				5DD815D019921B9C006B2804 /* HighbrowActivity$9.class */,
+				5DD815D119921B9C006B2804 /* HighbrowActivity.class */,
+				5DD815D219921B9C006B2804 /* TouchLayer.class */,
+			);
+			path = sources;
+			sourceTree = "<group>";
+		};
+		5DD815D319921B9C006B2804 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				5DD815D419921B9C006B2804 /* LoadingView$1.class */,
+				5DD815D519921B9C006B2804 /* LoadingView$2.class */,
+				5DD815D619921B9C006B2804 /* LoadingView.class */,
+				5DD815D719921B9C006B2804 /* LoginView$1.class */,
+				5DD815D819921B9C006B2804 /* LoginView$2.class */,
+				5DD815D919921B9C006B2804 /* LoginView$3.class */,
+				5DD815DA19921B9C006B2804 /* LoginView$4.class */,
+				5DD815DB19921B9C006B2804 /* LoginView$5.class */,
+				5DD815DC19921B9C006B2804 /* LoginView$6.class */,
+				5DD815DD19921B9C006B2804 /* LoginView$7.class */,
+				5DD815DE19921B9C006B2804 /* LoginView.class */,
+				5DD815DF19921B9C006B2804 /* PopupView$1.class */,
+				5DD815E019921B9C006B2804 /* PopupView$2.class */,
+				5DD815E119921B9C006B2804 /* PopupView$3.class */,
+				5DD815E219921B9C006B2804 /* PopupView$4.class */,
+				5DD815E319921B9C006B2804 /* PopupView.class */,
+				5DD815E419921B9C006B2804 /* ProvisionView$1.class */,
+				5DD815E519921B9C006B2804 /* ProvisionView$2.class */,
+				5DD815E619921B9C006B2804 /* ProvisionView$3.class */,
+				5DD815E719921B9C006B2804 /* ProvisionView$4.class */,
+				5DD815E819921B9C006B2804 /* ProvisionView$5.class */,
+				5DD815E919921B9C006B2804 /* ProvisionView$6.class */,
+				5DD815EA19921B9C006B2804 /* ProvisionView$7.class */,
+				5DD815EB19921B9C006B2804 /* ProvisionView.class */,
+				5DD815EC19921B9C006B2804 /* RegisterView$1.class */,
+				5DD815ED19921B9C006B2804 /* RegisterView$10.class */,
+				5DD815EE19921B9C006B2804 /* RegisterView$2.class */,
+				5DD815EF19921B9C006B2804 /* RegisterView$3.class */,
+				5DD815F019921B9C006B2804 /* RegisterView$4.class */,
+				5DD815F119921B9C006B2804 /* RegisterView$5.class */,
+				5DD815F219921B9C006B2804 /* RegisterView$6.class */,
+				5DD815F319921B9C006B2804 /* RegisterView$7.class */,
+				5DD815F419921B9C006B2804 /* RegisterView$8.class */,
+				5DD815F519921B9C006B2804 /* RegisterView$9.class */,
+				5DD815F619921B9C006B2804 /* RegisterView.class */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		5DD815FA19921B9C006B2804 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				5DD815FB19921B9C006B2804 /* crunch */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		5DD815FB19921B9C006B2804 /* crunch */ = {
+			isa = PBXGroup;
+			children = (
+				5DD815FC19921B9C006B2804 /* drawable-hdpi */,
+				5DD815FE19921B9C006B2804 /* drawable-mdpi */,
+				5DD8160F19921B9C006B2804 /* drawable-xhdpi */,
+				5DD8161119921B9C006B2804 /* drawable-xxhdpi */,
+			);
+			path = crunch;
+			sourceTree = "<group>";
+		};
+		5DD815FC19921B9C006B2804 /* drawable-hdpi */ = {
+			isa = PBXGroup;
+			children = (
+				5DD815FD19921B9C006B2804 /* ic_launcher.png */,
+			);
+			path = "drawable-hdpi";
+			sourceTree = "<group>";
+		};
+		5DD815FE19921B9C006B2804 /* drawable-mdpi */ = {
+			isa = PBXGroup;
+			children = (
+				5DD815FF19921B9C006B2804 /* bt_blue.9.png */,
+				5DD8160019921B9C006B2804 /* bt_exit.png */,
+				5DD8160119921B9C006B2804 /* bt_facebook.png */,
+				5DD8160219921B9C006B2804 /* bt_google_plus.png */,
+				5DD8160319921B9C006B2804 /* bt_grey.9.png */,
+				5DD8160419921B9C006B2804 /* bt_id.png */,
+				5DD8160519921B9C006B2804 /* bt_kakao.png */,
+				5DD8160619921B9C006B2804 /* bt_question.png */,
+				5DD8160719921B9C006B2804 /* bt_red.9.png */,
+				5DD8160819921B9C006B2804 /* checked.png */,
+				5DD8160919921B9C006B2804 /* checked_bg.png */,
+				5DD8160A19921B9C006B2804 /* ic_launcher.png */,
+				5DD8160B19921B9C006B2804 /* loading_icon.png */,
+				5DD8160C19921B9C006B2804 /* pop.9.png */,
+				5DD8160D19921B9C006B2804 /* pop_main.9.png */,
+				5DD8160E19921B9C006B2804 /* txt_highbrow.png */,
+			);
+			path = "drawable-mdpi";
+			sourceTree = "<group>";
+		};
+		5DD8160F19921B9C006B2804 /* drawable-xhdpi */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8161019921B9C006B2804 /* ic_launcher.png */,
+			);
+			path = "drawable-xhdpi";
+			sourceTree = "<group>";
+		};
+		5DD8161119921B9C006B2804 /* drawable-xxhdpi */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8161219921B9C006B2804 /* ic_launcher.png */,
+			);
+			path = "drawable-xxhdpi";
+			sourceTree = "<group>";
+		};
+		5DD8161319921B9C006B2804 /* gen */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8161419921B9C006B2804 /* com */,
+			);
+			path = gen;
+			sourceTree = "<group>";
+		};
+		5DD8161419921B9C006B2804 /* com */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8161519921B9C006B2804 /* highbrow */,
+			);
+			path = com;
+			sourceTree = "<group>";
+		};
+		5DD8161519921B9C006B2804 /* highbrow */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8161619921B9C006B2804 /* games */,
+			);
+			path = highbrow;
+			sourceTree = "<group>";
+		};
+		5DD8161619921B9C006B2804 /* games */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8161719921B9C006B2804 /* TOF */,
+			);
+			path = games;
+			sourceTree = "<group>";
+		};
+		5DD8161719921B9C006B2804 /* TOF */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8161819921B9C006B2804 /* BuildConfig.java */,
+				5DD8161919921B9C006B2804 /* R.java */,
+			);
+			path = TOF;
+			sourceTree = "<group>";
+		};
+		5DD8161B19921B9C006B2804 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8161C19921B9C006B2804 /* volley-1.0.0-SNAPSHOT.jar */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		5DD8162019921B9C006B2804 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8162119921B9C006B2804 /* anim */,
+				5DD8162619921B9C006B2804 /* drawable-hdpi */,
+				5DD8162819921B9C006B2804 /* drawable-ldpi */,
+				5DD8162919921B9C006B2804 /* drawable-mdpi */,
+				5DD8163A19921B9C006B2804 /* drawable-xhdpi */,
+				5DD8163C19921B9C006B2804 /* drawable-xxhdpi */,
+				5DD8163E19921B9C006B2804 /* layout */,
+				5DD8164619921B9C006B2804 /* raw */,
+				5DD8164819921B9C006B2804 /* values */,
+				5DD8164F19921B9C006B2804 /* values-v11 */,
+				5DD8165119921B9C006B2804 /* values-v14 */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		5DD8162119921B9C006B2804 /* anim */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8162219921B9C006B2804 /* tran_in_to_left.xml */,
+				5DD8162319921B9C006B2804 /* tran_in_to_right.xml */,
+				5DD8162419921B9C006B2804 /* tran_out_to_left.xml */,
+				5DD8162519921B9C006B2804 /* tran_out_to_right.xml */,
+			);
+			path = anim;
+			sourceTree = "<group>";
+		};
+		5DD8162619921B9C006B2804 /* drawable-hdpi */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8162719921B9C006B2804 /* ic_launcher.png */,
+			);
+			path = "drawable-hdpi";
+			sourceTree = "<group>";
+		};
+		5DD8162819921B9C006B2804 /* drawable-ldpi */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "drawable-ldpi";
+			sourceTree = "<group>";
+		};
+		5DD8162919921B9C006B2804 /* drawable-mdpi */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8162A19921B9C006B2804 /* bt_blue.9.png */,
+				5DD8162B19921B9C006B2804 /* bt_exit.png */,
+				5DD8162C19921B9C006B2804 /* bt_facebook.png */,
+				5DD8162D19921B9C006B2804 /* bt_google_plus.png */,
+				5DD8162E19921B9C006B2804 /* bt_grey.9.png */,
+				5DD8162F19921B9C006B2804 /* bt_id.png */,
+				5DD8163019921B9C006B2804 /* bt_kakao.png */,
+				5DD8163119921B9C006B2804 /* bt_question.png */,
+				5DD8163219921B9C006B2804 /* bt_red.9.png */,
+				5DD8163319921B9C006B2804 /* checked.png */,
+				5DD8163419921B9C006B2804 /* checked_bg.png */,
+				5DD8163519921B9C006B2804 /* ic_launcher.png */,
+				5DD8163619921B9C006B2804 /* loading_icon.png */,
+				5DD8163719921B9C006B2804 /* pop.9.png */,
+				5DD8163819921B9C006B2804 /* pop_main.9.png */,
+				5DD8163919921B9C006B2804 /* txt_highbrow.png */,
+			);
+			path = "drawable-mdpi";
+			sourceTree = "<group>";
+		};
+		5DD8163A19921B9C006B2804 /* drawable-xhdpi */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8163B19921B9C006B2804 /* ic_launcher.png */,
+			);
+			path = "drawable-xhdpi";
+			sourceTree = "<group>";
+		};
+		5DD8163C19921B9C006B2804 /* drawable-xxhdpi */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8163D19921B9C006B2804 /* ic_launcher.png */,
+			);
+			path = "drawable-xxhdpi";
+			sourceTree = "<group>";
+		};
+		5DD8163E19921B9C006B2804 /* layout */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8163F19921B9C006B2804 /* com_highbrow_activity.xml */,
+				5DD8164019921B9C006B2804 /* com_highbrow_loading_layout.xml */,
+				5DD8164119921B9C006B2804 /* com_highbrow_login_layout.xml */,
+				5DD8164219921B9C006B2804 /* com_highbrow_popup_layout.xml */,
+				5DD8164319921B9C006B2804 /* com_highbrow_provision_layout.xml */,
+				5DD8164419921B9C006B2804 /* com_highbrow_register_layout.xml */,
+				5DD8164519921B9C006B2804 /* highbrow_kr.xml */,
+			);
+			path = layout;
+			sourceTree = "<group>";
+		};
+		5DD8164619921B9C006B2804 /* raw */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8164719921B9C006B2804 /* highbrow_kr.xml */,
+			);
+			path = raw;
+			sourceTree = "<group>";
+		};
+		5DD8164819921B9C006B2804 /* values */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8164919921B9C006B2804 /* colors.xml */,
+				5DD8164A19921B9C006B2804 /* highbrow_strings.xml */,
+				5DD8164B19921B9C006B2804 /* kakao_strings.xml */,
+				5DD8164C19921B9C006B2804 /* strings.xml */,
+				5DD8164D19921B9C006B2804 /* styles.xml */,
+				5DD8164E19921B9C006B2804 /* version.xml */,
+			);
+			path = values;
+			sourceTree = "<group>";
+		};
+		5DD8164F19921B9C006B2804 /* values-v11 */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8165019921B9C006B2804 /* styles.xml */,
+			);
+			path = "values-v11";
+			sourceTree = "<group>";
+		};
+		5DD8165119921B9C006B2804 /* values-v14 */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8165219921B9C006B2804 /* styles.xml */,
+			);
+			path = "values-v14";
+			sourceTree = "<group>";
+		};
+		5DD8165319921B9C006B2804 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8165419921B9C006B2804 /* com */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		5DD8165419921B9C006B2804 /* com */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8165519921B9C006B2804 /* highbrow */,
+			);
+			path = com;
+			sourceTree = "<group>";
+		};
+		5DD8165519921B9C006B2804 /* highbrow */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8165619921B9C006B2804 /* google */,
+				5DD8165A19921B9C006B2804 /* libraries */,
+				5DD8165D19921B9C006B2804 /* login */,
+			);
+			path = highbrow;
+			sourceTree = "<group>";
+		};
+		5DD8165619921B9C006B2804 /* google */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8165719921B9C006B2804 /* BaseGameActivity.java */,
+				5DD8165819921B9C006B2804 /* GameHelper.java */,
+				5DD8165919921B9C006B2804 /* GameHelperUtils.java */,
+			);
+			path = google;
+			sourceTree = "<group>";
+		};
+		5DD8165A19921B9C006B2804 /* libraries */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8165B19921B9C006B2804 /* BitmapLruCache.java */,
+				5DD8165C19921B9C006B2804 /* NetworkVolley.java */,
+			);
+			path = libraries;
+			sourceTree = "<group>";
+		};
+		5DD8165D19921B9C006B2804 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8165E19921B9C006B2804 /* manager */,
+				5DD8166119921B9C006B2804 /* sources */,
+				5DD8166519921B9C006B2804 /* views */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		5DD8165E19921B9C006B2804 /* manager */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8165F19921B9C006B2804 /* LoginManager.java */,
+				5DD8166019921B9C006B2804 /* StringManager.java */,
+			);
+			path = manager;
+			sourceTree = "<group>";
+		};
+		5DD8166119921B9C006B2804 /* sources */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8166219921B9C006B2804 /* CallbackManager.java */,
+				5DD8166319921B9C006B2804 /* HighbrowActivity.java */,
+				5DD8166419921B9C006B2804 /* TouchLayer.java */,
+			);
+			path = sources;
+			sourceTree = "<group>";
+		};
+		5DD8166519921B9C006B2804 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8166619921B9C006B2804 /* LoadingView.java */,
+				5DD8166719921B9C006B2804 /* LoginView.java */,
+				5DD8166819921B9C006B2804 /* PopupView.java */,
+				5DD8166919921B9C006B2804 /* ProvisionView.java */,
+				5DD8166A19921B9C006B2804 /* RegisterView.java */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		5DD8166B19921B9C006B2804 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8166C19921B9C006B2804 /* Highbrow_Login.framework */,
+				5DD8166D19921B9C006B2804 /* Highbrow_Resources.bundle */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		5DD8166E19921B9C006B2804 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8166F19921B9C006B2804 /* android */,
+				5DD8167019921B9C006B2804 /* include */,
+				5DD8167119921B9C006B2804 /* ios */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		5DD8166F19921B9C006B2804 /* android */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = android;
+			sourceTree = "<group>";
+		};
+		5DD8167019921B9C006B2804 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8167519921FB2006B2804 /* HBnetwork.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		5DD8167119921B9C006B2804 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				5DD8167319921D53006B2804 /* HBnetwork.mm */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		5DD8167219921B9C006B2804 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		9C6814E51990D89A0023D951 /* utility */ = {
+			isa = PBXGroup;
+			children = (
+				9C6814E61990D9070023D951 /* utility_display.cpp */,
+				9C6814E71990D9070023D951 /* utility_display.h */,
+			);
+			name = utility;
+			path = ../utils;
+			sourceTree = "<group>";
+		};
+>>>>>>> f9d33e957f6064d531638bcb58e4031fe3214615
 		B29594B81926D61F003EEF37 /* 3d */ = {
 			isa = PBXGroup;
 			children = (
@@ -5773,6 +6584,7 @@
 				1AD71EC4180E26E600808F54 /* extension.h in Headers */,
 				1AD71EC8180E26E600808F54 /* Json.h in Headers */,
 				1AD71ECC180E26E600808F54 /* RegionAttachment.h in Headers */,
+				5DD8167619921FB2006B2804 /* HBnetwork.h in Headers */,
 				50ABBDBC1925AB4100A911A9 /* CCTextureAtlas.h in Headers */,
 				1AD71ED0180E26E600808F54 /* Skeleton.h in Headers */,
 				50ABBE541925AB6F00A911A9 /* CCEventDispatcher.h in Headers */,
@@ -7456,6 +8268,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/zobyzo/Documents/Highbrow_Cocos/cocos/highbrow/library/ios,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "../cocos/cocos2d-prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -7486,6 +8302,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/zobyzo/Documents/Highbrow_Cocos/cocos/highbrow/library/ios,
+				);
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "../cocos/cocos2d-prefix.pch";
