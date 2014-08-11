@@ -1931,8 +1931,6 @@
 		9CBC92CA19962DB600AB2786 /* libcrypto.so */ = {isa = PBXFileReference; lastKnownFileType = file; path = libcrypto.so; sourceTree = "<group>"; };
 		9CBC92CB19962DB600AB2786 /* libsqlcipher.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsqlcipher.a; sourceTree = "<group>"; };
 		9CBC92CD19962DB600AB2786 /* libsqlcipher.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsqlcipher.a; sourceTree = "<group>"; };
-		9CBC92CF19962DB600AB2786 /* HBDocument.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HBDocument.cpp; sourceTree = "<group>"; };
-		9CBC92D019962DB600AB2786 /* HBDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBDocument.h; sourceTree = "<group>"; };
 		9CBC92D219962DB600AB2786 /* HBMacros.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HBMacros.cpp; sourceTree = "<group>"; };
 		9CBC92D319962DB600AB2786 /* HBMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBMacros.h; sourceTree = "<group>"; };
 		9CBC92D519962DB600AB2786 /* HBMenuItemImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HBMenuItemImage.cpp; sourceTree = "<group>"; };
@@ -4082,8 +4080,6 @@
 		9CBC92CE19962DB600AB2786 /* network */ = {
 			isa = PBXGroup;
 			children = (
-				9CBC92CF19962DB600AB2786 /* HBDocument.cpp */,
-				9CBC92D019962DB600AB2786 /* HBDocument.h */,
 			);
 			path = network;
 			sourceTree = "<group>";

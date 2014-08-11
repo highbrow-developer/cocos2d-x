@@ -9,8 +9,13 @@
 #ifndef cocos2d_libs_highbros2d_x_h
 #define cocos2d_libs_highbros2d_x_h
 
+/*  macro  */
 #include "highbrow/ui/HBMacros.h"
 
+/*  json  */
+#include "highbrow/libs/librapidjson/document.h"
+
+/*  ui  */
 #include "highbrow/ui/menu/HBMenuItemImage.h"
 
 #endif

@@ -50,6 +50,36 @@ NS_CC_BEGIN
 #define touch_graph_lock(target)        HBmacros::setTouchGraphLock(target);
 
 
+/*  데이터 수신 포멧  */
+class HBdata : public Ref {
+public:
+    HBdata();
+    ~HBdata();
+    
+    static HBdata* create(...);
+
+protected:
+    
+public:
+    int getInt();
+    float getFloat();
+    std::string getString();
+    
+protected:
+    bool initData(void *data);
+    
+public:
+protected:
+    int _data_int;
+    float _data_float;
+    std::string _data_string;
+};
+
+
+
+
+
+
 class HBmacros : public Ref {
 public:
     /*  디자인 해상도  */
@@ -89,6 +119,42 @@ public:
         
         director->setOpenGLView(glview);
     }
+    
+    
+    /*  맵 변환  */
+//    static Map<std::string, __String*> parseDocument(std::vector<char> *data) {
+//        Map<std::string, __String*> map;
+//        
+//        data->push_back('\0');
+//        char *json = reinterpret_cast<char*>(data->data());
+//        
+//        /*  로그  */
+//        log("response json ; %s", json);
+//        
+//        rapidjson::Document parser;
+//        parser.Parse<0>(json);
+//        
+//        if ( parser.HasParseError() ) {
+//            map.insert("rs", String::createWithFormat("%d", -1));
+//            return map;
+//        }
+//        
+//        std::string key = "";
+//        __String* value = nullptr;
+//        
+//        for ( int cnt = 0; cnt < parser.Size(); cnt++ ) {
+//            
+//            std::string index = __String::createWithFormat("%du", cnt)->getCString();
+//            
+//            key = parser[index.c_str()]["key"].GetString();
+//            value = __String::createWithFormat("%s", parser[index.c_str()]["value"].GetString());
+//            
+//            map.insert(key.c_str(), value);
+//        }
+//        
+//        return map;
+//    };
+    
     
     /*  화면 터치 잠금  */
     static void setTouchGraphLock(Node *target) {
