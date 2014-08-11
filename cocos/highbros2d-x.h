@@ -12,7 +12,13 @@
 /*  macro  */
 #include "highbrow/ui/HBMacros.h"
 
+
 /*  menu  */
 #include "highbrow/ui/menu/HBMenuItemImage.h"
+
+
+/*  network  */
+#include "highbrow/network/HBNetwork.h"
+
 
 #endif
