@@ -11,6 +11,10 @@
 
 #include "cocos2d.h"
 
+/*  json  */
+#include "highbrow/libs/librapidjson/document.h"
+
+
 NS_CC_BEGIN
 
 #define display_init(resolution)        HBmacros::setDesignResolution(resolution)
@@ -122,38 +126,42 @@ public:
     
     
     /*  맵 변환  */
-//    static Map<std::string, __String*> parseDocument(std::vector<char> *data) {
-//        Map<std::string, __String*> map;
-//        
-//        data->push_back('\0');
-//        char *json = reinterpret_cast<char*>(data->data());
-//        
-//        /*  로그  */
-//        log("response json ; %s", json);
-//        
-//        rapidjson::Document parser;
-//        parser.Parse<0>(json);
-//        
-//        if ( parser.HasParseError() ) {
-//            map.insert("rs", String::createWithFormat("%d", -1));
-//            return map;
-//        }
-//        
-//        std::string key = "";
-//        __String* value = nullptr;
-//        
-//        for ( int cnt = 0; cnt < parser.Size(); cnt++ ) {
-//            
-//            std::string index = __String::createWithFormat("%du", cnt)->getCString();
-//            
-//            key = parser[index.c_str()]["key"].GetString();
-//            value = __String::createWithFormat("%s", parser[index.c_str()]["value"].GetString());
-//            
-//            map.insert(key.c_str(), value);
-//        }
-//        
-//        return map;
-//    };
+    static Map<std::string, __String*> parseDocument(std::vector<char> *data) {
+        Map<std::string, __String*> map;
+        
+        data->push_back('\0');
+        char *json = reinterpret_cast<char*>(data->data());
+        
+        /*  로그  */
+        log("response json ; %s", json);
+        
+        rapidjson::Document parser;
+        parser.Parse<0>(json);
+        
+        if ( parser.HasParseError() ) {
+            map.insert("rs", String::createWithFormat("%d", -1));
+            return map;
+        }
+        
+        std::string key = "";
+        __String* value = nullptr;
+    
+
+//        switch ( parser[index.c_str()]["value"]
+        
+        
+        for ( int cnt = 0; cnt < parser.Size(); cnt++ ) {
+            
+            std::string index = __String::createWithFormat("%du", cnt)->getCString();
+            
+            key = parser[index.c_str()]["key"].GetString();
+            value = __String::createWithFormat("%s", parser[index.c_str()]["value"].GetString());
+            
+            map.insert(key.c_str(), value);
+        }
+        
+        return map;
+    };
     
     
     /*  화면 터치 잠금  */

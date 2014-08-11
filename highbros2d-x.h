@@ -12,9 +12,6 @@
 /*  macro  */
 #include "highbrow/ui/HBMacros.h"
 
-/*  json  */
-#include "highbrow/libs/librapidjson/document.h"
-
 /*  ui  */
 #include "highbrow/ui/menu/HBMenuItemImage.h"
 
