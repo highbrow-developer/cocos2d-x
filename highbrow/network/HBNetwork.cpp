@@ -11,69 +11,169 @@
 USING_NS_CC;
 
 HBData::HBData() :
-_data_int(0),
-_data_float(0.0f),
-_data_string("") {
+_index(-1)
+{
     
 }
 
 HBData::~HBData() {
+    _data.clear();
+    _data_array.clear();
+    _map.clear();
+}
+
+HBData* HBData::create() {
+    HBData *ret = new HBData();
+    if ( ret && ret->initData() ) {
+        ret->autorelease();
+        return ret;
+    }
+    CC_SAFE_DELETE(ret);
+    return NULL;
+}
+
+bool HBData::initData() {
     
-}
-
-HBData* HBData::create(int data) {
-    HBData *ret = new HBData();
-    if ( ret && ret->initData(data) ) {
-        ret->autorelease();
-        return ret;
-    }
-    CC_SAFE_DELETE(ret);
-    return NULL;
-}
-
-HBData* HBData::create(float data) {
-    HBData *ret = new HBData();
-    if ( ret && ret->initData(data) ) {
-        ret->autorelease();
-        return ret;
-    }
-    CC_SAFE_DELETE(ret);
-    return NULL;
-}
-
-HBData* HBData::create(std::string data) {
-    HBData *ret = new HBData();
-    if ( ret && ret->initData(data) ) {
-        ret->autorelease();
-        return ret;
-    }
-    CC_SAFE_DELETE(ret);
-    return NULL;
-}
-
-bool HBData::initData(int data) {
-    _data_int = data;
     return true;
 }
 
-bool HBData::initData(float data) {
-    _data_float = data;
-    return true;
+const int HBData::size() {
+    return _data.size() + _data_array.size() + _map.size();
 }
 
-bool HBData::initData(std::string data) {
-    _data_string = data;
-    return true;
+bool HBData::isBool(int index) {
+    int index_var = 0;
+    if ( index == 0 )   index_var = MAX(_index, 0);
+    else                index_var = index;
+    
+    if ( _data[index_var]._bool == false )  return false;
+    else                                    return true;
 }
 
-int HBData::getInt() {
-    return _data_int;
+bool HBData::isInt(int index) {
+    int index_var = 0;
+    if ( index == 0 )   index_var = MAX(_index, 0);
+    else                index_var = index;
+    
+    if ( _data[index_var]._number == NO_DATA_NUMBER )   return false;
+    else                                                return true;
 }
 
-float HBData::getFloat() {
-    return _data_float;
+bool HBData::isFloat(int index) {
+    int index_var = 0;
+    if ( index == 0 )   index_var = MAX(_index, 0);
+    else                index_var = index;
+    
+    if ( _data[index_var]._number == NO_DATA_NUMBER )   return false;
+    else                                                return true;
 }
 
-std::string HBData::getString() {
-    return _data_string;
+bool HBData::isString(int index) {
+    int index_var = 0;
+    if ( index == 0 )   index_var = MAX(_index, 0);
+    else                index_var = index;
+    
+    if ( _data[index_var]._string.length() == 0 )   return false;
+    else                                            return true;
+}
+
+bool HBData::isArray() {
+    if ( _data_array.size() > 1 ) {
+        return true;
+    }
+    
+    return false;
+}
+
+bool HBData::isObject() {
+    if ( _map.size() > 1 ) {
+        return true;
+    }
+    
+    return false;
+}
+
+void HBData::addData(bool data) {
+    _data_struct _struct;
+    _struct._bool = data;
+    _struct._number = NO_DATA_NUMBER;
+    _struct._string = NO_DATA_STRING;
+    _data.push_back(_struct);
+}
+
+void HBData::addData(int data) {
+    _data_struct _struct;
+    _struct._bool = false;
+    _struct._number = data;
+    _struct._string = NO_DATA_STRING;
+    _data.push_back(_struct);
+}
+
+void HBData::addData(float data) {
+    _data_struct _struct;
+    _struct._bool = false;
+    _struct._number = data;
+    _struct._string = NO_DATA_STRING;
+    _data.push_back(_struct);
+}
+
+void HBData::addData(double data) {
+    _data_struct _struct;
+    _struct._bool = false;
+    _struct._number = data;
+    _struct._string = NO_DATA_STRING;
+    _data.push_back(_struct);
+}
+
+void HBData::addData(const char *data) {
+    _data_struct _struct;
+    _struct._bool = false;
+    _struct._number = NO_DATA_NUMBER;
+    _struct._string = data;
+    _data.push_back(_struct);
+}
+
+void HBData::addData(HBData* data) {
+    _data_array.push_back(data);
+}
+
+
+bool HBData::getBool(int index) {
+    int index_var = 0;
+    if ( index == 0 )   index_var = ++_index;
+    else                index_var = index;
+    return _data[index_var]._bool;
+}
+
+int HBData::getInt(int index) {
+    int index_var = 0;
+    if ( index == 0 )   index_var = ++_index;
+    else                index_var = index;
+    return (int)_data[index_var]._number;
+}
+
+float HBData::getFloat(int index) {
+    int index_var = 0;
+    if ( index == 0 )   index_var = ++_index;
+    else                index_var = index;
+    return (float)_data[index_var]._number;
+}
+
+const char* HBData::getString(int index) {
+    int index_var = 0;
+    if ( index == 0 )   index_var = ++_index;
+    else                index_var = index;
+    return _data[index_var]._string.c_str();
+}
+
+HBData* HBData::getArray(int index) {
+    return _data_array[index];
+}
+
+HBData* HBData::at(const char *key) {
+    return _map.at(key);
+}
+
+void HBData::insert(const char *key, HBData *data) {
+    _map.insert(key, data);
 }

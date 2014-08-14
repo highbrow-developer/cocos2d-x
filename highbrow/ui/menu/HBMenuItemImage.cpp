@@ -2,7 +2,7 @@
 //  HBMenuItemImage.cpp
 //  cocos2d_libs
 //
-//  Created by 이재은 on 2014. 8. 8..
+//  Created by 이재은 on 2014. 8. 14..
 //
 //
 
@@ -27,12 +27,9 @@ HBMenuItemImage::~HBMenuItemImage() {
     if ( _action_unselected != NULL )   CC_SAFE_RELEASE_NULL(_action_unselected);
 }
 
-
-HBMenuItemImage* HBMenuItemImage::create()
-{
+HBMenuItemImage* HBMenuItemImage::create() {
     HBMenuItemImage *ret = new HBMenuItemImage();
-    if ( ret && ret->initWithNormalImage("", "", "", (const ccMenuCallback&)nullptr) )
-    {
+    if ( ret && ret->initWithNormalImage("", "", "", (const ccMenuCallback&)nullptr) ) {
         ret->autorelease();
         return ret;
     }
@@ -40,28 +37,17 @@ HBMenuItemImage* HBMenuItemImage::create()
     return nullptr;
 }
 
-HBMenuItemImage * HBMenuItemImage::create(const std::string& normalImage, const std::string& selectedImage)
-{
+HBMenuItemImage* HBMenuItemImage::create(const std::string& normalImage, const std::string& selectedImage) {
     return HBMenuItemImage::create(normalImage, selectedImage, "", (const ccMenuCallback&)nullptr);
 }
 
-// XXX deprecated
-HBMenuItemImage * HBMenuItemImage::create(const std::string& normalImage, const std::string& selectedImage, Ref* target, SEL_MenuHandler selector)
-{
-    return HBMenuItemImage::create(normalImage, selectedImage, "", target, selector);
-}
-
-HBMenuItemImage * HBMenuItemImage::create(const std::string& normalImage, const std::string& selectedImage, const ccMenuCallback& callback)
-{
+HBMenuItemImage* HBMenuItemImage::create(const std::string& normalImage, const std::string& selectedImage, const ccMenuCallback& callback) {
     return HBMenuItemImage::create(normalImage, selectedImage, "", callback);
 }
 
-// XXX deprecated
-HBMenuItemImage * HBMenuItemImage::create(const std::string& normalImage, const std::string& selectedImage, const std::string& disabledImage, Ref* target, SEL_MenuHandler selector)
-{
+HBMenuItemImage* HBMenuItemImage::create(const std::string& normalImage, const std::string& selectedImage, const std::string& disabledImage, const ccMenuCallback& callback) {
     HBMenuItemImage *ret = new HBMenuItemImage();
-    if ( ret && ret->initWithNormalImage(normalImage, selectedImage, disabledImage, target, selector) )
-    {
+    if ( ret && ret->initWithNormalImage(normalImage, selectedImage, disabledImage, callback) ) {
         ret->autorelease();
         return ret;
     }
@@ -69,23 +55,9 @@ HBMenuItemImage * HBMenuItemImage::create(const std::string& normalImage, const 
     return nullptr;
 }
 
-HBMenuItemImage * HBMenuItemImage::create(const std::string& normalImage, const std::string& selectedImage, const std::string& disabledImage, const ccMenuCallback& callback)
-{
+HBMenuItemImage * HBMenuItemImage::create(const std::string& normalImage, const std::string& selectedImage, const std::string& disabledImage) {
     HBMenuItemImage *ret = new HBMenuItemImage();
-    if ( ret && ret->initWithNormalImage(normalImage, selectedImage, disabledImage, callback) )
-    {
-        ret->autorelease();
-        return ret;
-    }
-    CC_SAFE_DELETE(ret);
-    return nullptr;
-}
-
-HBMenuItemImage * HBMenuItemImage::create(const std::string& normalImage, const std::string& selectedImage, const std::string& disabledImage)
-{
-    HBMenuItemImage *ret = new HBMenuItemImage();
-    if ( ret && ret->initWithNormalImage(normalImage, selectedImage, disabledImage, (const ccMenuCallback&)nullptr) )
-    {
+    if ( ret && ret->initWithNormalImage(normalImage, selectedImage, disabledImage, (const ccMenuCallback&)nullptr) ) {
         ret->autorelease();
         return ret;
     }
@@ -100,4 +72,12 @@ void HBMenuItemImage::activate() {
             this->runAction(_action_selected);
         }
     }
+}
+
+void HBMenuItemImage::selected() {
+    
+}
+
+void HBMenuItemImage::unselected() {
+    
 }

@@ -9,6 +9,9 @@
 #ifndef cocos2d_libs_highbros2d_x_h
 #define cocos2d_libs_highbros2d_x_h
 
+/*  cocos2d-x  */
+#include "cocos2d.h"
+
 /*  macro  */
 #include "highbrow/ui/HBMacros.h"
 
