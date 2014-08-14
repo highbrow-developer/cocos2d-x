@@ -125,6 +125,23 @@ Sprite* Sprite::createWithSpriteFrameName(const std::string& spriteFrameName)
 {
     SpriteFrame *frame = SpriteFrameCache::getInstance()->getSpriteFrameByName(spriteFrameName);
     
+    /*  캐쉬에 파일이 추가되지 않았을 시 추가  */
+    if ( frame == NULL ) {
+        std::string strName = spriteFrameName;
+        size_t pos = strName.find_last_of("/");
+        if ( pos != -1 ) {
+            strName = strName.substr(0, pos).append(".img_plist");
+            SpriteFrameCache::getInstance()->addSpriteFramesWithFile(strName.c_str());
+            frame = SpriteFrameCache::getInstance()->getSpriteFrameByName(spriteFrameName);
+        }
+    }
+    
+    /*  이미지 없을 시  */
+    if ( frame == NULL ) {
+        SpriteFrameCache::getInstance()->addSpriteFramesWithFile("common.img_plist");
+        frame = SpriteFrameCache::getInstance()->getSpriteFrameByName("common/no_image.png");
+    }
+    
 #if COCOS2D_DEBUG > 0
     char msg[256] = {0};
     sprintf(msg, "Invalid spriteFrameName: %s", spriteFrameName.c_str());

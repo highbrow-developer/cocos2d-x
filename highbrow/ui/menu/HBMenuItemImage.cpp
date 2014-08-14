@@ -17,12 +17,14 @@ _selectedLong(false),
 _schedule_default(0.2f),
 _schedule_current(0.2f),
 _schedule_minimum(0.2f),
+_action_activate(NULL),
 _action_selected(NULL),
 _action_unselected(NULL) {
     
 }
 
 HBMenuItemImage::~HBMenuItemImage() {
+    if ( _action_activate != NULL )     CC_SAFE_RELEASE_NULL(_action_activate);
     if ( _action_selected != NULL )     CC_SAFE_RELEASE_NULL(_action_selected);
     if ( _action_unselected != NULL )   CC_SAFE_RELEASE_NULL(_action_unselected);
 }
@@ -67,17 +69,63 @@ HBMenuItemImage * HBMenuItemImage::create(const std::string& normalImage, const 
 
 void HBMenuItemImage::activate() {
     if ( this->isEnabled() ) {
-        if ( _action_selected != NULL ) {
-            this->getActionManager()->removeAction(_action_selected);
-            this->runAction(_action_selected);
+        this->stopAllActions();
+        if ( _action_activate == NULL ) {
+            this->runAction(Sequence::create(ScaleBy::create(0.075f, 1.0f, 1.125f),
+                                             ScaleBy::create(0.075f, 1.125f, 1.0f),
+                                             ScaleBy::create(0.075f, 1.0f),
+                                             DelayTime::create(0.05f),
+                                             CallFunc::create( [=](void) { MenuItem::activate();} ),
+                                             NULL));
         }
+        else {
+            this->runAction(Sequence::create(_action_activate->clone(),
+                                             DelayTime::create(0.05f),
+                                             CallFunc::create( [=](void) { MenuItem::activate();} ),
+                                             NULL));
+        }
+        
     }
 }
 
 void HBMenuItemImage::selected() {
-    
+    if ( this->isEnabled() ) {
+        this->stopAllActions();
+        if ( _action_selected == NULL ) {
+            this->runAction(EaseIn::create(ScaleTo::create(0.5f, 1.1f), 0.25f));
+        }
+        else {
+            this->runAction(_action_selected->clone());
+        }
+        MenuItem::selected();
+    }
 }
 
 void HBMenuItemImage::unselected() {
-    
+    if ( this->isEnabled() ) {
+        this->stopAllActions();
+        if ( _action_unselected == NULL ) {
+            this->runAction(Spawn::create(EaseIn::create(ScaleTo::create(0.25f, 1.0f), 0.25f),
+                                          FadeTo::create(0.25f, 255.0f),
+                                          NULL));
+        }
+        else {
+            this->runAction(_action_unselected->clone());
+        }
+        MenuItem::unselected();
+    }
+}
+
+
+void HBMenuItemImage::setActivateAction(ActionInterval *action) {
+    _action_activate = action;
+}
+
+void HBMenuItemImage::setSelectedAction(ActionInterval *action) {
+    _action_selected = action;
+    _action_selected->retain();
+}
+
+void HBMenuItemImage::setUnselectedAction(ActionInterval *action) {
+    _action_unselected = action;
 }

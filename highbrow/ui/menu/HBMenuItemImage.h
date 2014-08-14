@@ -24,18 +24,21 @@ public:
     static HBMenuItemImage* create(const std::string& normalImage, const std::string& selectedImage, const ccMenuCallback& callback);
     static HBMenuItemImage* create(const std::string& normalImage, const std::string& selectedImage, const std::string& disabledImage, const ccMenuCallback& callback);
     
+protected:
     virtual void activate();
     virtual void selected();
     virtual void unselected();
     
-    //    void setActivateLong(bool value);
-    //    void setSelectedLong(bool value);
-    //
-    //    void setActivateAction(ActionInterval *action);
-    //    void setSelectedAction(ActionInterval *action);
+public:
+    void setActivateLong(bool value);
+    void setSelectedLong(bool value);
+    
+    void setActivateAction(ActionInterval *action);
+    void setSelectedAction(ActionInterval *action);
+    void setUnselectedAction(ActionInterval *action);
     
 protected:
-    //    void scheduleTimer(float timeScale_default, float timeScale_minimum);
+    void scheduleTimer(float timeScale_default, float timeScale_minimum);
     
 public:
 protected:
@@ -46,6 +49,7 @@ protected:
     float _schedule_current;
     float _schedule_minimum;
     
+    ActionInterval *_action_activate;
     ActionInterval *_action_selected;
     ActionInterval *_action_unselected;
 };

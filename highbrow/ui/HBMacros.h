@@ -6,15 +6,15 @@
 //
 //
 
-#ifndef __cocos2d_libs__HBmacros__
-#define __cocos2d_libs__HBmacros__
+#ifndef __cocos2d_libs__HBMacros__
+#define __cocos2d_libs__HBMacros__
 
 #include "cocos2d.h"
 
 
 NS_CC_BEGIN
 
-#define display_init(resolution)        HBmacros::setDesignResolution(resolution)
+#define display_init(resolution)        HBMacros::setDesignResolution(resolution)
 
 /*  화면 사이즈   */
 #define display_size                    Size(Director::getInstance()->getWinSize())
@@ -48,11 +48,11 @@ NS_CC_BEGIN
 
 
 /*  터치  */
-#define touch_graph_lock(target)        HBmacros::setTouchGraphLock(target);
+#define lock(target)                    HBMacros::setTouchDisable(target);
 
 
 
-class HBmacros : public Ref {
+class HBMacros : public Ref {
 public:
     /*  디자인 해상도  */
     static void setDesignResolution(Size resolution) {
@@ -94,11 +94,11 @@ public:
     
     
     /*  화면 터치 잠금  */
-    static void setTouchGraphLock(Node *target) {
+    static void setTouchDisable(Node *target) {
         auto touch = EventListenerTouchOneByOne::create();
-        touch->onTouchBegan = [=](Touch *touch, Event *event) { return false; };
+        touch->onTouchBegan = [=](Touch *touch, Event *event) { return true; };
+        touch->setSwallowTouches(true);
         Director::getInstance()->getEventDispatcher()->addEventListenerWithSceneGraphPriority(touch, target);
-//        Director::getInstance()->getEventDispatcher()->resumeEventListenersForTarget(target);
     }
 };
 
