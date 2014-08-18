@@ -29,7 +29,7 @@ NS_CC_BEGIN
 #define pos_leftBot                     Point(0.0f, 0.0f)
 
 #define pos_right                       Point(pos_right.x, pos_center.y)
-#define pos_rightTop                    display_size
+#define pos_rightTop                    Point(display_size)
 #define pos_righyBot                    Point(pos_right.x, 0.0f)
 
 /*  앵커  */

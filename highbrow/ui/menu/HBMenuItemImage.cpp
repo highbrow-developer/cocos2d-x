@@ -71,9 +71,9 @@ void HBMenuItemImage::activate() {
     if ( this->isEnabled() ) {
         this->stopAllActions();
         if ( _action_activate == NULL ) {
-            this->runAction(Sequence::create(ScaleBy::create(0.075f, 1.0f, 1.125f),
-                                             ScaleBy::create(0.075f, 1.125f, 1.0f),
-                                             ScaleBy::create(0.075f, 1.0f),
+            this->runAction(Sequence::create(ScaleTo::create(0.0625f, 1.0f, 1.125f),
+                                             ScaleTo::create(0.0625f, 1.125f, 0.9f),
+                                             ScaleTo::create(0.0625f, 1.0f),
                                              DelayTime::create(0.05f),
                                              CallFunc::create( [=](void) { MenuItem::activate();} ),
                                              NULL));
