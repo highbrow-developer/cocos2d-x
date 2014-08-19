@@ -12,7 +12,8 @@
 #include "cocos2d.h"
 
 /*  json  */
-#include "highbrow/libs/librapidjson/document.h"
+//#include "highbrow/libs/librapidjson/document.h"
+#include "external/json/document.h"
 
 
 #define PARSE_HBDATA(data)                          HBNetwork::parseDocument(data)
@@ -114,7 +115,7 @@ public:
                     case kStringType:   data_result->addData(iterator->GetString());     break;
                     case kNumberType:   data_result->addData(iterator->GetDouble());     break;
                     case kObjectType: {
-                        for ( rapidjson::GenericDocument<UTF8<char>, MemoryPoolAllocator<CrtAllocator>>::ConstMemberIterator itr = iterator->MemberBegin(); itr != iterator->MemberEnd(); ++itr ) {
+                        for ( rapidjson::GenericDocument<UTF8<char>, MemoryPoolAllocator<CrtAllocator>>::ConstMemberIterator itr = iterator->MemberonBegin(); itr != iterator->MemberonEnd(); ++itr ) {
                             data_result->insert(itr->name.GetString(), parse(&itr->value));
                         }
                     }
@@ -129,14 +130,14 @@ public:
                         
                         std::function<HBData*(rapidjson::GenericDocument<UTF8<char>, MemoryPoolAllocator<CrtAllocator>>::ConstValueIterator itr_arr, HBData *data_arr)> parse_arr = [&parse, &parse_arr](rapidjson::GenericDocument<UTF8<char>, MemoryPoolAllocator<CrtAllocator>>::ConstValueIterator itr_arr, HBData *data_arr) mutable ->HBData* {
                             
-                            for ( rapidjson::GenericDocument<UTF8<char>, MemoryPoolAllocator<CrtAllocator>>::ConstValueIterator itr_value = itr_arr->Begin(); itr_value != itr_arr->End(); ++itr_value ) {
+                            for ( rapidjson::GenericDocument<UTF8<char>, MemoryPoolAllocator<CrtAllocator>>::ConstValueIterator itr_value = itr_arr->onBegin(); itr_value != itr_arr->onEnd(); ++itr_value ) {
                                 switch ( itr_value->GetType() ) {
                                     case kFalseType:
                                     case kTrueType:     data_arr->addData(itr_value->GetBool());       break;
                                     case kStringType:   data_arr->addData(itr_value->GetString());     break;
                                     case kNumberType:   data_arr->addData(itr_value->GetDouble());     break;
                                     case kObjectType: {
-                                        for ( rapidjson::GenericDocument<UTF8<char>, MemoryPoolAllocator<CrtAllocator>>::ConstMemberIterator itr = itr_value->MemberBegin(); itr != itr_value->MemberEnd(); ++itr ) {
+                                        for ( rapidjson::GenericDocument<UTF8<char>, MemoryPoolAllocator<CrtAllocator>>::ConstMemberIterator itr = itr_value->MemberonBegin(); itr != itr_value->MemberonEnd(); ++itr ) {
                                             data_arr->insert(itr->name.GetString(), parse(&itr->value));
                                         }
                                     }
@@ -163,7 +164,7 @@ public:
             return data_result;
         };
         
-        for ( rapidjson::GenericDocument<UTF8<char>, MemoryPoolAllocator<CrtAllocator> >::ConstMemberIterator itr = document.MemberBegin(); itr != document.MemberEnd(); ++itr ) {
+        for ( rapidjson::GenericDocument<UTF8<char>, MemoryPoolAllocator<CrtAllocator> >::ConstMemberIterator itr = document.MemberonBegin(); itr != document.MemberonEnd(); ++itr ) {
             log("%s 파싱 중", itr->name.GetString());
             map.insert(itr->name.GetString(), parse(&itr->value));
         }

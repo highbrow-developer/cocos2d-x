@@ -19,8 +19,11 @@ NS_CC_BEGIN
 /*  화면 사이즈   */
 #define display_size                    Size(Director::getInstance()->getWinSize())
 
+/*  jpg ( bg ) 화면 맞춤  */
+#define sinc_bg(node)                   HBMacros::setSincBackground(node)
+
 /*  좌표 ( = VisibleRect )  */
-#define pos_center                      display_size / 2.0f
+#define pos_center                      Point(display_size / 2.0f)
 #define pos_top                         Point(pos_center.x, pos_size.height)
 #define pos_bottom                      Point(pos_center.x, 0.0f)
 
@@ -92,6 +95,10 @@ public:
         director->setOpenGLView(glview);
     }
     
+    static void setSincBackground(Node *node) {
+        node->setScaleX(display_size.width / node->getContentSize().width);
+        node->setScaleY(display_size.height / node->getContentSize().height);
+    }
     
     /*  화면 터치 잠금  */
     static void setTouchDisable(Node *target) {
