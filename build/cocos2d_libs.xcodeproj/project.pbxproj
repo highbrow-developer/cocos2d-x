@@ -897,7 +897,6 @@
 		50FCEBCC18C72017004AD434 /* WidgetReaderProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 50FCEB9218C72017004AD434 /* WidgetReaderProtocol.h */; };
 		9CA3DE02199C5495002CC308 /* HBMenuItemImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CA3DE00199C5495002CC308 /* HBMenuItemImage.cpp */; };
 		9CA3DE03199C5495002CC308 /* HBMenuItemImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CA3DE01199C5495002CC308 /* HBMenuItemImage.h */; };
-		9CA527CC1998537800914695 /* libsqlcipher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA527BE1998526500914695 /* libsqlcipher.a */; };
 		9CA527CF199854C700914695 /* HBNetwork.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CA527CD199854C700914695 /* HBNetwork.cpp */; };
 		9CA527D0199854C700914695 /* HBNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CA527CE199854C700914695 /* HBNetwork.h */; };
 		A07A4CAF1783777C0073F6A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1551A342158F2AB200E66CFE /* Foundation.framework */; };
@@ -1919,13 +1918,6 @@
 		50FCEB9218C72017004AD434 /* WidgetReaderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WidgetReaderProtocol.h; sourceTree = "<group>"; };
 		9CA3DE00199C5495002CC308 /* HBMenuItemImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HBMenuItemImage.cpp; sourceTree = "<group>"; };
 		9CA3DE01199C5495002CC308 /* HBMenuItemImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBMenuItemImage.h; sourceTree = "<group>"; };
-		9CA527A61998526400914695 /* Highbrow_Login.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Highbrow_Login.framework; sourceTree = "<group>"; };
-		9CA527A71998526400914695 /* Highbrow_Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Highbrow_Resources.bundle; sourceTree = "<group>"; };
-		9CA527B61998526500914695 /* Android.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Android.mk; sourceTree = "<group>"; };
-		9CA527B81998526500914695 /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
-		9CA527BB1998526500914695 /* libcrypto.so */ = {isa = PBXFileReference; lastKnownFileType = file; path = libcrypto.so; sourceTree = "<group>"; };
-		9CA527BC1998526500914695 /* libsqlcipher.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsqlcipher.a; sourceTree = "<group>"; };
-		9CA527BE1998526500914695 /* libsqlcipher.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsqlcipher.a; sourceTree = "<group>"; };
 		9CA527C11998526500914695 /* HBMacros.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HBMacros.cpp; sourceTree = "<group>"; };
 		9CA527C21998526500914695 /* HBMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBMacros.h; sourceTree = "<group>"; };
 		9CA527C6199852D800914695 /* highbros2d-x.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "highbros2d-x.h"; path = "../cocos/highbros2d-x.h"; sourceTree = "<group>"; };
@@ -1986,7 +1978,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CA527CC1998537800914695 /* libsqlcipher.a in Frameworks */,
 				B3B12A5B17E7F45C00026B4A /* libchipmunk iOS.a in Frameworks */,
 				A07A4CAF1783777C0073F6A7 /* Foundation.framework in Frameworks */,
 				1A570364180BD1120088DEC7 /* libpng.a in Frameworks */,
@@ -3986,63 +3977,8 @@
 		9CA527A41998526400914695 /* libs */ = {
 			isa = PBXGroup;
 			children = (
-				9CA527A51998526400914695 /* ios */,
-				9CA527B51998526500914695 /* libsqlcipher */,
 			);
 			path = libs;
-			sourceTree = "<group>";
-		};
-		9CA527A51998526400914695 /* ios */ = {
-			isa = PBXGroup;
-			children = (
-				9CA527A61998526400914695 /* Highbrow_Login.framework */,
-				9CA527A71998526400914695 /* Highbrow_Resources.bundle */,
-			);
-			path = ios;
-			sourceTree = "<group>";
-		};
-		9CA527B51998526500914695 /* libsqlcipher */ = {
-			isa = PBXGroup;
-			children = (
-				9CA527B61998526500914695 /* Android.mk */,
-				9CA527B71998526500914695 /* include */,
-				9CA527B91998526500914695 /* libs */,
-			);
-			path = libsqlcipher;
-			sourceTree = "<group>";
-		};
-		9CA527B71998526500914695 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				9CA527B81998526500914695 /* sqlite3.h */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		9CA527B91998526500914695 /* libs */ = {
-			isa = PBXGroup;
-			children = (
-				9CA527BA1998526500914695 /* armeabi */,
-				9CA527BD1998526500914695 /* ios */,
-			);
-			path = libs;
-			sourceTree = "<group>";
-		};
-		9CA527BA1998526500914695 /* armeabi */ = {
-			isa = PBXGroup;
-			children = (
-				9CA527BB1998526500914695 /* libcrypto.so */,
-				9CA527BC1998526500914695 /* libsqlcipher.a */,
-			);
-			path = armeabi;
-			sourceTree = "<group>";
-		};
-		9CA527BD1998526500914695 /* ios */ = {
-			isa = PBXGroup;
-			children = (
-				9CA527BE1998526500914695 /* libsqlcipher.a */,
-			);
-			path = ios;
 			sourceTree = "<group>";
 		};
 		9CA527BF1998526500914695 /* network */ = {
@@ -4716,7 +4652,7 @@
 		1551A336158F2AB200E66CFE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "";
 			};
 			buildConfigurationList = 1551A339158F2AB200E66CFE /* Build configuration list for PBXProject "cocos2d_libs" */;
@@ -5315,7 +5251,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(COCOSROOT)/cocos/highbrow/library/ios",
@@ -5350,7 +5286,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(COCOSROOT)/cocos/highbrow/library/ios",
@@ -5385,8 +5321,7 @@
 		A07A4E0D178386390073F6A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -5395,8 +5330,7 @@
 		A07A4E0E178386390073F6A7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -5406,7 +5340,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					CC_TARGET_OS_IPHONE,
@@ -5425,7 +5359,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -5444,7 +5378,7 @@
 		A07A4F39178387670073F6A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				SDKROOT = iphoneos;
@@ -5456,7 +5390,7 @@
 		A07A4F3A178387670073F6A7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
@@ -5469,7 +5403,7 @@
 		A07A4F9C1783876B0073F6A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_WARN_BOOL_CONVERSION = NO;
 				CLANG_WARN_CONSTANT_CONVERSION = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
@@ -5487,7 +5421,7 @@
 		A07A4F9D1783876B0073F6A7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_WARN_BOOL_CONVERSION = NO;
 				CLANG_WARN_CONSTANT_CONVERSION = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -5507,7 +5441,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					CC_TARGET_OS_IPHONE,
@@ -5525,7 +5459,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
