@@ -37,7 +37,7 @@
             ]
          },
          "project_replace_cocos_lib_path":{
-            "src_cocos_lib_path":"../cocos2d/build/",
+            "src_cocos_lib_path":"../cocos2d/build/cocos2d_libs.xcodeproj",
             "files":[
                "proj.ios/PROJECT_NAME.xcodeproj/project.pbxproj"
             ]

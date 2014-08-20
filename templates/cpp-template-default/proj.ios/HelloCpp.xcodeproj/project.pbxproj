@@ -44,7 +44,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_libs.xcodeproj; path = ../cocos2d/build/cocos2d_libs.xcodeproj; sourceTree = "<absolute>"; };
+		1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_libs.xcodeproj; path = "/Users/ztoky/Workspace/SDKs/cocos2dx-highbrow/templates/cpp-template-default/proj.ios/../../../../../../build/cocos2d_libs.xcodeproj"; sourceTree = "<absolute>"; };
 		1ACB3243164770DE00914215 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../cocos2dx/platform/third_party/ios/libraries/libcurl.a; sourceTree = "<group>"; };
 		1AFAF8B316D35DE700DB1158 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = ../Classes/AppDelegate.cpp; sourceTree = "<group>"; };
 		1AFAF8B416D35DE700DB1158 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../Classes/AppDelegate.h; sourceTree = "<group>"; };
@@ -361,8 +361,8 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../cocos2d/cocos/platform/ios",
-					"$(SRCROOT)/../cocos2d/cocos/platform/ios/Simulation",
+					"$(HIGHBROW_COCOS_ROOT)/cocos/platform/ios",
+					"$(HIGHBROW_COCOS_ROOT)/cocos/platform/ios/Simulation",
 				);
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
@@ -390,8 +390,8 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../cocos2d/cocos/platform/ios",
-					"$(SRCROOT)/../cocos2d/cocos/platform/ios/Simulation",
+					"$(HIGHBROW_COCOS_ROOT)/cocos/platform/ios",
+					"$(HIGHBROW_COCOS_ROOT)/cocos/platform/ios/Simulation",
 				);
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
@@ -412,19 +412,19 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/../cocos2d",
-					"$(SRCROOT)/../cocos2d/cocos",
-					"$(SRCROOT)/../cocos2d/cocos/base",
-					"$(SRCROOT)/../cocos2d/cocos/physics",
-					"$(SRCROOT)/../cocos2d/cocos/math",
-					"$(SRCROOT)/../cocos2d/cocos/2d",
-					"$(SRCROOT)/../cocos2d/cocos/ui",
-					"$(SRCROOT)/../cocos2d/cocos/network",
-					"$(SRCROOT)/../cocos2d/cocos/audio/include",
-					"$(SRCROOT)/../cocos2d/cocos/editor-support",
-					"$(SRCROOT)/../cocos2d/extensions",
-					"$(SRCROOT)/../cocos2d/external",
-					"$(SRCROOT)/../cocos2d/external/chipmunk/include/chipmunk",
+					"$(HIGHBROW_COCOS_ROOT)",
+					"$(HIGHBROW_COCOS_ROOT)/cocos",
+					"$(HIGHBROW_COCOS_ROOT)/cocos/base",
+					"$(HIGHBROW_COCOS_ROOT)/cocos/physics",
+					"$(HIGHBROW_COCOS_ROOT)/cocos/math",
+					"$(HIGHBROW_COCOS_ROOT)/cocos/2d",
+					"$(HIGHBROW_COCOS_ROOT)/cocos/ui",
+					"$(HIGHBROW_COCOS_ROOT)/cocos/network",
+					"$(HIGHBROW_COCOS_ROOT)/cocos/audio/include",
+					"$(HIGHBROW_COCOS_ROOT)/cocos/editor-support",
+					"$(HIGHBROW_COCOS_ROOT)/extensions",
+					"$(HIGHBROW_COCOS_ROOT)/external",
+					"$(HIGHBROW_COCOS_ROOT)/external/chipmunk/include/chipmunk",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
@@ -441,19 +441,19 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/../cocos2d",
-					"$(SRCROOT)/../cocos2d/cocos",
-					"$(SRCROOT)/../cocos2d/cocos/base",
-					"$(SRCROOT)/../cocos2d/cocos/physics",
-					"$(SRCROOT)/../cocos2d/cocos/math",
-					"$(SRCROOT)/../cocos2d/cocos/2d",
-					"$(SRCROOT)/../cocos2d/cocos/ui",
-					"$(SRCROOT)/../cocos2d/cocos/network",
-					"$(SRCROOT)/../cocos2d/cocos/audio/include",
-					"$(SRCROOT)/../cocos2d/cocos/editor-support",
-					"$(SRCROOT)/../cocos2d/extensions",
-					"$(SRCROOT)/../cocos2d/external",
-					"$(SRCROOT)/../cocos2d/external/chipmunk/include/chipmunk",
+					"$(HIGHBROW_COCOS_ROOT)",
+					"$(HIGHBROW_COCOS_ROOT)/cocos",
+					"$(HIGHBROW_COCOS_ROOT)/cocos/base",
+					"$(HIGHBROW_COCOS_ROOT)/cocos/physics",
+					"$(HIGHBROW_COCOS_ROOT)/cocos/math",
+					"$(HIGHBROW_COCOS_ROOT)/cocos/2d",
+					"$(HIGHBROW_COCOS_ROOT)/cocos/ui",
+					"$(HIGHBROW_COCOS_ROOT)/cocos/network",
+					"$(HIGHBROW_COCOS_ROOT)/cocos/audio/include",
+					"$(HIGHBROW_COCOS_ROOT)/cocos/editor-support",
+					"$(HIGHBROW_COCOS_ROOT)/extensions",
+					"$(HIGHBROW_COCOS_ROOT)/external",
+					"$(HIGHBROW_COCOS_ROOT)/external/chipmunk/include/chipmunk",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";

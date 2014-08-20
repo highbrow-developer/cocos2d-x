@@ -55,6 +55,11 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
+	<key>LSEnvironment</key>
+	<dict>
+		<key>HIGHBROW_COCOS_ROOT</key>
+		<string>/Users/ztoky/Workspace/SDKs/cocos2dx-highbrow</string>
+	</dict>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIAppFonts</key>
