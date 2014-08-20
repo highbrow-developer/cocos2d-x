@@ -37,64 +37,14 @@
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
-		C7D5199E19A324BE003E0D2D /* libbox2d iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D5199919A324B2003E0D2D /* libbox2d iOS.a */; };
-		C7D5199F19A324BE003E0D2D /* libchipmunk iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D5199719A324B2003E0D2D /* libchipmunk iOS.a */; };
-		C7D519A019A324BE003E0D2D /* libcocos2dx iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D5199319A324B2003E0D2D /* libcocos2dx iOS.a */; };
-		C7D519A119A324BE003E0D2D /* libcocos2dx-extensions iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D5199519A324B2003E0D2D /* libcocos2dx-extensions iOS.a */; };
-		C7D519A219A324BF003E0D2D /* libCocosDenshion iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D5199B19A324B2003E0D2D /* libCocosDenshion iOS.a */; };
 		D44C620C132DFF330009C878 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620B132DFF330009C878 /* OpenAL.framework */; };
 		D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620D132DFF430009C878 /* AVFoundation.framework */; };
 		D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
 		D6B0611B1803AB670077942B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B0611A1803AB670077942B /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		C7D5199219A324B2003E0D2D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A07A4D641783777C0073F6A7;
-			remoteInfo = "cocos2dx iOS";
-		};
-		C7D5199419A324B2003E0D2D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A07A4EFC1783867C0073F6A7;
-			remoteInfo = "cocos2dx-extensions iOS";
-		};
-		C7D5199619A324B2003E0D2D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A07A4F3B178387670073F6A7;
-			remoteInfo = "chipmunk iOS";
-		};
-		C7D5199819A324B2003E0D2D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A07A4F9E1783876B0073F6A7;
-			remoteInfo = "box2d iOS";
-		};
-		C7D5199A19A324B2003E0D2D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A07A4FB4178387730073F6A7;
-			remoteInfo = "CocosDenshion iOS";
-		};
-		C7D5199C19A324B8003E0D2D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = A07A4E0B178386390073F6A7;
-			remoteInfo = "build all libs iOS";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_libs.xcodeproj; path = "../cocos2d/build/cocos2d_libs.xcodeproj"; sourceTree = "<absolute>"; };
+		1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_libs.xcodeproj; path = "/Users/ztoky/Workspace/SDKs/cocos2dx-highbrow/templates/cpp-template-default/proj.ios/../../../../../../build/cocos2d_libs.xcodeproj"; sourceTree = "<absolute>"; };
 		1ACB3243164770DE00914215 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../cocos2dx/platform/third_party/ios/libraries/libcurl.a; sourceTree = "<group>"; };
 		1AFAF8B316D35DE700DB1158 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = ../Classes/AppDelegate.cpp; sourceTree = "<group>"; };
 		1AFAF8B416D35DE700DB1158 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../Classes/AppDelegate.h; sourceTree = "<group>"; };
@@ -152,11 +102,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7D5199E19A324BE003E0D2D /* libbox2d iOS.a in Frameworks */,
-				C7D5199F19A324BE003E0D2D /* libchipmunk iOS.a in Frameworks */,
-				C7D519A019A324BE003E0D2D /* libcocos2dx iOS.a in Frameworks */,
-				C7D519A119A324BE003E0D2D /* libcocos2dx-extensions iOS.a in Frameworks */,
-				C7D519A219A324BF003E0D2D /* libCocosDenshion iOS.a in Frameworks */,
 				D6B0611B1803AB670077942B /* CoreMotion.framework in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
@@ -300,18 +245,6 @@
 			path = ../Resources;
 			sourceTree = "<group>";
 		};
-		C7D5198A19A324B2003E0D2D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C7D5199319A324B2003E0D2D /* libcocos2dx iOS.a */,
-				C7D5199519A324B2003E0D2D /* libcocos2dx-extensions iOS.a */,
-				C7D5199719A324B2003E0D2D /* libchipmunk iOS.a */,
-				C7D5199919A324B2003E0D2D /* libbox2d iOS.a */,
-				C7D5199B19A324B2003E0D2D /* libCocosDenshion iOS.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -326,7 +259,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				C7D5199D19A324B8003E0D2D /* PBXTargetDependency */,
 			);
 			name = "HelloCpp iOS";
 			productName = iphone;
@@ -358,56 +290,12 @@
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = C7D5198A19A324B2003E0D2D /* Products */;
-					ProjectRef = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* HelloCpp iOS */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		C7D5199319A324B2003E0D2D /* libcocos2dx iOS.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libcocos2dx iOS.a";
-			remoteRef = C7D5199219A324B2003E0D2D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C7D5199519A324B2003E0D2D /* libcocos2dx-extensions iOS.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libcocos2dx-extensions iOS.a";
-			remoteRef = C7D5199419A324B2003E0D2D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C7D5199719A324B2003E0D2D /* libchipmunk iOS.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libchipmunk iOS.a";
-			remoteRef = C7D5199619A324B2003E0D2D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C7D5199919A324B2003E0D2D /* libbox2d iOS.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libbox2d iOS.a";
-			remoteRef = C7D5199819A324B2003E0D2D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C7D5199B19A324B2003E0D2D /* libCocosDenshion iOS.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libCocosDenshion iOS.a";
-			remoteRef = C7D5199A19A324B2003E0D2D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1D60588D0D05DD3D006BFB54 /* Resources */ = {
@@ -453,14 +341,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		C7D5199D19A324B8003E0D2D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "build all libs iOS";
-			targetProxy = C7D5199C19A324B8003E0D2D /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -481,8 +361,8 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../cocos2d/cocos/platform/ios",
-					"$(SRCROOT)/../cocos2d/cocos/platform/ios/Simulation",
+					"$(HIGHBROW_COCOS_ROOT)/cocos/platform/ios",
+					"$(HIGHBROW_COCOS_ROOT)/cocos/platform/ios/Simulation",
 				);
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
@@ -510,8 +390,8 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/../cocos2d/cocos/platform/ios",
-					"$(SRCROOT)/../cocos2d/cocos/platform/ios/Simulation",
+					"$(HIGHBROW_COCOS_ROOT)/cocos/platform/ios",
+					"$(HIGHBROW_COCOS_ROOT)/cocos/platform/ios/Simulation",
 				);
 				INFOPLIST_FILE = ios/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
@@ -532,19 +412,19 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/../cocos2d",
-					"$(SRCROOT)/../cocos2d/cocos",
-					"$(SRCROOT)/../cocos2d/cocos/base",
-					"$(SRCROOT)/../cocos2d/cocos/physics",
-					"$(SRCROOT)/../cocos2d/cocos/math",
-					"$(SRCROOT)/../cocos2d/cocos/2d",
-					"$(SRCROOT)/../cocos2d/cocos/ui",
-					"$(SRCROOT)/../cocos2d/cocos/network",
-					"$(SRCROOT)/../cocos2d/cocos/audio/include",
-					"$(SRCROOT)/../cocos2d/cocos/editor-support",
-					"$(SRCROOT)/../cocos2d/extensions",
-					"$(SRCROOT)/../cocos2d/external",
-					"$(SRCROOT)/../cocos2d/external/chipmunk/include/chipmunk",
+					"$(HIGHBROW_COCOS_ROOT)",
+					"$(HIGHBROW_COCOS_ROOT)/cocos",
+					"$(HIGHBROW_COCOS_ROOT)/cocos/base",
+					"$(HIGHBROW_COCOS_ROOT)/cocos/physics",
+					"$(HIGHBROW_COCOS_ROOT)/cocos/math",
+					"$(HIGHBROW_COCOS_ROOT)/cocos/2d",
+					"$(HIGHBROW_COCOS_ROOT)/cocos/ui",
+					"$(HIGHBROW_COCOS_ROOT)/cocos/network",
+					"$(HIGHBROW_COCOS_ROOT)/cocos/audio/include",
+					"$(HIGHBROW_COCOS_ROOT)/cocos/editor-support",
+					"$(HIGHBROW_COCOS_ROOT)/extensions",
+					"$(HIGHBROW_COCOS_ROOT)/external",
+					"$(HIGHBROW_COCOS_ROOT)/external/chipmunk/include/chipmunk",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
@@ -561,19 +441,19 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/../cocos2d",
-					"$(SRCROOT)/../cocos2d/cocos",
-					"$(SRCROOT)/../cocos2d/cocos/base",
-					"$(SRCROOT)/../cocos2d/cocos/physics",
-					"$(SRCROOT)/../cocos2d/cocos/math",
-					"$(SRCROOT)/../cocos2d/cocos/2d",
-					"$(SRCROOT)/../cocos2d/cocos/ui",
-					"$(SRCROOT)/../cocos2d/cocos/network",
-					"$(SRCROOT)/../cocos2d/cocos/audio/include",
-					"$(SRCROOT)/../cocos2d/cocos/editor-support",
-					"$(SRCROOT)/../cocos2d/extensions",
-					"$(SRCROOT)/../cocos2d/external",
-					"$(SRCROOT)/../cocos2d/external/chipmunk/include/chipmunk",
+					"$(HIGHBROW_COCOS_ROOT)",
+					"$(HIGHBROW_COCOS_ROOT)/cocos",
+					"$(HIGHBROW_COCOS_ROOT)/cocos/base",
+					"$(HIGHBROW_COCOS_ROOT)/cocos/physics",
+					"$(HIGHBROW_COCOS_ROOT)/cocos/math",
+					"$(HIGHBROW_COCOS_ROOT)/cocos/2d",
+					"$(HIGHBROW_COCOS_ROOT)/cocos/ui",
+					"$(HIGHBROW_COCOS_ROOT)/cocos/network",
+					"$(HIGHBROW_COCOS_ROOT)/cocos/audio/include",
+					"$(HIGHBROW_COCOS_ROOT)/cocos/editor-support",
+					"$(HIGHBROW_COCOS_ROOT)/extensions",
+					"$(HIGHBROW_COCOS_ROOT)/external",
+					"$(HIGHBROW_COCOS_ROOT)/external/chipmunk/include/chipmunk",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
