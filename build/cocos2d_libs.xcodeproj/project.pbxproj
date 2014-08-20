@@ -1914,17 +1914,6 @@
 		9CA3DE01199C5495002CC308 /* HBMenuItemImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBMenuItemImage.h; sourceTree = "<group>"; };
 		9CA527A61998526400914695 /* Highbrow_Login.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Highbrow_Login.framework; sourceTree = "<group>"; };
 		9CA527A71998526400914695 /* Highbrow_Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Highbrow_Resources.bundle; sourceTree = "<group>"; };
-		9CA527A91998526400914695 /* Android.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Android.mk; sourceTree = "<group>"; };
-		9CA527AA1998526400914695 /* document.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = document.h; sourceTree = "<group>"; };
-		9CA527AB1998526400914695 /* filestream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filestream.h; sourceTree = "<group>"; };
-		9CA527AD1998526400914695 /* pow10.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pow10.h; sourceTree = "<group>"; };
-		9CA527AE1998526400914695 /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
-		9CA527AF1998526400914695 /* strfunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = strfunc.h; sourceTree = "<group>"; };
-		9CA527B01998526400914695 /* prettywriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prettywriter.h; sourceTree = "<group>"; };
-		9CA527B11998526400914695 /* rapidjson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rapidjson.h; sourceTree = "<group>"; };
-		9CA527B21998526400914695 /* reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reader.h; sourceTree = "<group>"; };
-		9CA527B31998526400914695 /* stringbuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stringbuffer.h; sourceTree = "<group>"; };
-		9CA527B41998526500914695 /* writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = writer.h; sourceTree = "<group>"; };
 		9CA527B61998526500914695 /* Android.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Android.mk; sourceTree = "<group>"; };
 		9CA527B81998526500914695 /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
 		9CA527BB1998526500914695 /* libcrypto.so */ = {isa = PBXFileReference; lastKnownFileType = file; path = libcrypto.so; sourceTree = "<group>"; };
@@ -3999,7 +3988,6 @@
 			isa = PBXGroup;
 			children = (
 				9CA527A51998526400914695 /* ios */,
-				9CA527A81998526400914695 /* librapidjson */,
 				9CA527B51998526500914695 /* libsqlcipher */,
 			);
 			path = libs;
@@ -4012,32 +4000,6 @@
 				9CA527A71998526400914695 /* Highbrow_Resources.bundle */,
 			);
 			path = ios;
-			sourceTree = "<group>";
-		};
-		9CA527A81998526400914695 /* librapidjson */ = {
-			isa = PBXGroup;
-			children = (
-				9CA527A91998526400914695 /* Android.mk */,
-				9CA527AA1998526400914695 /* document.h */,
-				9CA527AB1998526400914695 /* filestream.h */,
-				9CA527AC1998526400914695 /* internal */,
-				9CA527B01998526400914695 /* prettywriter.h */,
-				9CA527B11998526400914695 /* rapidjson.h */,
-				9CA527B21998526400914695 /* reader.h */,
-				9CA527B31998526400914695 /* stringbuffer.h */,
-				9CA527B41998526500914695 /* writer.h */,
-			);
-			path = librapidjson;
-			sourceTree = "<group>";
-		};
-		9CA527AC1998526400914695 /* internal */ = {
-			isa = PBXGroup;
-			children = (
-				9CA527AD1998526400914695 /* pow10.h */,
-				9CA527AE1998526400914695 /* stack.h */,
-				9CA527AF1998526400914695 /* strfunc.h */,
-			);
-			path = internal;
 			sourceTree = "<group>";
 		};
 		9CA527B51998526500914695 /* libsqlcipher */ = {

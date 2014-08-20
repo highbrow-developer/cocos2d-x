@@ -11,6 +11,8 @@
 
 /*  cocos2d-x  */
 #include "cocos2d.h"
+#include "cocos-ext.h"
+
 
 /*  macro  */
 #include "highbrow/ui/HBMacros.h"
