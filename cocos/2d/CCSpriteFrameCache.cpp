@@ -393,6 +393,18 @@ void SpriteFrameCache::removeSpriteFramesFromTexture(Texture2D* texture)
 SpriteFrame* SpriteFrameCache::getSpriteFrameByName(const std::string& name)
 {
     SpriteFrame* frame = _spriteFrames.at(name);
+    
+    /*  캐쉬에 파일이 추가되지 않았을 시 추가  */
+    if ( frame == NULL ) {
+        std::string strName = name;
+        size_t pos = name.find_last_of("/");
+        if ( pos != -1 ) {
+            strName = strName.substr(0, pos).append(".img_plist");
+            SpriteFrameCache::getInstance()->addSpriteFramesWithFile(strName.c_str());
+            frame = SpriteFrameCache::getInstance()->getSpriteFrameByName(name);
+        }
+    }
+    
     if (!frame)
     {
         // try alias dictionary

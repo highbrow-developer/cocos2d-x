@@ -45,10 +45,10 @@ protected:
 public:
     const int size();
     
-    bool isBool(int index = 0);
-    bool isInt(int index = 0);
-    bool isFloat(int index = 0);
-    bool isString(int index = 0);
+    bool isBool(int index);
+    bool isInt(int index);
+    bool isFloat(int index);
+    bool isString(int index);
     bool isArray();
     bool isObject();
     
@@ -59,11 +59,11 @@ public:
     void addData(const char *data);
     void addData(HBData *data);
     
-    bool getBool(int index = 0);
-    int getInt(int index = 0);
-    float getFloat(int index = 0);
-    const char* getString(int index = 0);
-    HBData* getArray(int index = 0);
+    bool getBool(int index);
+    int getInt(int index);
+    float getFloat(int index);
+    const char* getString(int index);
+    HBData* getArray(int index);
     
     
     HBData* at(const char *key);

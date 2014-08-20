@@ -568,6 +568,18 @@ bool Scale9Sprite::initWithSpriteFrameName(const std::string& spriteFrameName, c
     CCASSERT((SpriteFrameCache::getInstance()) != nullptr, "SpriteFrameCache::getInstance() must be non-nullptr");
 
     SpriteFrame *frame = SpriteFrameCache::getInstance()->getSpriteFrameByName(spriteFrameName);
+    
+    /*  캐쉬에 파일이 추가되지 않았을 시 추가  */
+    if ( frame == NULL ) {
+        std::string strName = spriteFrameName;
+        size_t pos = strName.find_last_of("/");
+        if ( pos != -1 ) {
+            strName = strName.substr(0, pos).append(".img_plist");
+            SpriteFrameCache::getInstance()->addSpriteFramesWithFile(strName.c_str());
+            frame = SpriteFrameCache::getInstance()->getSpriteFrameByName(spriteFrameName);
+        }
+    }    
+    
     CCASSERT(frame != nullptr, "CCSpriteFrame must be non-nullptr");
 
     if (nullptr == frame) return false;
