@@ -74,13 +74,13 @@ void HBMenuItemImage::activate() {
             this->runAction(Sequence::create(ScaleTo::create(0.0625f, 1.0f, 1.125f),
                                              ScaleTo::create(0.0625f, 1.125f, 0.9f),
                                              ScaleTo::create(0.0625f, 1.0f),
-                                             DelayTime::create(0.05f),
+//                                             DelayTime::create(0.05f),
                                              CallFunc::create( [=](void) { MenuItem::activate();} ),
                                              NULL));
         }
         else {
             this->runAction(Sequence::create(_action_activate->clone(),
-                                             DelayTime::create(0.05f),
+//                                             DelayTime::create(0.05f),
                                              CallFunc::create( [=](void) { MenuItem::activate();} ),
                                              NULL));
         }
