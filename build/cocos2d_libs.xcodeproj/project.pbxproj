@@ -1969,6 +1969,12 @@
 		B6B2633C19381FBF0088FE25 /* CCAnimationCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAnimationCurve.h; sourceTree = "<group>"; };
 		B6B26341193884D60088FE25 /* CCAnimation3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCAnimation3D.cpp; sourceTree = "<group>"; };
 		B6B26342193884D60088FE25 /* CCAnimation3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAnimation3D.h; sourceTree = "<group>"; };
+		C7901CF219A5923600DEA929 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../highbrow/external/FacebookSDK.framework; sourceTree = "<group>"; };
+		C7901CF319A5923600DEA929 /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleOpenSource.framework; path = ../highbrow/external/GoogleOpenSource.framework; sourceTree = "<group>"; };
+		C7901CF419A5923600DEA929 /* GooglePlayGames.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GooglePlayGames.bundle; path = ../highbrow/external/GooglePlayGames.bundle; sourceTree = "<group>"; };
+		C7901CF519A5923600DEA929 /* GooglePlayGames.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlayGames.framework; path = ../highbrow/external/GooglePlayGames.framework; sourceTree = "<group>"; };
+		C7901CF619A5923600DEA929 /* GooglePlus.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GooglePlus.bundle; path = ../highbrow/external/GooglePlus.bundle; sourceTree = "<group>"; };
+		C7901CF719A5923600DEA929 /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlus.framework; path = ../highbrow/external/GooglePlus.framework; sourceTree = "<group>"; };
 		ED9C6A9218599AD8000A5232 /* CCNodeGrid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = CCNodeGrid.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		ED9C6A9318599AD8000A5232 /* CCNodeGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNodeGrid.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -2085,6 +2091,12 @@
 		1551A341158F2AB200E66CFE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C7901CF219A5923600DEA929 /* FacebookSDK.framework */,
+				C7901CF319A5923600DEA929 /* GoogleOpenSource.framework */,
+				C7901CF419A5923600DEA929 /* GooglePlayGames.bundle */,
+				C7901CF519A5923600DEA929 /* GooglePlayGames.framework */,
+				C7901CF619A5923600DEA929 /* GooglePlus.bundle */,
+				C7901CF719A5923600DEA929 /* GooglePlus.framework */,
 				1551A342158F2AB200E66CFE /* Foundation.framework */,
 			);
 			name = Frameworks;
