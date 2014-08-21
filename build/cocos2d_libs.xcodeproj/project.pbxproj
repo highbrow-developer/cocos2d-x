@@ -350,10 +350,6 @@
 		1AAF5340180E2F11000584C8 /* b2Rope.h in Headers */ = {isa = PBXBuildFile; fileRef = 46A169331807AF9C005B8026 /* b2Rope.h */; };
 		1AAF5354180E3060000584C8 /* AssetsManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF5351180E3060000584C8 /* AssetsManager.cpp */; };
 		1AAF5356180E3060000584C8 /* AssetsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AAF5352180E3060000584C8 /* AssetsManager.h */; };
-		1AAF536B180E3374000584C8 /* HttpClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF5362180E3374000584C8 /* HttpClient.cpp */; };
-		1AAF536D180E3374000584C8 /* HttpClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AAF5363180E3374000584C8 /* HttpClient.h */; };
-		1AAF536F180E3374000584C8 /* HttpRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AAF5364180E3374000584C8 /* HttpRequest.h */; };
-		1AAF5371180E3374000584C8 /* HttpResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AAF5365180E3374000584C8 /* HttpResponse.h */; };
 		1AAF5373180E3374000584C8 /* SocketIO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF5366180E3374000584C8 /* SocketIO.cpp */; };
 		1AAF5375180E3374000584C8 /* SocketIO.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AAF5367180E3374000584C8 /* SocketIO.h */; };
 		1AAF5377180E3374000584C8 /* WebSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF5368180E3374000584C8 /* WebSocket.cpp */; };
@@ -938,6 +934,7 @@
 		B6B2634019381FBF0088FE25 /* CCAnimationCurve.h in Headers */ = {isa = PBXBuildFile; fileRef = B6B2633C19381FBF0088FE25 /* CCAnimationCurve.h */; };
 		B6B26344193884D60088FE25 /* CCAnimation3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6B26341193884D60088FE25 /* CCAnimation3D.cpp */; };
 		B6B26346193884D60088FE25 /* CCAnimation3D.h in Headers */ = {isa = PBXBuildFile; fileRef = B6B26342193884D60088FE25 /* CCAnimation3D.h */; };
+		DF5094D419A2F4F00014818E /* HBHttpClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF5094D219A2ECE30014818E /* HBHttpClient.cpp */; };
 		ED9C6A9518599AD8000A5232 /* CCNodeGrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED9C6A9218599AD8000A5232 /* CCNodeGrid.cpp */; };
 		ED9C6A9718599AD8000A5232 /* CCNodeGrid.h in Headers */ = {isa = PBXBuildFile; fileRef = ED9C6A9318599AD8000A5232 /* CCNodeGrid.h */; };
 /* End PBXBuildFile section */
@@ -1229,10 +1226,6 @@
 		1A9DCA03180E6955007A3AD4 /* CCGLBufferedNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCGLBufferedNode.h; sourceTree = "<group>"; };
 		1AAF5351180E3060000584C8 /* AssetsManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AssetsManager.cpp; sourceTree = "<group>"; };
 		1AAF5352180E3060000584C8 /* AssetsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetsManager.h; sourceTree = "<group>"; };
-		1AAF5362180E3374000584C8 /* HttpClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HttpClient.cpp; sourceTree = "<group>"; };
-		1AAF5363180E3374000584C8 /* HttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpClient.h; sourceTree = "<group>"; };
-		1AAF5364180E3374000584C8 /* HttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequest.h; sourceTree = "<group>"; };
-		1AAF5365180E3374000584C8 /* HttpResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpResponse.h; sourceTree = "<group>"; };
 		1AAF5366180E3374000584C8 /* SocketIO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SocketIO.cpp; sourceTree = "<group>"; };
 		1AAF5367180E3374000584C8 /* SocketIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIO.h; sourceTree = "<group>"; };
 		1AAF5368180E3374000584C8 /* WebSocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WebSocket.cpp; sourceTree = "<group>"; };
@@ -1969,12 +1962,14 @@
 		B6B2633C19381FBF0088FE25 /* CCAnimationCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAnimationCurve.h; sourceTree = "<group>"; };
 		B6B26341193884D60088FE25 /* CCAnimation3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCAnimation3D.cpp; sourceTree = "<group>"; };
 		B6B26342193884D60088FE25 /* CCAnimation3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAnimation3D.h; sourceTree = "<group>"; };
-		C7901CF219A5923600DEA929 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../highbrow/external/FacebookSDK.framework; sourceTree = "<group>"; };
-		C7901CF319A5923600DEA929 /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleOpenSource.framework; path = ../highbrow/external/GoogleOpenSource.framework; sourceTree = "<group>"; };
-		C7901CF419A5923600DEA929 /* GooglePlayGames.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GooglePlayGames.bundle; path = ../highbrow/external/GooglePlayGames.bundle; sourceTree = "<group>"; };
-		C7901CF519A5923600DEA929 /* GooglePlayGames.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlayGames.framework; path = ../highbrow/external/GooglePlayGames.framework; sourceTree = "<group>"; };
-		C7901CF619A5923600DEA929 /* GooglePlus.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GooglePlus.bundle; path = ../highbrow/external/GooglePlus.bundle; sourceTree = "<group>"; };
-		C7901CF719A5923600DEA929 /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlus.framework; path = ../highbrow/external/GooglePlus.framework; sourceTree = "<group>"; };
+		DF50948819A1D7CA0014818E /* HBHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBHttpRequest.h; sourceTree = "<group>"; };
+		DF5094C819A213800014818E /* HBHttpResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBHttpResponse.h; sourceTree = "<group>"; };
+		DF5094CB19A2E39F0014818E /* HttpClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HttpClient.cpp; sourceTree = "<group>"; };
+		DF5094CC19A2E39F0014818E /* HttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpClient.h; sourceTree = "<group>"; };
+		DF5094CD19A2E39F0014818E /* HttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequest.h; sourceTree = "<group>"; };
+		DF5094CE19A2E39F0014818E /* HttpResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpResponse.h; sourceTree = "<group>"; };
+		DF5094D219A2ECE30014818E /* HBHttpClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HBHttpClient.cpp; sourceTree = "<group>"; };
+		DF5094D319A2ECE30014818E /* HBHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBHttpClient.h; sourceTree = "<group>"; };
 		ED9C6A9218599AD8000A5232 /* CCNodeGrid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = CCNodeGrid.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		ED9C6A9318599AD8000A5232 /* CCNodeGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNodeGrid.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -2091,12 +2086,6 @@
 		1551A341158F2AB200E66CFE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C7901CF219A5923600DEA929 /* FacebookSDK.framework */,
-				C7901CF319A5923600DEA929 /* GoogleOpenSource.framework */,
-				C7901CF419A5923600DEA929 /* GooglePlayGames.bundle */,
-				C7901CF519A5923600DEA929 /* GooglePlayGames.framework */,
-				C7901CF619A5923600DEA929 /* GooglePlus.bundle */,
-				C7901CF719A5923600DEA929 /* GooglePlus.framework */,
 				1551A342158F2AB200E66CFE /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -2806,10 +2795,10 @@
 		1AAF5360180E3374000584C8 /* network */ = {
 			isa = PBXGroup;
 			children = (
-				1AAF5362180E3374000584C8 /* HttpClient.cpp */,
-				1AAF5363180E3374000584C8 /* HttpClient.h */,
-				1AAF5364180E3374000584C8 /* HttpRequest.h */,
-				1AAF5365180E3374000584C8 /* HttpResponse.h */,
+				DF5094CB19A2E39F0014818E /* HttpClient.cpp */,
+				DF5094CC19A2E39F0014818E /* HttpClient.h */,
+				DF5094CD19A2E39F0014818E /* HttpRequest.h */,
+				DF5094CE19A2E39F0014818E /* HttpResponse.h */,
 				1AAF5366180E3374000584C8 /* SocketIO.cpp */,
 				1AAF5367180E3374000584C8 /* SocketIO.h */,
 				1AAF5368180E3374000584C8 /* WebSocket.cpp */,
@@ -3996,6 +3985,10 @@
 		9CA527BF1998526500914695 /* network */ = {
 			isa = PBXGroup;
 			children = (
+				DF5094D219A2ECE30014818E /* HBHttpClient.cpp */,
+				DF5094D319A2ECE30014818E /* HBHttpClient.h */,
+				DF5094C819A213800014818E /* HBHttpResponse.h */,
+				DF50948819A1D7CA0014818E /* HBHttpRequest.h */,
 				9CA527CD199854C700914695 /* HBNetwork.cpp */,
 				9CA527CE199854C700914695 /* HBNetwork.h */,
 			);
@@ -4348,9 +4341,6 @@
 				1AD71EE4180E26E600808F54 /* SlotData.h in Headers */,
 				1AD71EE8180E26E600808F54 /* spine-cocos2dx.h in Headers */,
 				1AD71EEA180E26E600808F54 /* spine.h in Headers */,
-				1AAF536D180E3374000584C8 /* HttpClient.h in Headers */,
-				1AAF536F180E3374000584C8 /* HttpRequest.h in Headers */,
-				1AAF5371180E3374000584C8 /* HttpResponse.h in Headers */,
 				1AAF5375180E3374000584C8 /* SocketIO.h in Headers */,
 				1AAF5379180E3374000584C8 /* WebSocket.h in Headers */,
 				50ABBE921925AB6F00A911A9 /* CCPlatformMacros.h in Headers */,
@@ -4694,6 +4684,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF5094D419A2F4F00014818E /* HBHttpClient.cpp in Sources */,
 				1A01C69918F57BE800EFE3A6 /* CCSet.cpp in Sources */,
 				1A01C69D18F57BE800EFE3A6 /* CCString.cpp in Sources */,
 				2986667F18B1B246000E39CA /* CCTweenFunction.cpp in Sources */,
@@ -4932,7 +4923,6 @@
 				503DD8E71926736A00CD74DD /* CCEAGLView.mm in Sources */,
 				1AD71EE6180E26E600808F54 /* spine-cocos2dx.cpp in Sources */,
 				2905FA8518CF08D100240AA3 /* UITextBMFont.cpp in Sources */,
-				1AAF536B180E3374000584C8 /* HttpClient.cpp in Sources */,
 				1AAF5373180E3374000584C8 /* SocketIO.cpp in Sources */,
 				1AAF5377180E3374000584C8 /* WebSocket.cpp in Sources */,
 				50ABBDA41925AB4100A911A9 /* CCQuadCommand.cpp in Sources */,
