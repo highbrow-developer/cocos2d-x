@@ -42,38 +42,22 @@ const int HBData::size() {
 }
 
 bool HBData::isBool(int index) {
-    int index_var = 0;
-    if ( index == 0 )   index_var = MAX(_index, 0);
-    else                index_var = index;
-    
-    if ( _data[index_var]._bool == false )  return false;
-    else                                    return true;
+    if ( _data[index]._bool == false )  return false;
+    else                                return true;
 }
 
 bool HBData::isInt(int index) {
-    int index_var = 0;
-    if ( index == 0 )   index_var = MAX(_index, 0);
-    else                index_var = index;
-    
-    if ( _data[index_var]._number == NO_DATA_NUMBER )   return false;
-    else                                                return true;
+    if ( _data[index]._number == NO_DATA_NUMBER )   return false;
+    else                                            return true;
 }
 
 bool HBData::isFloat(int index) {
-    int index_var = 0;
-    if ( index == 0 )   index_var = MAX(_index, 0);
-    else                index_var = index;
-    
-    if ( _data[index_var]._number == NO_DATA_NUMBER )   return false;
-    else                                                return true;
+    if ( _data[index]._number == NO_DATA_NUMBER )   return false;
+    else                                            return true;
 }
 
 bool HBData::isString(int index) {
-    int index_var = 0;
-    if ( index == 0 )   index_var = MAX(_index, 0);
-    else                index_var = index;
-    
-    if ( _data[index_var]._string.length() == 0 )   return false;
+    if ( _data[index]._string.length() == 0 )       return false;
     else                                            return true;
 }
 
@@ -139,31 +123,19 @@ void HBData::addData(HBData* data) {
 
 
 bool HBData::getBool(int index) {
-    int index_var = 0;
-    if ( index == 0 )   index_var = ++_index;
-    else                index_var = index;
-    return _data[index_var]._bool;
+    return _data[index]._bool;
 }
 
 int HBData::getInt(int index) {
-    int index_var = 0;
-    if ( index == 0 )   index_var = ++_index;
-    else                index_var = index;
-    return (int)_data[index_var]._number;
+    return (int)_data[index]._number;
 }
 
 float HBData::getFloat(int index) {
-    int index_var = 0;
-    if ( index == 0 )   index_var = ++_index;
-    else                index_var = index;
-    return (float)_data[index_var]._number;
+    return (float)_data[index]._number;
 }
 
 const char* HBData::getString(int index) {
-    int index_var = 0;
-    if ( index == 0 )   index_var = ++_index;
-    else                index_var = index;
-    return _data[index_var]._string.c_str();
+    return _data[index]._string.c_str();
 }
 
 HBData* HBData::getArray(int index) {
