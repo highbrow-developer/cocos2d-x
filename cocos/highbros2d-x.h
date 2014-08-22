@@ -25,6 +25,10 @@
 /*  network  */
 #include "highbrow/network/HBJson.h"
 #include "highbrow/network/HBNetwork.h"
+#include "highbrow/network/HBHttpRequest.h"
+#include "highbrow/network/HBHttpResponse.h"
+#include "highbrow/network/HBHttpClient.h"
+
 
 
 
