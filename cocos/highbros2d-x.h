@@ -24,6 +24,7 @@
 
 /*  network  */
 #include "highbrow/network/HBNetwork.h"
+#include "highbrow/network/HBJson.h"
 
 
 #endif
