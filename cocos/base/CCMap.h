@@ -348,6 +348,10 @@ public:
     //        CCLOG("const move []");
     //        return _data.at(key);
     //    }
+    V operator[] ( const K& key )
+    {
+        return at(key);
+    }
     
     /** Copy assignment operator */
     Map<K, V>& operator= ( const Map<K, V>& other )
