@@ -45,6 +45,15 @@ typedef void (cocos2d::Ref::*SEL_AnimationStateEvent)(spine::SkeletonAnimation* 
 
 /** Draws an animated skeleton, providing an AnimationState for applying one or more animations and queuing animations to be
   * played later. */
+    
+    
+typedef enum {
+    blend_none,
+    blend_visible,
+    blend_premultiply_none
+}kBlendType;
+    
+    
 class SkeletonAnimation: public Skeleton {
 public:
 	spAnimationState* state;
@@ -72,6 +81,13 @@ public:
 	void clearTrack (int trackIndex = 0);
 
 	virtual void onAnimationStateEvent (int trackIndex, spEventType type, spEvent* event, int loopCount);
+    
+    
+    /*  지속시간  */
+    const float getDuration(const char* animation, int stateIndex = 0);
+    
+    /*  블랜딩  */
+    void setBlend(kBlendType type);
 
 protected:
 	SkeletonAnimation ();
