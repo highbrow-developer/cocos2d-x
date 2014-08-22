@@ -62,13 +62,11 @@ Map<std::string, HBJson*> HBJson::parse(std::vector<char> *data)
         //to rapidjson
         document.Parse<0>(json);
     }
-    /*임시*/
-    document.Parse<0>("{\"netflag\":0,\"_ti\":1407751270,\"dragons\":{\"16036\":[0,2,3,4,5,7]},\"battle\":{\"log\":[{\"dn\":1,\"sq\":[{\"an\":1,\"tn\":{\"4\":4},\"sn\":[1],\"hp\":{\"4\":-33},\"mission_24\":1}]},{\"dn\":4,\"sq\":[{\"an\":4,\"tn\":{\"1\":1},\"sn\":[1],\"hp\":{\"1\":-6}}]},{\"dn\":1,\"sq\":[{\"an\":1,\"tn\":{\"4\":4},\"sn\":[1],\"hp\":{\"4\":-35},\"mission_24\":2,\"dead\":[4]}]}],\"win\":\"a\",\"mission\":[],\"position\":{\"1\":16036,\"4\":1}},\"mission_battle\":[[24,\"4\ubc88 \uc774\uc0c1 \ub54c\ub9ac\uae30\",4,20],[4,\"3\uc5f0\ud0c0 \ub54c\ub9ac\uae30\",1,40]],\"change1\":[{\"tag\":16036,\"exp_max\":36,\"exp_now\":22,\"exp_prev\":9}],\"hp\":{\"hp_now1\":196,\"hp_max1\":202,\"hp_now2\":0,\"hp_max2\":0,\"hp_now3\":0,\"hp_max3\":0},\"quest_check\":1,\"rs\":0,\"etc\":{\"exp1\":5,\"exp_bonus1\":0},\"reward\":{\"gold\":18,\"gold_bonus\":0}}");
-    
+   
     //error
     HBJson *pError = HBJson::create();
     pError->addData(false);
-    if ( (data == nullptr && false/*임시*/) || document.HasParseError() == true )
+    if ( data == nullptr || document.HasParseError() == true )
     {
         pError->addData(true);
         
