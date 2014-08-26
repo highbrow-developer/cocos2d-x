@@ -893,7 +893,6 @@
 		50FCEBC818C72017004AD434 /* WidgetReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50FCEB9018C72017004AD434 /* WidgetReader.cpp */; };
 		50FCEBCA18C72017004AD434 /* WidgetReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 50FCEB9118C72017004AD434 /* WidgetReader.h */; };
 		50FCEBCC18C72017004AD434 /* WidgetReaderProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 50FCEB9218C72017004AD434 /* WidgetReaderProtocol.h */; };
-		9CA1733D19A491EB00CEDC8C /* libsqlcipher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA1733C19A491EB00CEDC8C /* libsqlcipher.a */; };
 		9CA4527719A6D94200E93F55 /* HBAction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CA4527219A6D94200E93F55 /* HBAction.cpp */; };
 		9CA4527819A6D94200E93F55 /* HBAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CA4527319A6D94200E93F55 /* HBAction.h */; };
 		9CA4527919A6D94200E93F55 /* HBMenuItemImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CA4527519A6D94200E93F55 /* HBMenuItemImage.cpp */; };
@@ -1926,6 +1925,8 @@
 		9CA527C6199852D800914695 /* highbros2d-x.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "highbros2d-x.h"; path = "../cocos/highbros2d-x.h"; sourceTree = "<group>"; };
 		9CA527CD199854C700914695 /* HBNetwork.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HBNetwork.cpp; sourceTree = "<group>"; };
 		9CA527CE199854C700914695 /* HBNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBNetwork.h; sourceTree = "<group>"; };
+		9CF37F7619AC880E00C0FB32 /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
+		9CF37F7C19AC880E00C0FB32 /* libsqlcipher.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsqlcipher.a; sourceTree = "<group>"; };
 		A07A4D641783777C0073F6A7 /* libcocos2dx iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libcocos2dx iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A07A4EFC1783867C0073F6A7 /* libcocos2dx-extensions iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libcocos2dx-extensions iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A07A4F3B178387670073F6A7 /* libchipmunk iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libchipmunk iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1989,7 +1990,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CA1733D19A491EB00CEDC8C /* libsqlcipher.a in Frameworks */,
 				B3B12A5B17E7F45C00026B4A /* libchipmunk iOS.a in Frameworks */,
 				A07A4CAF1783777C0073F6A7 /* Foundation.framework in Frameworks */,
 				1A570364180BD1120088DEC7 /* libpng.a in Frameworks */,
@@ -4008,6 +4008,7 @@
 		9CA527A41998526400914695 /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				9CF37F7319AC880E00C0FB32 /* libsqlcipher */,
 			);
 			path = libs;
 			sourceTree = "<group>";
@@ -4044,6 +4045,39 @@
 			children = (
 			);
 			path = "label-nodes";
+			sourceTree = "<group>";
+		};
+		9CF37F7319AC880E00C0FB32 /* libsqlcipher */ = {
+			isa = PBXGroup;
+			children = (
+				9CF37F7519AC880E00C0FB32 /* include */,
+				9CF37F7719AC880E00C0FB32 /* libs */,
+			);
+			path = libsqlcipher;
+			sourceTree = "<group>";
+		};
+		9CF37F7519AC880E00C0FB32 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				9CF37F7619AC880E00C0FB32 /* sqlite3.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		9CF37F7719AC880E00C0FB32 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				9CF37F7B19AC880E00C0FB32 /* ios */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		9CF37F7B19AC880E00C0FB32 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				9CF37F7C19AC880E00C0FB32 /* libsqlcipher.a */,
+			);
+			path = ios;
 			sourceTree = "<group>";
 		};
 		B29594B81926D61F003EEF37 /* 3d */ = {
@@ -5244,11 +5278,13 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/.. $(SRCROOT)/../cocos $(SRCROOT)/../cocos/editor-support $(SRCROOT)/../external/chipmunk/include/chipmunk $(SRCROOT)/../external";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/.. $(SRCROOT)/../cocos $(SRCROOT)/../cocos/editor-support $(SRCROOT)/../external/chipmunk/include/chipmunk $(SRCROOT)/../external $(SRCROOT)/../highbrow";
 			};
 			name = Debug;
 		};
@@ -5280,11 +5316,13 @@
 				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/.. $(SRCROOT)/../cocos $(SRCROOT)/../cocos/editor-support $(SRCROOT)/../external/chipmunk/include/chipmunk $(SRCROOT)/../external";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/.. $(SRCROOT)/../cocos $(SRCROOT)/../cocos/editor-support $(SRCROOT)/../external/chipmunk/include/chipmunk $(SRCROOT)/../external $(SRCROOT)/../highbrow";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -5294,10 +5332,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(COCOSROOT)/cocos/highbrow/library/ios",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "../cocos/cocos2d-prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -5329,10 +5364,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(COCOSROOT)/cocos/highbrow/library/ios",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "../cocos/cocos2d-prefix.pch";
