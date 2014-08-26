@@ -51,8 +51,11 @@ NS_CC_BEGIN
 
 
 /*  터치  */
-#define lock(target)                    HBMacros::setTouchDisable(target);
+#define lock(target)                    HBMacros::setTouchDisable(target)
 
+
+/*  BM폰트 색상  */
+#define Color_BMF(label, str)           HBMacros::setColorForBMFont(label, str)
 
 
 class HBMacros : public Ref {
@@ -106,6 +109,76 @@ public:
         touch->onTouchBegan = [=](Touch *touch, Event *event) { return true; };
         touch->setSwallowTouches(true);
         Director::getInstance()->getEventDispatcher()->addEventListenerWithSceneGraphPriority(touch, target);
+    }
+    
+    /*  BM폰트 색상 변경  */
+    static void setColorForBMFont(LabelBMFont *label, std::string str) {
+        
+        std::vector<int> vec_pos;
+        std::vector<std::string> vec_hex;
+        
+        int pos = 0;
+        while ( str.find('{', pos) != -1 ) {
+            pos = str.find('{', pos);
+            if ( str[pos+1] == '#' && str.find('}',pos) != -1 ) {
+                int line = 0;
+                std::string str_sub = str.substr(0, pos);
+                
+                for (int i = 0; i < str_sub.length(); ++i) {
+                    short c = str_sub[i];
+                    if (c == '\n') {
+                        line++;
+                    }
+                }
+                
+                vec_hex.push_back(str.substr(pos+2, 6));
+                str.erase(pos, 9);
+                vec_pos.push_back(pos + line);
+                pos = str.find('}', pos);
+                line = 0;
+                str_sub = str.substr(0, pos);
+                
+                for (int i = 0; i < str_sub.length(); ++i) {
+                    short c = str_sub[i];
+                    if (c == '\n') {
+                        line++;
+                    }
+                }
+                
+                str.erase(pos, 1);
+                vec_pos.push_back(pos + line);
+            }
+        }
+        
+        label->setString(str.c_str());
+        
+        
+        for ( int i = 0; i < vec_hex.size(); i++ ) {
+            std::string str_hex = vec_hex[i];
+            
+            int rgb[3] = { 0, 0, 0 };
+            
+            {
+                std::stringstream ss_r;
+                ss_r<<std::hex<<str_hex.substr(0,2);
+                ss_r>>rgb[0];
+                
+                std::stringstream ss_g;
+                ss_g<<std::hex<<str_hex.substr(2,2);
+                ss_g>>rgb[1];
+                
+                std::stringstream ss_b;
+                ss_b<<std::hex<<str_hex.substr(4,2);
+                ss_b>>rgb[2];
+            }
+            
+            for ( int j = vec_pos[i * 2]; j < vec_pos[i * 2 + 1]; j++ ) {
+                auto label_sprite = (Sprite*)label->getChildByTag(j);
+                if ( label_sprite != NULL ) {
+                    label_sprite->setColor(Color3B(rgb[0], rgb[1], rgb[2]));
+                }
+            }
+        }
     }
 };
 

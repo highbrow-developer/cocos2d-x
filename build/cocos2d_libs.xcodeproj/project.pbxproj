@@ -4030,12 +4030,20 @@
 		9CA527C01998526500914695 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				9CB5DD4619AB084500DF9C8E /* label-nodes */,
 				9CA4527119A6D94200E93F55 /* actions */,
 				9CA4527419A6D94200E93F55 /* menu-nodes */,
 				9CA527C11998526500914695 /* HBMacros.cpp */,
 				9CA527C21998526500914695 /* HBMacros.h */,
 			);
 			path = ui;
+			sourceTree = "<group>";
+		};
+		9CB5DD4619AB084500DF9C8E /* label-nodes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "label-nodes";
 			sourceTree = "<group>";
 		};
 		B29594B81926D61F003EEF37 /* 3d */ = {
