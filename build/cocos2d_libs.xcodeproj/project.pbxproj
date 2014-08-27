@@ -899,6 +899,7 @@
 		9CA4527A19A6D94200E93F55 /* HBMenuItemImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CA4527619A6D94200E93F55 /* HBMenuItemImage.h */; };
 		9CA527CF199854C700914695 /* HBNetwork.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CA527CD199854C700914695 /* HBNetwork.cpp */; };
 		9CA527D0199854C700914695 /* HBNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CA527CE199854C700914695 /* HBNetwork.h */; };
+		9CA5368919ADD01800D8DABA /* libsqlcipher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA1733C19A491EB00CEDC8C /* libsqlcipher.a */; };
 		A07A4CAF1783777C0073F6A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1551A342158F2AB200E66CFE /* Foundation.framework */; };
 		B24AA986195A675C007B4522 /* CCFastTMXLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B24AA981195A675C007B4522 /* CCFastTMXLayer.cpp */; };
 		B24AA988195A675C007B4522 /* CCFastTMXLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = B24AA982195A675C007B4522 /* CCFastTMXLayer.h */; };
@@ -1925,8 +1926,6 @@
 		9CA527C6199852D800914695 /* highbros2d-x.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "highbros2d-x.h"; path = "../cocos/highbros2d-x.h"; sourceTree = "<group>"; };
 		9CA527CD199854C700914695 /* HBNetwork.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HBNetwork.cpp; sourceTree = "<group>"; };
 		9CA527CE199854C700914695 /* HBNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBNetwork.h; sourceTree = "<group>"; };
-		9CF37F7619AC880E00C0FB32 /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
-		9CF37F7C19AC880E00C0FB32 /* libsqlcipher.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsqlcipher.a; sourceTree = "<group>"; };
 		A07A4D641783777C0073F6A7 /* libcocos2dx iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libcocos2dx iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A07A4EFC1783867C0073F6A7 /* libcocos2dx-extensions iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libcocos2dx-extensions iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A07A4F3B178387670073F6A7 /* libchipmunk iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libchipmunk iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1999,6 +1998,7 @@
 				1A57052E180BD3280088DEC7 /* libfreetype.a in Frameworks */,
 				1AAF5388180E35AC000584C8 /* libwebsockets.a in Frameworks */,
 				1AAF541D180E3B6A000584C8 /* libcurl.a in Frameworks */,
+				9CA5368919ADD01800D8DABA /* libsqlcipher.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4008,7 +4008,6 @@
 		9CA527A41998526400914695 /* libs */ = {
 			isa = PBXGroup;
 			children = (
-				9CF37F7319AC880E00C0FB32 /* libsqlcipher */,
 			);
 			path = libs;
 			sourceTree = "<group>";
@@ -4045,39 +4044,6 @@
 			children = (
 			);
 			path = "label-nodes";
-			sourceTree = "<group>";
-		};
-		9CF37F7319AC880E00C0FB32 /* libsqlcipher */ = {
-			isa = PBXGroup;
-			children = (
-				9CF37F7519AC880E00C0FB32 /* include */,
-				9CF37F7719AC880E00C0FB32 /* libs */,
-			);
-			path = libsqlcipher;
-			sourceTree = "<group>";
-		};
-		9CF37F7519AC880E00C0FB32 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				9CF37F7619AC880E00C0FB32 /* sqlite3.h */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		9CF37F7719AC880E00C0FB32 /* libs */ = {
-			isa = PBXGroup;
-			children = (
-				9CF37F7B19AC880E00C0FB32 /* ios */,
-			);
-			path = libs;
-			sourceTree = "<group>";
-		};
-		9CF37F7B19AC880E00C0FB32 /* ios */ = {
-			isa = PBXGroup;
-			children = (
-				9CF37F7C19AC880E00C0FB32 /* libsqlcipher.a */,
-			);
-			path = ios;
 			sourceTree = "<group>";
 		};
 		B29594B81926D61F003EEF37 /* 3d */ = {

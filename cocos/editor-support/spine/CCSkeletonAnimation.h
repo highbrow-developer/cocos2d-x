@@ -47,13 +47,6 @@ typedef void (cocos2d::Ref::*SEL_AnimationStateEvent)(spine::SkeletonAnimation* 
   * played later. */
     
     
-typedef enum {
-    blend_none,
-    blend_visible,
-    blend_premultiply_none
-}kBlendType;
-    
-    
 class SkeletonAnimation: public Skeleton {
 public:
 	spAnimationState* state;
@@ -85,9 +78,6 @@ public:
     
     /*  지속시간  */
     const float getDuration(const char* animation, int stateIndex = 0);
-    
-    /*  블랜딩  */
-    void setBlend(kBlendType type);
 
 protected:
 	SkeletonAnimation ();

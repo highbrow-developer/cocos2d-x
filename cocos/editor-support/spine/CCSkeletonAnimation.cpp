@@ -163,39 +163,11 @@ void SkeletonAnimation::onAnimationStateEvent (int trackIndex, spEventType type,
 #pragma mark - 커스텀
 const float spine::SkeletonAnimation::getDuration(const char *animation, int stateIndex) {
     
-    float fduration = 0.0f;
+    float duration = 0.0f;
     
-    if ( spSkeletonData_findAnimation(state[stateIndex].data->skeletonData, animation) != 0 )
-    {
+    if ( spSkeletonData_findAnimation(state[stateIndex].data->skeletonData, animation) != 0 ) {
         fduration = spSkeletonData_findAnimation(state[stateIndex].data->skeletonData, animation)->duration;
     }
     
-    return fduration;
-}
-
-void spine::SkeletonAnimation::setBlend(kBlendType type) {
-    
-    bool opacity_modifyRGB = false;
-    BlendFunc gl_blend;
-    
-    switch ( type ) {
-        case blend_none:
-            opacity_modifyRGB = true;
-            gl_blend.src = GL_ONE;
-            gl_blend.dst = GL_ONE_MINUS_SRC_ALPHA;
-            break;
-        case blend_visible:
-            opacity_modifyRGB = false;
-            gl_blend.src = GL_ONE;
-            gl_blend.dst = GL_ONE_MINUS_SRC_ALPHA;
-            break;
-        case blend_premultiply_none:
-            opacity_modifyRGB = false;
-            gl_blend.src = GL_SRC_ALPHA;
-            gl_blend.dst = GL_ONE_MINUS_SRC_ALPHA;
-            break;
-    }
-    
-    this->setOpacityModifyRGB(opacity_modifyRGB);
-    this->setBlendFunc(gl_blend);
+    return duration;
 }
