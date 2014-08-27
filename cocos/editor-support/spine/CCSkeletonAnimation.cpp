@@ -166,7 +166,7 @@ const float spine::SkeletonAnimation::getDuration(const char *animation, int sta
     float duration = 0.0f;
     
     if ( spSkeletonData_findAnimation(state[stateIndex].data->skeletonData, animation) != 0 ) {
-        fduration = spSkeletonData_findAnimation(state[stateIndex].data->skeletonData, animation)->duration;
+        duration = spSkeletonData_findAnimation(state[stateIndex].data->skeletonData, animation)->duration;
     }
     
     return duration;
