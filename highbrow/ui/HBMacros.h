@@ -120,25 +120,27 @@ public:
         int pos = 0;
         while ( str.find('{', pos) != -1 ) {
             pos = str.find('{', pos);
-            if ( str[pos+1] == '#' && str.find('}',pos) != -1 ) {
+            if ( str[pos + 1] == '#' && str.find('}',pos) != -1 ) {
                 int line = 0;
                 std::string str_sub = str.substr(0, pos);
                 
-                for (int i = 0; i < str_sub.length(); ++i) {
+                for ( int i = 0; i < str_sub.length(); ++i ) {
                     short c = str_sub[i];
-                    if (c == '\n') {
+                    if ( c == '\n' ) {
                         line++;
                     }
                 }
                 
                 vec_hex.push_back(str.substr(pos+2, 6));
                 str.erase(pos, 9);
-                vec_pos.push_back(pos + line);
+                
+                int pos_start = pos + line;
+                
                 pos = str.find('}', pos);
                 line = 0;
                 str_sub = str.substr(0, pos);
                 
-                for (int i = 0; i < str_sub.length(); ++i) {
+                for ( int i = 0; i < str_sub.length(); ++i ) {
                     short c = str_sub[i];
                     if (c == '\n') {
                         line++;
@@ -146,12 +148,30 @@ public:
                 }
                 
                 str.erase(pos, 1);
-                vec_pos.push_back(pos + line);
+                
+                int pos_end     = pos + line;
+                int pos_kr      = 0;
+                
+                bool set_start  = false;
+                
+                for ( int i = 0; i < pos_end; i++ ) {
+                    if ( i >= pos_start && !set_start ) {
+                        pos_start = pos_kr;
+                        set_start = true;
+                    }
+                    
+                    pos_kr++;
+                    if ( str[i] & 0x80 )    i += 2;
+                }
+                
+                pos_end = pos_kr;
+                
+                vec_pos.push_back(pos_start);
+                vec_pos.push_back(pos_end);
             }
         }
         
         label->setString(str.c_str());
-        
         
         for ( int i = 0; i < vec_hex.size(); i++ ) {
             std::string str_hex = vec_hex[i];
