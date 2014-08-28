@@ -29,9 +29,9 @@
     return myInstance;
 }
 
-- (void)initData
+- (void)initData:(NSString *)gameId language:(NSString *)languageCode
 {
-    [HighbrowLogin setDelegate:[HBLogin_objc sharedInstance] gameId:@"TOF" language:@"kr" testMode:YES];
+    [HighbrowLogin setDelegate:[HBLogin_objc sharedInstance] gameId:gameId language:languageCode testMode:YES];
 }
 
 - (void)highbrowLoginDidFinishLogin:(NSDictionary *)data
@@ -52,9 +52,9 @@
 
 #pragma mark - HBLogin
 
-void HBLogin::init()
+void HBLogin::init(const char *gameId, const char *languageCode)
 {
-    [[HBLogin_objc sharedInstance] initData];
+    [[HBLogin_objc sharedInstance] initData:[NSString stringWithUTF8String:gameId] language:[NSString stringWithUTF8String:languageCode]];
 }
 
 void HBLogin::showLoginPopup(const std::function<void(const char *)> &callback)
