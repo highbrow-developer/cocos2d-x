@@ -13,6 +13,7 @@
 			buildPhases = (
 			);
 			dependencies = (
+				C7901DAC19A59BBD00DEA929 /* PBXTargetDependency */,
 				A07A4E10178386520073F6A7 /* PBXTargetDependency */,
 				A07A5047178389710073F6A7 /* PBXTargetDependency */,
 				A07A5049178389710073F6A7 /* PBXTargetDependency */,
@@ -938,6 +939,11 @@
 		B6B2634019381FBF0088FE25 /* CCAnimationCurve.h in Headers */ = {isa = PBXBuildFile; fileRef = B6B2633C19381FBF0088FE25 /* CCAnimationCurve.h */; };
 		B6B26344193884D60088FE25 /* CCAnimation3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6B26341193884D60088FE25 /* CCAnimation3D.cpp */; };
 		B6B26346193884D60088FE25 /* CCAnimation3D.h in Headers */ = {isa = PBXBuildFile; fileRef = B6B26342193884D60088FE25 /* CCAnimation3D.h */; };
+		C7901D8A19A59B9200DEA929 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1551A342158F2AB200E66CFE /* Foundation.framework */; };
+		C7901DB919A59ED000DEA929 /* HBLogin.mm in Sources */ = {isa = PBXBuildFile; fileRef = C7901DAE19A59C3C00DEA929 /* HBLogin.mm */; };
+		C7A331F419AECC5F00F113E7 /* HighbrowLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7A331F119AECC1300F113E7 /* HighbrowLogin.framework */; };
+		C7A331F919AECD8E00F113E7 /* HighbrowLogin.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C7A331F019AECC1300F113E7 /* HighbrowLogin.bundle */; };
+		C7A331FB19AECDB900F113E7 /* HighbrowLogin.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C7A331F119AECC1300F113E7 /* HighbrowLogin.framework */; };
 		ED9C6A9518599AD8000A5232 /* CCNodeGrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED9C6A9218599AD8000A5232 /* CCNodeGrid.cpp */; };
 		ED9C6A9718599AD8000A5232 /* CCNodeGrid.h in Headers */ = {isa = PBXBuildFile; fileRef = ED9C6A9318599AD8000A5232 /* CCNodeGrid.h */; };
 /* End PBXBuildFile section */
@@ -985,7 +991,27 @@
 			remoteGlobalIDString = A07A4F9F178387730073F6A7;
 			remoteInfo = "CocosDenshion iOS";
 		};
+		C7901DAB19A59BBD00DEA929 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1551A336158F2AB200E66CFE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7901D8819A59B9200DEA929;
+			remoteInfo = HBLogin;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C7A331FA19AECDB100F113E7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C7A331FB19AECDB900F113E7 /* HighbrowLogin.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0634A4C5194B19E400E608AF /* CCActionTimeline.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCActionTimeline.cpp; sourceTree = "<group>"; };
@@ -1969,12 +1995,11 @@
 		B6B2633C19381FBF0088FE25 /* CCAnimationCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAnimationCurve.h; sourceTree = "<group>"; };
 		B6B26341193884D60088FE25 /* CCAnimation3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCAnimation3D.cpp; sourceTree = "<group>"; };
 		B6B26342193884D60088FE25 /* CCAnimation3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAnimation3D.h; sourceTree = "<group>"; };
-		C7901CF219A5923600DEA929 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../highbrow/external/FacebookSDK.framework; sourceTree = "<group>"; };
-		C7901CF319A5923600DEA929 /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleOpenSource.framework; path = ../highbrow/external/GoogleOpenSource.framework; sourceTree = "<group>"; };
-		C7901CF419A5923600DEA929 /* GooglePlayGames.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GooglePlayGames.bundle; path = ../highbrow/external/GooglePlayGames.bundle; sourceTree = "<group>"; };
-		C7901CF519A5923600DEA929 /* GooglePlayGames.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlayGames.framework; path = ../highbrow/external/GooglePlayGames.framework; sourceTree = "<group>"; };
-		C7901CF619A5923600DEA929 /* GooglePlus.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GooglePlus.bundle; path = ../highbrow/external/GooglePlus.bundle; sourceTree = "<group>"; };
-		C7901CF719A5923600DEA929 /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlus.framework; path = ../highbrow/external/GooglePlus.framework; sourceTree = "<group>"; };
+		C7901D8919A59B9200DEA929 /* libHBLogin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHBLogin.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7901DAD19A59C3C00DEA929 /* HBLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBLogin.h; sourceTree = "<group>"; };
+		C7901DAE19A59C3C00DEA929 /* HBLogin.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HBLogin.mm; sourceTree = "<group>"; };
+		C7A331F019AECC1300F113E7 /* HighbrowLogin.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HighbrowLogin.bundle; sourceTree = "<group>"; };
+		C7A331F119AECC1300F113E7 /* HighbrowLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HighbrowLogin.framework; sourceTree = "<group>"; };
 		ED9C6A9218599AD8000A5232 /* CCNodeGrid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = CCNodeGrid.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		ED9C6A9318599AD8000A5232 /* CCNodeGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNodeGrid.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -2021,6 +2046,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7901D8619A59B9200DEA929 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7A331F419AECC5F00F113E7 /* HighbrowLogin.framework in Frameworks */,
+				C7901D8A19A59B9200DEA929 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2084,6 +2118,7 @@
 				A07A4F3B178387670073F6A7 /* libchipmunk iOS.a */,
 				A07A4F9E1783876B0073F6A7 /* libbox2d iOS.a */,
 				A07A4FB4178387730073F6A7 /* libCocosDenshion iOS.a */,
+				C7901D8919A59B9200DEA929 /* libHBLogin.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2091,12 +2126,6 @@
 		1551A341158F2AB200E66CFE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C7901CF219A5923600DEA929 /* FacebookSDK.framework */,
-				C7901CF319A5923600DEA929 /* GoogleOpenSource.framework */,
-				C7901CF419A5923600DEA929 /* GooglePlayGames.bundle */,
-				C7901CF519A5923600DEA929 /* GooglePlayGames.framework */,
-				C7901CF619A5923600DEA929 /* GooglePlus.bundle */,
-				C7901CF719A5923600DEA929 /* GooglePlus.framework */,
 				1551A342158F2AB200E66CFE /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -3978,6 +4007,7 @@
 		9CA527A31998526400914695 /* highbrow */ = {
 			isa = PBXGroup;
 			children = (
+				C7901D5619A59A3300DEA929 /* login */,
 				9CA527A41998526400914695 /* libs */,
 				9CA527BF1998526500914695 /* network */,
 				9CA527C01998526500914695 /* ui */,
@@ -4048,6 +4078,17 @@
 			);
 			name = 3d;
 			path = ../cocos/3d;
+			sourceTree = "<group>";
+		};
+		C7901D5619A59A3300DEA929 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				C7A331F019AECC1300F113E7 /* HighbrowLogin.bundle */,
+				C7A331F119AECC1300F113E7 /* HighbrowLogin.framework */,
+				C7901DAD19A59C3C00DEA929 /* HBLogin.h */,
+				C7901DAE19A59C3C00DEA929 /* HBLogin.mm */,
+			);
+			path = login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -4658,6 +4699,24 @@
 			productReference = A07A4FB4178387730073F6A7 /* libCocosDenshion iOS.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		C7901D8819A59B9200DEA929 /* HBLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7901DA519A59B9200DEA929 /* Build configuration list for PBXNativeTarget "HBLogin" */;
+			buildPhases = (
+				C7901D8519A59B9200DEA929 /* Sources */,
+				C7901D8619A59B9200DEA929 /* Frameworks */,
+				C7A331FA19AECDB100F113E7 /* CopyFiles */,
+				C7A331F819AECD8900F113E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HBLogin;
+			productName = HBLogin;
+			productReference = C7901D8919A59B9200DEA929 /* libHBLogin.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -4685,9 +4744,21 @@
 				A07A4EFD178387670073F6A7 /* chipmunk iOS */,
 				A07A4F3C1783876B0073F6A7 /* box2d iOS */,
 				A07A4F9F178387730073F6A7 /* CocosDenshion iOS */,
+				C7901D8819A59B9200DEA929 /* HBLogin */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C7A331F819AECD8900F113E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7A331F919AECD8E00F113E7 /* HighbrowLogin.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A07A4C251783777C0073F6A7 /* Sources */ = {
@@ -5150,6 +5221,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C7901D8519A59B9200DEA929 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7901DB919A59ED000DEA929 /* HBLogin.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -5182,6 +5261,11 @@
 			isa = PBXTargetDependency;
 			target = A07A4F9F178387730073F6A7 /* CocosDenshion iOS */;
 			targetProxy = A07A504C178389710073F6A7 /* PBXContainerItemProxy */;
+		};
+		C7901DAC19A59BBD00DEA929 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7901D8819A59B9200DEA929 /* HBLogin */;
+			targetProxy = C7901DAB19A59BBD00DEA929 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -5492,6 +5576,81 @@
 			};
 			name = Release;
 		};
+		C7901DA619A59B9200DEA929 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DSTROOT = /tmp/HBLogin.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/../highbrow/external",
+					"/Users/ztoky/Workspace/SDKs/cocos2dx-highbrow/highbrow/external",
+					"/Users/ztoky/Workspace/SDKs/cocos2dx-highbrow/highbrow/login",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				HEADER_SEARCH_PATHS = /Users/ztoky/Workspace/iOS/HighbrowLogin/HighbrowLogin;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C7901DA719A59B9200DEA929 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/HBLogin.dst;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/../highbrow/external",
+					"/Users/ztoky/Workspace/SDKs/cocos2dx-highbrow/highbrow/external",
+					"/Users/ztoky/Workspace/SDKs/cocos2dx-highbrow/highbrow/login",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				HEADER_SEARCH_PATHS = /Users/ztoky/Workspace/iOS/HighbrowLogin/HighbrowLogin;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -5554,6 +5713,15 @@
 			buildConfigurations = (
 				A07A4FB2178387730073F6A7 /* Debug */,
 				A07A4FB3178387730073F6A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7901DA519A59B9200DEA929 /* Build configuration list for PBXNativeTarget "HBLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7901DA619A59B9200DEA929 /* Debug */,
+				C7901DA719A59B9200DEA929 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

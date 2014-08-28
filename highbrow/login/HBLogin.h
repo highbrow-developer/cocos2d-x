@@ -1,0 +1,21 @@
+//
+//  HBLogin.h
+//  HBLogin
+//
+//  Created by Heewon Song on 2014. 8. 21..
+//
+//
+#ifndef __HB_LOGIN_H__
+#define __HB_LOGIN_H__
+
+class HBLogin
+{
+public:
+    static void init();
+    static void showLoginPopup();
+//    static void logout();
+//    static void signup();
+    static void hideLoadingLayer();
+};
+
+#endif
