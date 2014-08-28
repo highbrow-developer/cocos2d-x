@@ -19,11 +19,21 @@
 
 
 /*  menu  */
-#include "highbrow/ui/menu/HBMenuItemImage.h"
+#include "highbrow/ui/menu-nodes/HBMenuItemImage.h"
 
 
 /*  network  */
+#include "highbrow/network/HBJson.h"
 #include "highbrow/network/HBNetwork.h"
+#include "highbrow/network/HBHttpRequest.h"
+#include "highbrow/network/HBHttpResponse.h"
+#include "highbrow/network/HBHttpClient.h"
+
+
+
+
+/*  action  */
+#include "highbrow/ui/actions/HBAction.h"
 
 
 #endif

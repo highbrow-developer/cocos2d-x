@@ -159,3 +159,15 @@ void SkeletonAnimation::onAnimationStateEvent (int trackIndex, spEventType type,
 }
 
 }
+
+#pragma mark - 커스텀
+const float spine::SkeletonAnimation::getDuration(const char *animation, int stateIndex) {
+    
+    float duration = 0.0f;
+    
+    if ( spSkeletonData_findAnimation(state[stateIndex].data->skeletonData, animation) != 0 ) {
+        duration = spSkeletonData_findAnimation(state[stateIndex].data->skeletonData, animation)->duration;
+    }
+    
+    return duration;
+}
