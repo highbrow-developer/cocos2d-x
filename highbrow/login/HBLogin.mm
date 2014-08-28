@@ -11,7 +11,10 @@
 
 #pragma mark - HBLogin_objc
 
-@interface HBLogin_objc : NSObject <HighbrowLoginDelegate>
+@interface HBLogin_objc : NSObject <HighbrowLoginDelegate> {
+}
+
+@property (nonatomic, readwrite) std::function<void(const char*)> callback;
 
 @end
 
@@ -34,6 +37,15 @@
 - (void)highbrowLoginDidFinishLogin:(NSDictionary *)data
 {
     NSLog(@"%@", data);
+    
+    NSError *error;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:data options:nil error:&error];
+
+    if (! jsonData) {
+        NSLog(@"JSON Write Error: %@", error.localizedDescription);
+    } else {
+        _callback((const char*)[jsonData bytes]);
+    }
 }
 
 @end
@@ -45,8 +57,9 @@ void HBLogin::init()
     [[HBLogin_objc sharedInstance] initData];
 }
 
-void HBLogin::showLoginPopup()
+void HBLogin::showLoginPopup(const std::function<void(const char *)> &callback)
 {
+    [HBLogin_objc sharedInstance].callback = callback;
     [HighbrowLogin showLoginView];
 }
 
