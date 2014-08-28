@@ -57,6 +57,12 @@ void HBShake::update(float time) {
     _target->setPosition(Point(_initial_x + randx, _initial_y + randy));
 }
 
+void HBShake::stop() {
+    _target->setPosition(Point(_initial_x, _initial_y));
+    
+    ActionInterval::stop();
+}
+
 void HBShake::startWithTarget(Node *target) {
     ActionInterval::startWithTarget(target);
     _initial_x = target->getPosition().x;

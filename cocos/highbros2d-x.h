@@ -19,7 +19,7 @@
 
 
 /*  menu  */
-#include "highbrow/ui/menu/HBMenuItemImage.h"
+#include "highbrow/ui/menu-nodes/HBMenuItemImage.h"
 
 
 /*  network  */
@@ -33,7 +33,7 @@
 
 
 /*  action  */
-#include "highbrow/ui/action/HBAction.h"
+#include "highbrow/ui/actions/HBAction.h"
 
 
 #endif

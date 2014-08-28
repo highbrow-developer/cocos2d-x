@@ -27,6 +27,7 @@ public:
 	virtual HBShake* reverse() const override;
     virtual void startWithTarget(Node *target) override;
     virtual void update(float time) override;
+    virtual void stop() override;
     
     
     bool initWithDuration(float d, float strength_x, float strength_y );
