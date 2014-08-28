@@ -36,4 +36,7 @@
 #include "highbrow/ui/actions/HBAction.h"
 
 
+/*  login   */
+#include "highbrow/login/HBLogin.h"
+
 #endif
