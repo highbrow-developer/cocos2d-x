@@ -13,7 +13,7 @@
 class HBLogin
 {
 public:
-    static void init();
+    static void init(const char *gameId, const char *languageCode);
     static void showLoginPopup(const std::function<void(const char *)> &callback);
 //    static void logout();
 //    static void signup();
