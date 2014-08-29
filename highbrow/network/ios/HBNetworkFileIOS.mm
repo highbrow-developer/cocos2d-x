@@ -23,7 +23,8 @@
     self = [super init];
     if ( self )
     {
-        NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration backgroundSessionConfiguration:@"com.highbrow.mytest01"];
+        NSString *bundleIdentifier = [[NSBundle mainBundle] bundleIdentifier];
+        NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration backgroundSessionConfiguration:bundleIdentifier];
         self.session = [NSURLSession sessionWithConfiguration:configuration delegate:self delegateQueue:nil];
         
         self.netwokrFile = networkFile;
