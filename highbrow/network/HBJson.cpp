@@ -91,6 +91,7 @@ HBJson* HBJson::parseValue(GenericDocument<UTF8<char>, MemoryPoolAllocator<CrtAl
         case rapidjson::kNullType:
             CC_SAFE_RELEASE_NULL(data_result);
             break;
+            
         case kFalseType:
         case kTrueType:
             data_result->addData(iterator->GetBool());
