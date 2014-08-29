@@ -50,7 +50,7 @@ public:
     void addData(uint64_t data)                     {        _n.u64 = data;         _t = rapidjson::kNumberType;    }
     void addData(const char *data)                  {        _s = data;             _t = rapidjson::kStringType;    }
     void addData(const char *key, HBJson *data)     {        _o.insert(key, data);  _t = rapidjson::kObjectType;    }
-    void addData(HBJson *data)                      {        _a.push_back(data);    _t =rapidjson:: kArrayType;     }
+    void addData(HBJson *data)                      {        _a.pushBack(data);     _t =rapidjson:: kArrayType;     }
     
     /** get bool */
     bool getBool() { return _t == rapidjson::kTrueType;}
@@ -110,7 +110,7 @@ protected:
     Map<std::string, HBJson*> _o;
     
     /** Array */
-    std::vector<HBJson*> _a;
+    Vector<HBJson*> _a;
     
     /** List */
     rapidjson::Type _t;

@@ -24,6 +24,7 @@
 
 /*  network  */
 #include "highbrow/network/HBJson.h"
+#include "highbrow/network/HBNetworkFile.h"
 #include "highbrow/network/HBNetwork.h"
 #include "highbrow/network/HBHttpRequest.h"
 #include "highbrow/network/HBHttpResponse.h"
@@ -36,4 +37,5 @@
 #include "highbrow/ui/actions/HBAction.h"
 
 
+dsfsdadfaf
 #endif
