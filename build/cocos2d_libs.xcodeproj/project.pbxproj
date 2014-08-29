@@ -942,6 +942,7 @@
 		C7A3320519AEF7B600F113E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1551A342158F2AB200E66CFE /* Foundation.framework */; };
 		C7A3322D19AEF7FA00F113E7 /* HBLogin.mm in Sources */ = {isa = PBXBuildFile; fileRef = C7A3322A19AEF7E800F113E7 /* HBLogin.mm */; };
 		C7A3323019AF02C000F113E7 /* HighbrowLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7A3322C19AEF7E800F113E7 /* HighbrowLogin.framework */; };
+		DF4B297219AF0E0600BBFCDB /* libsqlcipher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF4B297119AF0E0600BBFCDB /* libsqlcipher.a */; };
 		DF5094D419A2F4F00014818E /* HBHttpClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF5094D219A2ECE30014818E /* HBHttpClient.cpp */; };
 		ED9C6A9518599AD8000A5232 /* CCNodeGrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED9C6A9218599AD8000A5232 /* CCNodeGrid.cpp */; };
 		ED9C6A9718599AD8000A5232 /* CCNodeGrid.h in Headers */ = {isa = PBXBuildFile; fileRef = ED9C6A9318599AD8000A5232 /* CCNodeGrid.h */; };
@@ -1998,6 +1999,7 @@
 		C7A3322A19AEF7E800F113E7 /* HBLogin.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HBLogin.mm; sourceTree = "<group>"; };
 		C7A3322B19AEF7E800F113E7 /* HighbrowLogin.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HighbrowLogin.bundle; sourceTree = "<group>"; };
 		C7A3322C19AEF7E800F113E7 /* HighbrowLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HighbrowLogin.framework; path = ../highbrow/login/HighbrowLogin.framework; sourceTree = SOURCE_ROOT; };
+		DF4B297119AF0E0600BBFCDB /* libsqlcipher.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsqlcipher.a; path = ../highbrow/libs/libsqlcipher/libs/ios/libsqlcipher.a; sourceTree = "<group>"; };
 		DF50948819A1D7CA0014818E /* HBHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBHttpRequest.h; sourceTree = "<group>"; };
 		DF5094C819A213800014818E /* HBHttpResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBHttpResponse.h; sourceTree = "<group>"; };
 		DF5094CB19A2E39F0014818E /* HttpClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HttpClient.cpp; sourceTree = "<group>"; };
@@ -2024,6 +2026,7 @@
 				1A57052E180BD3280088DEC7 /* libfreetype.a in Frameworks */,
 				1AAF5388180E35AC000584C8 /* libwebsockets.a in Frameworks */,
 				1AAF541D180E3B6A000584C8 /* libcurl.a in Frameworks */,
+				DF4B297219AF0E0600BBFCDB /* libsqlcipher.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2132,6 +2135,7 @@
 		1551A341158F2AB200E66CFE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DF4B297119AF0E0600BBFCDB /* libsqlcipher.a */,
 				1551A342158F2AB200E66CFE /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -5609,7 +5613,7 @@
 				DSTROOT = /tmp/HBLogin.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/ztoky/Workspace/SDKs/cocos2dx-highbrow/highbrow/login",
+					"$(COCOSROOT)/highbrow/login",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -5648,7 +5652,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/ztoky/Workspace/SDKs/cocos2dx-highbrow/highbrow/login",
+					"$(COCOSROOT)/highbrow/login",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -5737,6 +5741,7 @@
 				C7A3322319AEF7B600F113E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
