@@ -45,20 +45,18 @@ protected:
 class HBSizeTo : public ActionInterval
 {
 public:
-    HBSizeTo() { };
+    HBSizeTo();
     virtual ~HBSizeTo() { };
     
-    static HBSizeTo* create(float duration, float s);
-    static HBSizeTo* create(float duration, float sx, float sy);
+    static HBSizeTo* create(float duration, Size size);
+    static HBSizeTo* create(float duration, float width);
     
     virtual HBSizeTo* clone() const override;
 	virtual HBSizeTo* reverse(void) const override;
     virtual void startWithTarget(Node *target) override;
     virtual void update(float time) override;
     
-    
-    bool initWithDuration(float duration, float s);
-    bool initWithDuration(float duration, float sx, float sy);
+    bool initWithDuration(float duration, float width, float height = 0.0f);
     
 protected:
     float _startSizeX;

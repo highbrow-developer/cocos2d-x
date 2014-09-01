@@ -37,6 +37,10 @@
 #include <spine/spine.h>
 #include <spine/CCSkeleton.h>
 
+
+#define SPINE_FPS           0.03333290193548f
+
+
 namespace spine {
 
 class SkeletonAnimation;

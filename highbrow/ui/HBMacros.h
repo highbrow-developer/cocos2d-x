@@ -24,16 +24,16 @@ NS_CC_BEGIN
 
 /*  좌표 ( = VisibleRect )  */
 #define pos_center                      Point(display_size / 2.0f)
-#define pos_top                         Point(pos_center.x, pos_size.height)
+#define pos_top                         Point(pos_center.x, display_size.height)
 #define pos_bottom                      Point(pos_center.x, 0.0f)
 
 #define pos_left                        Point(0.0f, pos_center.y)
 #define pos_leftTop                     Point(0.0f, pos_top.y)
 #define pos_leftBot                     Point(0.0f, 0.0f)
 
-#define pos_right                       Point(pos_right.x, pos_center.y)
+#define pos_right                       Point(display_size.width, pos_center.y)
 #define pos_rightTop                    Point(display_size)
-#define pos_righyBot                    Point(pos_right.x, 0.0f)
+#define pos_rightBot                    Point(pos_right.x, 0.0f)
 
 /*  앵커  */
 #define anc_center                      Point(0.5f, 0.5f)
@@ -48,6 +48,9 @@ NS_CC_BEGIN
 #define anc_rightTop                    Point(anc_right.x, anc_top.y)
 #define anc_rightBot                    Point(anc_right.x, anc_bottom.y)
 
+
+/*  싱글톤 매크로  */
+#define single(class)                   class::getInstance()
 
 
 /*  터치  */
@@ -99,8 +102,9 @@ public:
     }
     
     static void setSincBackground(Node *node) {
-        node->setScaleX(display_size.width / node->getContentSize().width);
-        node->setScaleY(display_size.height / node->getContentSize().height);
+//        node->setScaleX(display_size.width / node->getContentSize().width);
+//        node->setScaleY(display_size.height / node->getContentSize().height);
+        node->setScale(display_size.width / node->getContentSize().width);
     }
     
     /*  화면 터치 잠금  */

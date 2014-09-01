@@ -71,37 +71,31 @@ void HBShake::startWithTarget(Node *target) {
 
 
 #pragma mark - SizeTo
-HBSizeTo* HBSizeTo::create(float duration, float s) {
+HBSizeTo::HBSizeTo() :
+_endSizeY(0.0f) {
+    
+}
+
+HBSizeTo* HBSizeTo::create(float duration, Size size) {
     HBSizeTo *a = new HBSizeTo();
-    a->initWithDuration(duration, s);
+    a->initWithDuration(duration, size.width, size.height);
     a->autorelease();
     
     return a;
 }
 
-HBSizeTo* HBSizeTo::create(float duration, float sx, float sy) {
-    HBSizeTo *pSizeTo = new HBSizeTo();
-    pSizeTo->initWithDuration(duration, sx, sy);
-    pSizeTo->autorelease();
+HBSizeTo* HBSizeTo::create(float duration, float width) {
+    HBSizeTo *a = new HBSizeTo();
+    a->initWithDuration(duration, width);
+    a->autorelease();
     
-    return pSizeTo;
+    return a;
 }
 
-bool HBSizeTo::initWithDuration(float duration, float s) {
+bool HBSizeTo::initWithDuration(float duration, float width, float height) {
     if ( ActionInterval::initWithDuration(duration) ) {
-        _endSizeX = s;
-        _endSizeY = s;
-        
-        return true;
-    }
-    
-    return false;
-}
-
-bool HBSizeTo::initWithDuration(float duration, float sx, float sy) {
-    if ( ActionInterval::initWithDuration(duration) ) {
-        _endSizeX = sx;
-        _endSizeY = sy;
+        _endSizeX = width;
+        _endSizeY = height;
         
         return true;
     }
@@ -123,8 +117,12 @@ HBSizeTo* HBSizeTo::reverse() const {
 
 void HBSizeTo::startWithTarget(Node *target) {
     ActionInterval::startWithTarget(target);
+    
     _startSizeX = target->getContentSize().width;
     _startSizeY = target->getContentSize().height;
+    
+    if ( _endSizeY == 0.0f )    _endSizeY = _startSizeY;
+    
     _deltaX = _endSizeX - _startSizeX;
     _deltaY = _endSizeY - _startSizeY;
 }
