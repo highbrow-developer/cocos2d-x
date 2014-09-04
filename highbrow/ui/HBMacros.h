@@ -204,6 +204,38 @@ public:
             }
         }
     }
+    
+    static Layer* getClippingSpriteForSkill(const char* filename) {
+        Layer *pLayer = Layer::create();
+        
+        ClippingNode *clipper = ClippingNode::create();
+        clipper->setPosition( Point::ZERO );
+        pLayer->addChild(clipper);
+        
+        auto content = Sprite::createWithSpriteFrameName(filename);
+        content->setPosition( Point::ZERO );
+        clipper->addChild(content);
+        
+        DrawNode *stencil = DrawNode::create();
+        
+        std::vector<Vec2> vertex;
+        float precision = .5f;
+        float cir = 2 * M_PI;
+        float radius = content->getContentSize().width / 2 - 2;
+        
+        
+        for (float a = .0f; a < cir; a += precision) {
+            float x = radius * cos(a);
+            float y = radius * sin(a);
+            
+            vertex.push_back(Vec2(x,y));
+        }
+        stencil->drawPolygon(&vertex[0], vertex.size(), Color4F(0,0,0,0), 2, Color4F(1,1,1,1));
+        clipper->setStencil(stencil);
+        
+        
+        return pLayer;
+    };
 };
 
 
