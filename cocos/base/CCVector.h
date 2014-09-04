@@ -138,6 +138,11 @@ public:
 //    {
 //        return _data[index];
 //    }
+    T operator[](ssize_t index) const
+    {
+        CCASSERT( index >= 0 && index < size(), "index out of range in getObjectAtIndex()");
+        return _data[index];
+    }
     
     /** @brief Request a change in capacity 
      *  @param capacity Minimum capacity for the vector.
