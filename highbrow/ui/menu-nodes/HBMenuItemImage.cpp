@@ -12,6 +12,7 @@ USING_NS_CC;
 
 
 HBMenuItemImage::HBMenuItemImage() :
+_scale_setting(1.0f),
 _activateLong(false),
 _selectedLong(false),
 _schedule_default(0.2f),
@@ -71,9 +72,9 @@ void HBMenuItemImage::activate() {
     if ( this->isEnabled() ) {
         this->stopAllActions();
         if ( _action_activate == NULL ) {
-            this->runAction(Sequence::create(ScaleTo::create(0.0625f, 1.0f, 1.125f),
-                                             ScaleTo::create(0.0625f, 1.125f, 0.9f),
-                                             ScaleTo::create(0.0625f, 1.0f),
+            this->runAction(Sequence::create(ScaleTo::create(0.0625f, _scale_setting * 1.0f, _scale_setting * 1.125f),
+                                             ScaleTo::create(0.0625f, _scale_setting * 1.125f, _scale_setting * 0.9f),
+                                             ScaleTo::create(0.0625f, _scale_setting * 1.0f),
 //                                             DelayTime::create(0.05f),
                                              CallFunc::create( [=](void) { MenuItem::activate();} ),
                                              NULL));
@@ -92,7 +93,7 @@ void HBMenuItemImage::selected() {
     if ( this->isEnabled() ) {
         this->stopAllActions();
         if ( _action_selected == NULL ) {
-            this->runAction(EaseIn::create(ScaleTo::create(0.5f, 1.1f), 0.25f));
+            this->runAction(EaseIn::create(ScaleTo::create(0.5f, _scale_setting * 1.1f), 0.25f));
         }
         else {
             this->runAction(_action_selected->clone());
@@ -105,7 +106,7 @@ void HBMenuItemImage::unselected() {
     if ( this->isEnabled() ) {
         this->stopAllActions();
         if ( _action_unselected == NULL ) {
-            this->runAction(Spawn::create(EaseIn::create(ScaleTo::create(0.25f, 1.0f), 0.25f),
+            this->runAction(Spawn::create(EaseIn::create(ScaleTo::create(0.25f, _scale_setting * 1.0f), 0.25f),
                                           FadeTo::create(0.25f, 255.0f),
                                           NULL));
         }
@@ -116,6 +117,10 @@ void HBMenuItemImage::unselected() {
     }
 }
 
+void HBMenuItemImage::setScale(float scale) {
+    _scale_setting = scale;
+    Node::setScale(scale);
+}
 
 void HBMenuItemImage::setActivateAction(ActionInterval *action) {
     _action_activate = action;

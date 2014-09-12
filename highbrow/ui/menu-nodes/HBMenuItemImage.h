@@ -30,6 +30,10 @@ protected:
     virtual void unselected();
     
 public:
+    /*  크기 저장용  */
+    virtual void setScale(float scale);
+    float getScaleSetting() { return _scale_setting; };
+    
     void setActivateLong(bool value);
     void setSelectedLong(bool value);
     
@@ -42,6 +46,9 @@ protected:
     
 public:
 protected:
+    
+    float _scale_setting;
+    
     bool _activateLong;
     bool _selectedLong;
     
