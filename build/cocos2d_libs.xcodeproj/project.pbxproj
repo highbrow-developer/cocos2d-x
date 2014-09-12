@@ -953,6 +953,13 @@
 		B6B26344193884D60088FE25 /* CCAnimation3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6B26341193884D60088FE25 /* CCAnimation3D.cpp */; };
 		B6B26346193884D60088FE25 /* CCAnimation3D.h in Headers */ = {isa = PBXBuildFile; fileRef = B6B26342193884D60088FE25 /* CCAnimation3D.h */; };
 		C7A3320519AEF7B600F113E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1551A342158F2AB200E66CFE /* Foundation.framework */; };
+<<<<<<< HEAD
+=======
+		C7A3322D19AEF7FA00F113E7 /* HBLogin.mm in Sources */ = {isa = PBXBuildFile; fileRef = C7A3322A19AEF7E800F113E7 /* HBLogin.mm */; };
+		C7A3323019AF02C000F113E7 /* HighbrowLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7A3322C19AEF7E800F113E7 /* HighbrowLogin.framework */; };
+		DF5094D419A2F4F00014818E /* HBHttpClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF5094D219A2ECE30014818E /* HBHttpClient.cpp */; };
+		DFF0D14919B065400026B984 /* libsqlcipher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFF0D14819B065400026B984 /* libsqlcipher.a */; };
+>>>>>>> 96340b7e13d3a4d079b313859f1ddb407d7469bc
 		ED9C6A9518599AD8000A5232 /* CCNodeGrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED9C6A9218599AD8000A5232 /* CCNodeGrid.cpp */; };
 		ED9C6A9718599AD8000A5232 /* CCNodeGrid.h in Headers */ = {isa = PBXBuildFile; fileRef = ED9C6A9318599AD8000A5232 /* CCNodeGrid.h */; };
 /* End PBXBuildFile section */
@@ -2068,6 +2075,12 @@
 		DF5094CC19A2E39F0014818E /* HttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpClient.h; sourceTree = "<group>"; };
 		DF5094CD19A2E39F0014818E /* HttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequest.h; sourceTree = "<group>"; };
 		DF5094CE19A2E39F0014818E /* HttpResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpResponse.h; sourceTree = "<group>"; };
+<<<<<<< HEAD
+=======
+		DF5094D219A2ECE30014818E /* HBHttpClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HBHttpClient.cpp; sourceTree = "<group>"; };
+		DF5094D319A2ECE30014818E /* HBHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBHttpClient.h; sourceTree = "<group>"; };
+		DFF0D14819B065400026B984 /* libsqlcipher.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsqlcipher.a; path = ../highbrow/libs/libsqlcipher/libs/ios/libsqlcipher.a; sourceTree = "<group>"; };
+>>>>>>> 96340b7e13d3a4d079b313859f1ddb407d7469bc
 		ED9C6A9218599AD8000A5232 /* CCNodeGrid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = CCNodeGrid.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		ED9C6A9318599AD8000A5232 /* CCNodeGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNodeGrid.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -2078,6 +2091,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3B12A5B17E7F45C00026B4A /* libchipmunk iOS.a in Frameworks */,
+<<<<<<< HEAD
 				9CBDDF7519B71368000FA72E /* FacebookSDK.framework in Frameworks */,
 				9CBDDF7019B70EBC000FA72E /* GoogleOpenSource.framework in Frameworks */,
 				9CBDDF7219B70EBC000FA72E /* GooglePlus.framework in Frameworks */,
@@ -2085,12 +2099,26 @@
 				A07A4CAF1783777C0073F6A7 /* Foundation.framework in Frameworks */,
 				1A570364180BD1120088DEC7 /* libpng.a in Frameworks */,
 				1AAF5388180E35AC000584C8 /* libwebsockets.a in Frameworks */,
+=======
+				2583719419B00A0E005C20DE /* FacebookSDK.framework in Frameworks */,
+				2583719519B00A0E005C20DE /* GoogleOpenSource.framework in Frameworks */,
+				2583719719B00A0E005C20DE /* GooglePlus.framework in Frameworks */,
+				2583719619B00A0E005C20DE /* GooglePlayGames.framework in Frameworks */,
+				A07A4CAF1783777C0073F6A7 /* Foundation.framework in Frameworks */,
+				1A570364180BD1120088DEC7 /* libpng.a in Frameworks */,
+>>>>>>> 96340b7e13d3a4d079b313859f1ddb407d7469bc
 				1A570378180BD1B40088DEC7 /* libjpeg.a in Frameworks */,
 				1A5703A4180BD2350088DEC7 /* libtiff.a in Frameworks */,
 				1A5703BB180BD2800088DEC7 /* libwebp.a in Frameworks */,
 				1A57052E180BD3280088DEC7 /* libfreetype.a in Frameworks */,
+<<<<<<< HEAD
 				1AAF541D180E3B6A000584C8 /* libcurl.a in Frameworks */,
 				9C58AA9119B44DA700D2DB32 /* libsqlcipher.a in Frameworks */,
+=======
+				1AAF5388180E35AC000584C8 /* libwebsockets.a in Frameworks */,
+				1AAF541D180E3B6A000584C8 /* libcurl.a in Frameworks */,
+				DFF0D14919B065400026B984 /* libsqlcipher.a in Frameworks */,
+>>>>>>> 96340b7e13d3a4d079b313859f1ddb407d7469bc
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2199,11 +2227,15 @@
 		1551A341158F2AB200E66CFE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				9CBDDF7419B71368000FA72E /* FacebookSDK.framework */,
 				9CBDDF6D19B70EBC000FA72E /* GoogleOpenSource.framework */,
 				9CBDDF6E19B70EBC000FA72E /* GooglePlayGames.framework */,
 				9CBDDF6F19B70EBC000FA72E /* GooglePlus.framework */,
 				9C58AA9019B44DA700D2DB32 /* libsqlcipher.a */,
+=======
+				DFF0D14819B065400026B984 /* libsqlcipher.a */,
+>>>>>>> 96340b7e13d3a4d079b313859f1ddb407d7469bc
 				1551A342158F2AB200E66CFE /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -5557,7 +5589,11 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+<<<<<<< HEAD
 					"$(COCOSROOT)/highbrow/external/",
+=======
+					"/Users/koseungsu/Documents/highbros2d-x/highbrow/external",
+>>>>>>> 96340b7e13d3a4d079b313859f1ddb407d7469bc
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "../cocos/cocos2d-prefix.pch";
@@ -5592,7 +5628,11 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+<<<<<<< HEAD
 					"$(COCOSROOT)/highbrow/external/",
+=======
+					"/Users/koseungsu/Documents/highbros2d-x/highbrow/external",
+>>>>>>> 96340b7e13d3a4d079b313859f1ddb407d7469bc
 				);
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
