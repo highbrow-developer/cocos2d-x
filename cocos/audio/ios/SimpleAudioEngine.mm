@@ -289,5 +289,20 @@ void SimpleAudioEngine::stopAllEffects()
 {
     static_stopAllEffects();
 }
+    
+void SimpleAudioEngine::vibrate(long long time)
+{
+    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+}
+
+void SimpleAudioEngine::vibrateWithPattern(long long pattern[], int repeat)
+{
+    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+}
+
+void SimpleAudioEngine::cancelVibrate()
+{
+    
+}
 
 } // endof namespace CocosDenshion {
