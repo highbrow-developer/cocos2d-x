@@ -247,6 +247,18 @@ public class Cocos2dxHelper {
 	public static void stopAllEffects() {
 		Cocos2dxHelper.sCocos2dSound.stopAllEffects();
 	}
+    
+    public static void vibrate(long time) {
+        Cocos2dxHelper.sCocos2dSound.vibrate(time);
+    }
+    
+	public static void vibrateWithPattern(long pattern[], int repeat) {
+		Cocos2dxHelper.sCocos2dSound.vibrateWithPattern(pattern, repeat);
+	}
+    
+	public static void cancelVibrate() {
+		Cocos2dxHelper.sCocos2dSound.cancelVibrate();
+	}
 
 	public static void end() {
 		Cocos2dxHelper.sCocos2dMusic.end();
