@@ -25,11 +25,12 @@ public:
     static HBMenuItemImage* create(const std::string& normalImage, const std::string& selectedImage, const std::string& disabledImage, const ccMenuCallback& callback);
     
 protected:
+    
+public:
     virtual void activate();
     virtual void selected();
     virtual void unselected();
     
-public:
     /*  크기 저장용  */
     virtual void setScale(float scale);
     float getScaleSetting() { return _scale_setting; };
