@@ -188,11 +188,6 @@
 		1A570357180BD0B00088DEC7 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A570351180BD0B00088DEC7 /* ioapi.h */; };
 		1A570359180BD0B00088DEC7 /* unzip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A570352180BD0B00088DEC7 /* unzip.cpp */; };
 		1A57035B180BD0B00088DEC7 /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A570353180BD0B00088DEC7 /* unzip.h */; };
-		1A570364180BD1120088DEC7 /* libpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A570363180BD1120088DEC7 /* libpng.a */; };
-		1A570378180BD1B40088DEC7 /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A570377180BD1B40088DEC7 /* libjpeg.a */; };
-		1A5703A4180BD2350088DEC7 /* libtiff.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A5703A3180BD2350088DEC7 /* libtiff.a */; };
-		1A5703BB180BD2800088DEC7 /* libwebp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A5703BA180BD2800088DEC7 /* libwebp.a */; };
-		1A57052E180BD3280088DEC7 /* libfreetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A57052D180BD3280088DEC7 /* libfreetype.a */; };
 		1A8C598C180E930E00EF57C3 /* CCActionFrame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A8C5948180E930E00EF57C3 /* CCActionFrame.cpp */; };
 		1A8C598E180E930E00EF57C3 /* CCActionFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A8C5949180E930E00EF57C3 /* CCActionFrame.h */; };
 		1A8C5990180E930E00EF57C3 /* CCActionFrameEasing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A8C594A180E930E00EF57C3 /* CCActionFrameEasing.cpp */; };
@@ -355,8 +350,6 @@
 		1AAF5375180E3374000584C8 /* SocketIO.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AAF5367180E3374000584C8 /* SocketIO.h */; };
 		1AAF5377180E3374000584C8 /* WebSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF5368180E3374000584C8 /* WebSocket.cpp */; };
 		1AAF5379180E3374000584C8 /* WebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AAF5369180E3374000584C8 /* WebSocket.h */; };
-		1AAF5388180E35AC000584C8 /* libwebsockets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AAF5387180E35AC000584C8 /* libwebsockets.a */; };
-		1AAF541D180E3B6A000584C8 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AAF541C180E3B6A000584C8 /* libcurl.a */; };
 		1AAF5850180E40B9000584C8 /* LocalStorage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF584C180E40B9000584C8 /* LocalStorage.cpp */; };
 		1AAF5852180E40B9000584C8 /* LocalStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AAF584D180E40B9000584C8 /* LocalStorage.h */; };
 		1AAF5854180E40B9000584C8 /* LocalStorageAndroid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF584E180E40B9000584C8 /* LocalStorageAndroid.cpp */; };
@@ -460,11 +453,14 @@
 		1AD71EF5180E27CF00808F54 /* CCPhysicsSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AD71EEE180E27CF00808F54 /* CCPhysicsSprite.cpp */; };
 		1AD71EF7180E27CF00808F54 /* CCPhysicsSprite.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AD71EEF180E27CF00808F54 /* CCPhysicsSprite.h */; };
 		2514FF2219D2C93800270065 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1551A342158F2AB200E66CFE /* Foundation.framework */; };
-		2514FF2919D2C96200270065 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2514FF2319D2C96200270065 /* FacebookSDK.framework */; };
-		2514FF2A19D2C96200270065 /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2514FF2419D2C96200270065 /* GoogleOpenSource.framework */; };
-		2514FF2B19D2C96200270065 /* GooglePlayGames.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2514FF2619D2C96200270065 /* GooglePlayGames.framework */; };
-		2514FF2C19D2C96200270065 /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2514FF2819D2C96200270065 /* GooglePlus.framework */; };
 		2514FF2F19D2C98000270065 /* HighbrowLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2514FF2E19D2C98000270065 /* HighbrowLogin.framework */; };
+		2514FF3319D2D34800270065 /* libpng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A570363180BD1120088DEC7 /* libpng.a */; };
+		2514FF3419D2D35900270065 /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A570377180BD1B40088DEC7 /* libjpeg.a */; };
+		2514FF3519D2D36600270065 /* libtiff.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A5703A3180BD2350088DEC7 /* libtiff.a */; };
+		2514FF3619D2D36E00270065 /* libwebp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A5703BA180BD2800088DEC7 /* libwebp.a */; };
+		2514FF3719D2D38000270065 /* libfreetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A57052D180BD3280088DEC7 /* libfreetype.a */; };
+		2514FF3819D2D38A00270065 /* libwebsockets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AAF5387180E35AC000584C8 /* libwebsockets.a */; };
+		2514FF3B19D2D79800270065 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AAF541C180E3B6A000584C8 /* libcurl.a */; };
 		2550E3C019B053220084D9C9 /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2550E3AF19B053220084D9C9 /* AFNetworkActivityIndicatorManager.h */; };
 		2550E3C119B053220084D9C9 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2550E3B019B053220084D9C9 /* AFNetworkActivityIndicatorManager.m */; };
 		2550E3C219B053220084D9C9 /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 2550E3B119B053220084D9C9 /* UIActivityIndicatorView+AFNetworking.h */; };
@@ -1220,15 +1216,10 @@
 		1A570351180BD0B00088DEC7 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
 		1A570352180BD0B00088DEC7 /* unzip.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = unzip.cpp; sourceTree = "<group>"; };
 		1A570353180BD0B00088DEC7 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
-		1A570360180BD1080088DEC7 /* libpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpng.a; sourceTree = "<group>"; };
 		1A570363180BD1120088DEC7 /* libpng.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpng.a; sourceTree = "<group>"; };
 		1A570377180BD1B40088DEC7 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjpeg.a; sourceTree = "<group>"; };
-		1A57037A180BD1C90088DEC7 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjpeg.a; sourceTree = "<group>"; };
-		1A5703A0180BD22C0088DEC7 /* libtiff.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtiff.a; sourceTree = "<group>"; };
 		1A5703A3180BD2350088DEC7 /* libtiff.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libtiff.a; sourceTree = "<group>"; };
-		1A5703B7180BD2780088DEC7 /* libwebp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwebp.a; sourceTree = "<group>"; };
 		1A5703BA180BD2800088DEC7 /* libwebp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwebp.a; sourceTree = "<group>"; };
-		1A57052A180BD31F0088DEC7 /* libfreetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfreetype.a; sourceTree = "<group>"; };
 		1A57052D180BD3280088DEC7 /* libfreetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfreetype.a; sourceTree = "<group>"; };
 		1A57FFF7180BC5160088DEC7 /* CHANGELOG */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 0; name = CHANGELOG; path = ../CHANGELOG; sourceTree = "<group>"; };
 		1A8C5948180E930E00EF57C3 /* CCActionFrame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCActionFrame.cpp; sourceTree = "<group>"; };
@@ -1302,7 +1293,6 @@
 		1AAF5367180E3374000584C8 /* SocketIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketIO.h; sourceTree = "<group>"; };
 		1AAF5368180E3374000584C8 /* WebSocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WebSocket.cpp; sourceTree = "<group>"; };
 		1AAF5369180E3374000584C8 /* WebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSocket.h; sourceTree = "<group>"; };
-		1AAF5384180E35A3000584C8 /* libwebsockets.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwebsockets.a; sourceTree = "<group>"; };
 		1AAF5387180E35AC000584C8 /* libwebsockets.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libwebsockets.a; sourceTree = "<group>"; };
 		1AAF541C180E3B6A000584C8 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcurl.a; sourceTree = "<group>"; };
 		1AAF584B180E40B9000584C8 /* Android.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Android.mk; sourceTree = "<group>"; };
@@ -1416,6 +1406,7 @@
 		2514FF2819D2C96200270065 /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlus.framework; sourceTree = "<group>"; };
 		2514FF2D19D2C98000270065 /* HighbrowLogin.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HighbrowLogin.bundle; sourceTree = "<group>"; };
 		2514FF2E19D2C98000270065 /* HighbrowLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HighbrowLogin.framework; sourceTree = "<group>"; };
+		2514FF3919D2D71A00270065 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		2550E3AF19B053220084D9C9 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
 		2550E3B019B053220084D9C9 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
 		2550E3B119B053220084D9C9 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
@@ -2105,18 +2096,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3B12A5B17E7F45C00026B4A /* libchipmunk iOS.a in Frameworks */,
-				2514FF2A19D2C96200270065 /* GoogleOpenSource.framework in Frameworks */,
-				2514FF2919D2C96200270065 /* FacebookSDK.framework in Frameworks */,
 				A07A4CAF1783777C0073F6A7 /* Foundation.framework in Frameworks */,
-				1A570364180BD1120088DEC7 /* libpng.a in Frameworks */,
-				2514FF2C19D2C96200270065 /* GooglePlus.framework in Frameworks */,
-				1A570378180BD1B40088DEC7 /* libjpeg.a in Frameworks */,
-				1A5703A4180BD2350088DEC7 /* libtiff.a in Frameworks */,
-				1A5703BB180BD2800088DEC7 /* libwebp.a in Frameworks */,
-				1A57052E180BD3280088DEC7 /* libfreetype.a in Frameworks */,
-				2514FF2B19D2C96200270065 /* GooglePlayGames.framework in Frameworks */,
-				1AAF5388180E35AC000584C8 /* libwebsockets.a in Frameworks */,
-				1AAF541D180E3B6A000584C8 /* libcurl.a in Frameworks */,
+				2514FF3B19D2D79800270065 /* libcurl.a in Frameworks */,
+				2514FF3719D2D38000270065 /* libfreetype.a in Frameworks */,
+				2514FF3619D2D36E00270065 /* libwebp.a in Frameworks */,
+				2514FF3819D2D38A00270065 /* libwebsockets.a in Frameworks */,
+				2514FF3519D2D36600270065 /* libtiff.a in Frameworks */,
+				2514FF3419D2D35900270065 /* libjpeg.a in Frameworks */,
+				2514FF3319D2D34800270065 /* libpng.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2225,6 +2212,7 @@
 		1551A341158F2AB200E66CFE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2514FF3919D2D71A00270065 /* NetworkExtension.framework */,
 				1551A342158F2AB200E66CFE /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -2678,18 +2666,8 @@
 			isa = PBXGroup;
 			children = (
 				1A570362180BD1120088DEC7 /* ios */,
-				1A57035F180BD1080088DEC7 /* mac */,
 			);
 			name = prebuilt;
-			sourceTree = "<group>";
-		};
-		1A57035F180BD1080088DEC7 /* mac */ = {
-			isa = PBXGroup;
-			children = (
-				1A570360180BD1080088DEC7 /* libpng.a */,
-			);
-			name = mac;
-			path = ../external/png/prebuilt/mac;
 			sourceTree = "<group>";
 		};
 		1A570362180BD1120088DEC7 /* ios */ = {
@@ -2713,7 +2691,6 @@
 			isa = PBXGroup;
 			children = (
 				1A570376180BD1B40088DEC7 /* ios */,
-				1A570379180BD1C90088DEC7 /* mac */,
 			);
 			name = prebuilt;
 			sourceTree = "<group>";
@@ -2725,15 +2702,6 @@
 			);
 			name = ios;
 			path = ../external/jpeg/prebuilt/ios;
-			sourceTree = "<group>";
-		};
-		1A570379180BD1C90088DEC7 /* mac */ = {
-			isa = PBXGroup;
-			children = (
-				1A57037A180BD1C90088DEC7 /* libjpeg.a */,
-			);
-			name = mac;
-			path = ../external/jpeg/prebuilt/mac;
 			sourceTree = "<group>";
 		};
 		1A57038A180BD1EF0088DEC7 /* tiff */ = {
@@ -2748,18 +2716,8 @@
 			isa = PBXGroup;
 			children = (
 				1A5703A2180BD2350088DEC7 /* ios */,
-				1A57039F180BD22C0088DEC7 /* mac */,
 			);
 			name = prebuilt;
-			sourceTree = "<group>";
-		};
-		1A57039F180BD22C0088DEC7 /* mac */ = {
-			isa = PBXGroup;
-			children = (
-				1A5703A0180BD22C0088DEC7 /* libtiff.a */,
-			);
-			name = mac;
-			path = ../external/tiff/prebuilt/mac;
 			sourceTree = "<group>";
 		};
 		1A5703A2180BD2350088DEC7 /* ios */ = {
@@ -2783,18 +2741,8 @@
 			isa = PBXGroup;
 			children = (
 				1A5703B9180BD2800088DEC7 /* ios */,
-				1A5703B6180BD2780088DEC7 /* mac */,
 			);
 			name = prebuilt;
-			sourceTree = "<group>";
-		};
-		1A5703B6180BD2780088DEC7 /* mac */ = {
-			isa = PBXGroup;
-			children = (
-				1A5703B7180BD2780088DEC7 /* libwebp.a */,
-			);
-			name = mac;
-			path = ../external/webp/prebuilt/mac;
 			sourceTree = "<group>";
 		};
 		1A5703B9180BD2800088DEC7 /* ios */ = {
@@ -2818,18 +2766,8 @@
 			isa = PBXGroup;
 			children = (
 				1A57052C180BD3280088DEC7 /* ios */,
-				1A570529180BD31F0088DEC7 /* mac */,
 			);
 			name = prebuilt;
-			sourceTree = "<group>";
-		};
-		1A570529180BD31F0088DEC7 /* mac */ = {
-			isa = PBXGroup;
-			children = (
-				1A57052A180BD31F0088DEC7 /* libfreetype.a */,
-			);
-			name = mac;
-			path = ../external/freetype2/prebuilt/mac;
 			sourceTree = "<group>";
 		};
 		1A57052C180BD3280088DEC7 /* ios */ = {
@@ -2959,18 +2897,8 @@
 			isa = PBXGroup;
 			children = (
 				1AAF5386180E35AC000584C8 /* ios */,
-				1AAF5383180E35A3000584C8 /* mac */,
 			);
 			name = prebuilt;
-			sourceTree = "<group>";
-		};
-		1AAF5383180E35A3000584C8 /* mac */ = {
-			isa = PBXGroup;
-			children = (
-				1AAF5384180E35A3000584C8 /* libwebsockets.a */,
-			);
-			name = mac;
-			path = ../external/websockets/prebuilt/mac;
 			sourceTree = "<group>";
 		};
 		1AAF5386180E35AC000584C8 /* ios */ = {
@@ -5601,6 +5529,13 @@
 					"\"$(SRCROOT)/../external/websockets/prebuilt/ios\"",
 					"\"$(SRCROOT)/../external/curl/prebuilt/ios\"",
 					"\"$(SRCROOT)/../highbrow/libs/libsqlcipher/libs/ios\"",
+					/Volumes/Data/_Workspace/workspace_git/DragonPuzzle/cocos2d/external/curl/prebuilt/ios,
+					/Volumes/Data/_Workspace/workspace_git/DragonPuzzle/cocos2d/external/png/prebuilt/ios,
+					/Volumes/Data/_Workspace/workspace_git/DragonPuzzle/cocos2d/external/jpeg/prebuilt/ios,
+					/Volumes/Data/_Workspace/workspace_git/DragonPuzzle/cocos2d/external/tiff/prebuilt/ios,
+					/Volumes/Data/_Workspace/workspace_git/DragonPuzzle/cocos2d/external/webp/prebuilt/ios,
+					/Volumes/Data/_Workspace/workspace_git/DragonPuzzle/cocos2d/external/freetype2/prebuilt/ios,
+					/Volumes/Data/_Workspace/workspace_git/DragonPuzzle/cocos2d/external/websockets/prebuilt/ios,
 				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -5638,6 +5573,13 @@
 					"\"$(SRCROOT)/../external/websockets/prebuilt/ios\"",
 					"\"$(SRCROOT)/../external/curl/prebuilt/ios\"",
 					"\"$(SRCROOT)/../highbrow/libs/libsqlcipher/libs/ios\"",
+					/Volumes/Data/_Workspace/workspace_git/DragonPuzzle/cocos2d/external/curl/prebuilt/ios,
+					/Volumes/Data/_Workspace/workspace_git/DragonPuzzle/cocos2d/external/png/prebuilt/ios,
+					/Volumes/Data/_Workspace/workspace_git/DragonPuzzle/cocos2d/external/jpeg/prebuilt/ios,
+					/Volumes/Data/_Workspace/workspace_git/DragonPuzzle/cocos2d/external/tiff/prebuilt/ios,
+					/Volumes/Data/_Workspace/workspace_git/DragonPuzzle/cocos2d/external/webp/prebuilt/ios,
+					/Volumes/Data/_Workspace/workspace_git/DragonPuzzle/cocos2d/external/freetype2/prebuilt/ios,
+					/Volumes/Data/_Workspace/workspace_git/DragonPuzzle/cocos2d/external/websockets/prebuilt/ios,
 				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -5821,6 +5763,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../highbrow/login",
 					/Volumes/Data/_Workspace/workspace_git/DragonPuzzle/cocos2d/highbrow/login,
+					/Volumes/Data/_Workspace/workspace_git/DragonPuzzle/cocos2d/highbrow/external,
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -5861,6 +5804,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../highbrow/login",
 					/Volumes/Data/_Workspace/workspace_git/DragonPuzzle/cocos2d/highbrow/login,
+					/Volumes/Data/_Workspace/workspace_git/DragonPuzzle/cocos2d/highbrow/external,
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
