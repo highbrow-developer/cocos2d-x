@@ -242,6 +242,21 @@ public class Cocos2dxSound {
 		// remove records
 		this.mPathStreamIDsMap.clear();
 	}
+    
+    public void vibrate(long time) {
+		Vibrator v = (Vibrator) mContext.getSystemService(Context.VIBRATOR_SERVICE);
+		v.vibrate(time);
+	}
+	
+	public void vibrateWithPattern(long[] pattern, int repeat) {
+		Vibrator v = (Vibrator) mContext.getSystemService(Context.VIBRATOR_SERVICE);
+		v.vibrate(pattern, repeat);
+	}
+	
+	public void cancelVibrate()	{
+		Vibrator v = (Vibrator) mContext.getSystemService(Context.VIBRATOR_SERVICE);
+		v.cancel();
+	}
 
 	public float getEffectsVolume() {
 		return (this.mLeftVolume + this.mRightVolume) / 2;

@@ -42,8 +42,7 @@ protected:
 //----------------------------------------
 //                SizeTo
 //----------------------------------------
-class HBSizeTo : public ActionInterval
-{
+class HBSizeTo : public ActionInterval {
 public:
     HBSizeTo();
     virtual ~HBSizeTo() { };

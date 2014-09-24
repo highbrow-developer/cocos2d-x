@@ -71,6 +71,8 @@ public:
     HBJson* getObject(const char *key) { return _o.at(key); }
     HBJson* getArray(int index) { return _a[index]; }
     
+    int size() { return _a.size(); };
+    
     
 private:
     union number {

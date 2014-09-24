@@ -44,7 +44,7 @@ NS_CC_BEGIN
 #define anc_leftTop                     Point(anc_left.x, anc_top.y)
 #define anc_leftBot                     Point(anc_left.x, anc_bottom.y)
 
-#define anc_right                       Point(0.0f, anc_center.y)
+#define anc_right                       Point(1.0f, anc_center.y)
 #define anc_rightTop                    Point(anc_right.x, anc_top.y)
 #define anc_rightBot                    Point(anc_right.x, anc_bottom.y)
 
@@ -95,16 +95,16 @@ public:
             director->setContentScaleFactor(resource_320.size.height / resolution.height);
         }
         
-        resolution = Size(size_frame.width * (resolution.height / size_frame.height), resolution.height);//692.0f
+        resolution = Size(size_frame.width * (resolution.height / size_frame.height), resolution.height);//Size(director->getContentScaleFactor() * size_frame.width, resolution.height);//692.0f
         glview->setDesignResolutionSize(resolution.width, resolution.height, ResolutionPolicy::NO_BORDER);
         
         director->setOpenGLView(glview);
     }
     
     static void setSincBackground(Node *node) {
-//        node->setScaleX(display_size.width / node->getContentSize().width);
-//        node->setScaleY(display_size.height / node->getContentSize().height);
-        node->setScale(display_size.width / node->getContentSize().width);
+        node->setScaleX(display_size.width / node->getContentSize().width);
+        node->setScaleY(display_size.height / node->getContentSize().height);
+//        node->setScale(display_size.width / node->getContentSize().width);
     }
     
     /*  화면 터치 잠금  */

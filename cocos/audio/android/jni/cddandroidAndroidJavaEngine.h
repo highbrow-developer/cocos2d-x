@@ -55,6 +55,9 @@ namespace CocosDenshion {
             void stopAllEffects();
             void preloadEffect(const char* pszFilePath);
             void unloadEffect(const char* pszFilePath);
+            void vibrate(long long nTime);
+            void vibrateWithPattern(long long pattern[], int repeat);
+            void cancelVibrate();
 
         private :
             static bool getJNIStaticMethodInfo(cocos2d::JniMethodInfo &methodinfo,
