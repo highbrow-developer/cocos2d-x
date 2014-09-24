@@ -140,6 +140,10 @@ Sprite* Sprite::createWithSpriteFrameName(const std::string& spriteFrameName)
     if ( frame == NULL ) {
         SpriteFrameCache::getInstance()->addSpriteFramesWithFile("common.img_plist");
         frame = SpriteFrameCache::getInstance()->getSpriteFrameByName("common/no_image.png");
+        
+        if ( spriteFrameName.compare("common/no_image.png") == 0 ) {
+            return nullptr;
+        }
     }
     
 #if COCOS2D_DEBUG > 0

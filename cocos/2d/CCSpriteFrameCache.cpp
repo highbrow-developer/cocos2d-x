@@ -401,7 +401,7 @@ SpriteFrame* SpriteFrameCache::getSpriteFrameByName(const std::string& name)
         if ( pos != -1 ) {
             strName = strName.substr(0, pos).append(".img_plist");
             SpriteFrameCache::getInstance()->addSpriteFramesWithFile(strName.c_str());
-            frame = SpriteFrameCache::getInstance()->getSpriteFrameByName(name);
+            frame = _spriteFrames.at(name);
         }
     }
     
