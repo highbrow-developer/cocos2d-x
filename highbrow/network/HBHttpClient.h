@@ -24,8 +24,8 @@
  THE SOFTWARE.
  ****************************************************************************/
 
-#ifndef __CCHTTPREQUEST_H__
-#define __CCHTTPREQUEST_H__
+#ifndef __CCHBHTTPREQUEST_H__
+#define __CCHBHTTPREQUEST_H__
 
 #include "HBHttpRequest.h"
 #include "HBHttpResponse.h"

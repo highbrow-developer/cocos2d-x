@@ -66,6 +66,7 @@ Map<std::string, HBJson*> HBJson::parse(std::vector<char> *data)
     //error
     HBJson *pError = HBJson::create();
     pError->addData(false);
+    listJson.insert("error", pError);
     if ( data == nullptr || document.HasParseError() == true )
     {
         pError->addData(true);

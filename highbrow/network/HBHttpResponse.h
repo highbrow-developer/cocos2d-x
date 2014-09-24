@@ -23,8 +23,8 @@
  THE SOFTWARE.
  ****************************************************************************/
 
-#ifndef __HTTP_RESPONSE__
-#define __HTTP_RESPONSE__
+#ifndef __HBHTTP_RESPONSE__
+#define __HBHTTP_RESPONSE__
 
 #include "HBHttpRequest.h"
 

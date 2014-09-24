@@ -39,7 +39,7 @@
     NSLog(@"%@", data);
     
     NSError *error;
-    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:data options:nil error:&error];
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:data options:0 error:&error];
 
     if (! jsonData) {
         NSLog(@"JSON Write Error: %@", error.localizedDescription);

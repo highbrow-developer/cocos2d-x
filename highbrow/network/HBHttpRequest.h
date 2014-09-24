@@ -23,8 +23,8 @@
  THE SOFTWARE.
  ****************************************************************************/
 
-#ifndef __HTTP_REQUEST_H__
-#define __HTTP_REQUEST_H__
+#ifndef __HBHTTP_REQUEST_H__
+#define __HBHTTP_REQUEST_H__
 
 #include <string>
 #include <vector>
