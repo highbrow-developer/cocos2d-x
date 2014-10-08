@@ -18,6 +18,7 @@ class CC_DLL HBJson : public Ref {
 public:
     static HBJson* create();
     
+    static Map<std::string, HBJson*> parse(const char *data);
     static Map<std::string, HBJson*> parse(std::vector<char> *data);
     static HBJson* parseValue(rapidjson::GenericDocument<rapidjson::UTF8<char>, rapidjson::MemoryPoolAllocator<rapidjson::CrtAllocator>>::ConstValueIterator iterator);
     

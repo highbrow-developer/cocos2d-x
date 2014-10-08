@@ -46,23 +46,14 @@ HBJson* HBJson::create()
 }
 
 #pragma mark - parse
-Map<std::string, HBJson*> HBJson::parse(std::vector<char> *data)
+Map<std::string, HBJson*> HBJson::parse(const char *data)
 {
     rapidjson::Document document;
     Map<std::string, HBJson*> listJson;
     
-    if ( data != nullptr )
-    {
-        //add null
-        data->push_back('\0');
-        
-        //to char
-        char *json = reinterpret_cast<char*>(data->data());
-        
-        //to rapidjson
-        document.Parse<0>(json);
-    }
-   
+    //to rapidjson
+    document.Parse<0>(data);
+    
     //error
     HBJson *pError = HBJson::create();
     pError->addData(false);
@@ -83,6 +74,17 @@ Map<std::string, HBJson*> HBJson::parse(std::vector<char> *data)
     return listJson;
 }
 
+Map<std::string, HBJson*> HBJson::parse(std::vector<char> *data)
+{
+    //add null
+    data->push_back('\0');
+    
+    //to char
+    char *json = reinterpret_cast<char*>(data->data());
+    
+    return parse(json);
+}
+
 HBJson* HBJson::parseValue(GenericDocument<UTF8<char>, MemoryPoolAllocator<CrtAllocator>>::ConstValueIterator iterator)
 {
     HBJson *data_result = HBJson::create();
@@ -90,7 +92,8 @@ HBJson* HBJson::parseValue(GenericDocument<UTF8<char>, MemoryPoolAllocator<CrtAl
     switch ( iterator->GetType() )
     {
         case rapidjson::kNullType:
-            CC_SAFE_RELEASE_NULL(data_result);
+//            CC_SAFE_RELEASE_NULL(data_result);
+//            iterator->get
             break;
             
         case kFalseType:
