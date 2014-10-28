@@ -13,7 +13,8 @@ using namespace rapidjson;
 
 HBJson::HBJson() :
 _s(""),
-_t(kNullType)
+_t(kNullType),
+_a(0)
 {
     //initializes the number
     _n.i64 = 0;
@@ -58,6 +59,7 @@ Map<std::string, HBJson*> HBJson::parse(std::vector<char> *data)
         
         //to char
         char *json = reinterpret_cast<char*>(data->data());
+        log("DATA : %s", json);
         
         //to rapidjson
         document.Parse<0>(json);

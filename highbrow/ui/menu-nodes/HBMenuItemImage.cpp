@@ -129,4 +129,5 @@ void HBMenuItemImage::setSelectedAction(ActionInterval *action) {
 
 void HBMenuItemImage::setUnselectedAction(ActionInterval *action) {
     _action_unselected = action;
+    _action_unselected->retain();
 }

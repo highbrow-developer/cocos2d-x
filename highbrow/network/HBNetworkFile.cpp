@@ -231,11 +231,11 @@ void HBNetworkFile::networkFileThread()
         
         std::string strFileName = s_strFileSaveFile.substr( s_strFileSaveFile.find_last_of("/\\") + 1, s_strFileSaveFile.length() - s_strFileSaveFile.find_last_of("/\\"));
         std::string strFile = s_strFileSavePath + strFileName;
-        if ( access(strFile.c_str(), F_OK) == 0 )
-        {
-            downloadEnd();
-            continue;
-        }
+//        if ( access(strFile.c_str(), F_OK) == 0 )
+//        {
+//            downloadEnd();
+//            continue;
+//        }
         
         // 다운로드 시작
         if ( nullptr != s_pHBNetworkFile )

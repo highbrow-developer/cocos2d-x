@@ -182,7 +182,15 @@ physics/chipmunk/CCPhysicsWorldInfo_chipmunk.cpp \
 ../external/unzip/ioapi.cpp \
 ../external/unzip/unzip.cpp \
 ../external/edtaa3func/edtaa3func.cpp \
-../external/xxhash/xxhash.c
+../external/xxhash/xxhash.c \
+../highbrow/network/HBHttpClient.cpp \
+../highbrow/network/HBJson.cpp \
+../highbrow/network/HBNetwork.cpp \
+../highbrow/network/HBNetworkFile.cpp \
+../highbrow/network/android/HBNetworkFileAndroid.cpp \
+../highbrow/ui/actions/HBAction.cpp \
+../highbrow/ui/HBMacros.cpp \
+../highbrow/ui/menu-nodes/HBMenuItemImage.cpp
 
 
 LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH) \
@@ -192,7 +200,9 @@ LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH) \
                     $(LOCAL_PATH)/../external/unzip \
                     $(LOCAL_PATH)/../external/chipmunk/include/chipmunk \
                     $(LOCAL_PATH)/../external/xxhash \
-                    $(LOCAL_PATH)/../external/nslog
+                    $(LOCAL_PATH)/../external/nslog \
+		    $(LOCAL_PATH)/../external/curl/include/android \
+		    $(LOCAL_PATH)/../highbrow/network
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH) \
                     $(LOCAL_PATH)/. \
@@ -204,8 +214,9 @@ LOCAL_C_INCLUDES := $(LOCAL_PATH) \
                     $(LOCAL_PATH)/../external/edtaa3func \
                     $(LOCAL_PATH)/../external/xxhash \
                     $(LOCAL_PATH)/../external/ConvertUTF \
-                    $(LOCAL_PATH)/../external/nslog
-
+                    $(LOCAL_PATH)/../external/nslog \
+		    $(LOCAL_PATH)/../external/curl/include/android \
+		    $(LOCAL_PATH)/../highbrow/network 
 
 LOCAL_LDLIBS := -lGLESv2 \
                 -llog \
@@ -220,6 +231,7 @@ LOCAL_EXPORT_LDLIBS := -lGLESv2 \
 LOCAL_WHOLE_STATIC_LIBRARIES := cocos_freetype2_static
 LOCAL_WHOLE_STATIC_LIBRARIES += chipmunk_static
 LOCAL_WHOLE_STATIC_LIBRARIES += cocos2dxandroid_static
+LOCAL_WHOLE_STATIC_LIBRARIES += cocos_curl_static
 
 # define the macro to compile through support/zip_support/ioapi.c
 LOCAL_CFLAGS   :=  -DUSE_FILE32API
@@ -232,3 +244,4 @@ include $(BUILD_STATIC_LIBRARY)
 $(call import-module,freetype2/prebuilt/android)
 $(call import-module,chipmunk)
 $(call import-module,platform/android)
+$(call import-module,curl/prebuilt/android)
