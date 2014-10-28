@@ -13,7 +13,7 @@
 
 /*  json  */
 //#include "highbrow/libs/librapidjson/document.h"
-#include "external/json/document.h"
+#include "json/document.h"
 
 
 #define PARSE_HBDATA(data)                          HBNetwork::parseDocument(data)

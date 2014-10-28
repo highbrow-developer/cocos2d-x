@@ -10,7 +10,7 @@
 #define __cocos2d_libs__HBJson__
 
 #include "cocos2d.h"
-#include "external/json/document.h"
+#include "json/document.h"
 
 NS_CC_BEGIN
 
@@ -35,6 +35,7 @@ protected:
     
 public:
     /** check */
+    bool isNull() { if ( _t == rapidjson::kNullType) return true; return false; }
     bool isBool() { if ( _t == rapidjson::kFalseType || _t == rapidjson::kTrueType ) return true; return false; }
     bool isNumber() { if ( _t == rapidjson::kNumberType ) return true; return false; }
     bool isString() { if ( _t == rapidjson::kStringType ) return true; return false;   }
@@ -69,7 +70,7 @@ public:
     
     /** get object, array */
     HBJson* getObject(const char *key) { return _o.at(key); }
-    HBJson* getArray(int index) { return _a[index]; }
+    HBJson* getArray(int index) { return _a.at(index); }
     
     int size() { return _a.size(); };
     
