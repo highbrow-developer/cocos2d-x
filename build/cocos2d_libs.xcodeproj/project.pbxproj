@@ -770,10 +770,6 @@
 		9CA4527819A6D94200E93F55 /* HBAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CA4527319A6D94200E93F55 /* HBAction.h */; };
 		9CA4527919A6D94200E93F55 /* HBMenuItemImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9CA4527519A6D94200E93F55 /* HBMenuItemImage.cpp */; };
 		9CA4527A19A6D94200E93F55 /* HBMenuItemImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CA4527619A6D94200E93F55 /* HBMenuItemImage.h */; };
-		9CBDDF7019B70EBC000FA72E /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBDDF6D19B70EBC000FA72E /* GoogleOpenSource.framework */; };
-		9CBDDF7119B70EBC000FA72E /* GooglePlayGames.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBDDF6E19B70EBC000FA72E /* GooglePlayGames.framework */; };
-		9CBDDF7219B70EBC000FA72E /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBDDF6F19B70EBC000FA72E /* GooglePlus.framework */; };
-		9CBDDF7519B71368000FA72E /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBDDF7419B71368000FA72E /* FacebookSDK.framework */; };
 		9CBDDFCE19B71A6B000FA72E /* HighbrowLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBDDFB519B71494000FA72E /* HighbrowLogin.framework */; };
 		9CBDDFCF19B71EAC000FA72E /* HBLogin.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9CBDDFB319B71494000FA72E /* HBLogin.mm */; };
 		9CBDDFD119B720DD000FA72E /* HBNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CBDDFC119B71494000FA72E /* HBNetwork.h */; };
@@ -887,6 +883,7 @@
 		DFB6F14019FA2C1C006D7E4E /* CCTransitionPageTurn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DFB6F0F019FA2A85006D7E4E /* CCTransitionPageTurn.cpp */; };
 		DFB6F14119FA2C1C006D7E4E /* CCTransitionProgress.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DFB6F0F219FA2A85006D7E4E /* CCTransitionProgress.cpp */; };
 		DFB6F14219FA2C1C006D7E4E /* CCTweenFunction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DFB6F0F419FA2A85006D7E4E /* CCTweenFunction.cpp */; };
+		DFB6F1911A007DA1006D7E4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1551A342158F2AB200E66CFE /* Foundation.framework */; };
 		DFF21AF819EF5251009440D8 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AAF541C180E3B6A000584C8 /* libcurl.a */; };
 /* End PBXBuildFile section */
 
@@ -2001,6 +1998,7 @@
 		DFB6F0F319FA2A85006D7E4E /* CCTransitionProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTransitionProgress.h; sourceTree = "<group>"; };
 		DFB6F0F419FA2A85006D7E4E /* CCTweenFunction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCTweenFunction.cpp; sourceTree = "<group>"; };
 		DFB6F0F519FA2A85006D7E4E /* CCTweenFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTweenFunction.h; sourceTree = "<group>"; };
+		DFB6F1871A007370006D7E4E /* libsqlcipher.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsqlcipher.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2009,17 +2007,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3B12A5B17E7F45C00026B4A /* libchipmunk iOS.a in Frameworks */,
-				9CBDDF7519B71368000FA72E /* FacebookSDK.framework in Frameworks */,
-				9CBDDF7019B70EBC000FA72E /* GoogleOpenSource.framework in Frameworks */,
-				9CBDDF7219B70EBC000FA72E /* GooglePlus.framework in Frameworks */,
-				9CBDDF7119B70EBC000FA72E /* GooglePlayGames.framework in Frameworks */,
-				9C58AA9119B44DA700D2DB32 /* libsqlcipher.a in Frameworks */,
 				DFB43C5919DBDD500066310F /* libpng.a in Frameworks */,
 				1A570378180BD1B40088DEC7 /* libjpeg.a in Frameworks */,
 				1A5703A4180BD2350088DEC7 /* libtiff.a in Frameworks */,
 				1A5703BB180BD2800088DEC7 /* libwebp.a in Frameworks */,
 				1A57052E180BD3280088DEC7 /* libfreetype.a in Frameworks */,
 				DFF21AF819EF5251009440D8 /* libcurl.a in Frameworks */,
+				DFB6F1911A007DA1006D7E4E /* Foundation.framework in Frameworks */,
+				9C58AA9119B44DA700D2DB32 /* libsqlcipher.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3781,6 +3776,7 @@
 		9CA527A31998526400914695 /* highbrow */ = {
 			isa = PBXGroup;
 			children = (
+				DFB6F16D1A007370006D7E4E /* libs */,
 				9CBDDF7619B71494000FA72E /* external */,
 				9CBDDFB119B71494000FA72E /* login */,
 				9CBDDFB619B71494000FA72E /* network */,
@@ -4077,6 +4073,38 @@
 			);
 			name = 2d;
 			path = ../cocos/2d;
+			sourceTree = "<group>";
+		};
+		DFB6F16D1A007370006D7E4E /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				DFB6F17E1A007370006D7E4E /* libsqlcipher */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		DFB6F17E1A007370006D7E4E /* libsqlcipher */ = {
+			isa = PBXGroup;
+			children = (
+				DFB6F1821A007370006D7E4E /* libs */,
+			);
+			path = libsqlcipher;
+			sourceTree = "<group>";
+		};
+		DFB6F1821A007370006D7E4E /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				DFB6F1861A007370006D7E4E /* ios */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		DFB6F1861A007370006D7E4E /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				DFB6F1871A007370006D7E4E /* libsqlcipher.a */,
+			);
+			path = ios;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -5191,7 +5219,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -5226,6 +5254,7 @@
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/.. $(SRCROOT)/../cocos $(SRCROOT)/../cocos/editor-support $(SRCROOT)/../external/chipmunk/include/chipmunk $(SRCROOT)/../external $(SRCROOT)/../highbrow";
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -5233,7 +5262,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -5265,6 +5294,7 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/.. $(SRCROOT)/../cocos $(SRCROOT)/../cocos/editor-support $(SRCROOT)/../external/chipmunk/include/chipmunk $(SRCROOT)/../external $(SRCROOT)/../highbrow";
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Release;
 		};
@@ -5272,7 +5302,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(COCOSROOT)/highbrow/external/",
@@ -5307,7 +5337,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(COCOSROOT)/highbrow/external/",
@@ -5342,7 +5372,7 @@
 		A07A4E0D178386390073F6A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -5352,7 +5382,7 @@
 		A07A4E0E178386390073F6A7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -5363,7 +5393,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					CC_TARGET_OS_IPHONE,
@@ -5382,7 +5412,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -5401,7 +5431,7 @@
 		A07A4F39178387670073F6A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				SDKROOT = iphoneos;
@@ -5413,7 +5443,7 @@
 		A07A4F3A178387670073F6A7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
@@ -5426,7 +5456,7 @@
 		A07A4F9C1783876B0073F6A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_WARN_BOOL_CONVERSION = NO;
 				CLANG_WARN_CONSTANT_CONVERSION = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
@@ -5444,7 +5474,7 @@
 		A07A4F9D1783876B0073F6A7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_WARN_BOOL_CONVERSION = NO;
 				CLANG_WARN_CONSTANT_CONVERSION = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -5464,7 +5494,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					CC_TARGET_OS_IPHONE,
@@ -5482,7 +5512,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",

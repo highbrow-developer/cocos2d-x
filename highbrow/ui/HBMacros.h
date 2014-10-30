@@ -65,6 +65,7 @@ class HBMacros : public Ref {
 public:
     /*  디자인 해상도  */
     static void setDesignResolution(Size resolution) {
+        
         auto director   = Director::getInstance();
         auto glview     = director->getOpenGLView();
         if ( glview == NULL ) {
