@@ -27,6 +27,7 @@ import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
 
 import android.opengl.GLSurfaceView;
+import android.util.Log;
 
 import org.cocos2dx.lib.Cocos2dxHelper;
 public class Cocos2dxRenderer implements GLSurfaceView.Renderer {
@@ -56,10 +57,12 @@ public class Cocos2dxRenderer implements GLSurfaceView.Renderer {
 	// ===========================================================
 
 	public static void setAnimationInterval(final double pAnimationInterval) {
+		Log.d("MyClass", "Renderer_setAnimationInterval");
 		Cocos2dxRenderer.sAnimationInterval = (long) (pAnimationInterval * Cocos2dxRenderer.NANOSECONDSPERSECOND);
 	}
 
 	public void setScreenWidthAndHeight(final int pSurfaceWidth, final int pSurfaceHeight) {
+		Log.d("MyClass", "Renderer_setScreenWidthAndHeight");
 		this.mScreenWidth = pSurfaceWidth;
 		this.mScreenHeight = pSurfaceHeight;
 	}
@@ -70,12 +73,14 @@ public class Cocos2dxRenderer implements GLSurfaceView.Renderer {
 
 	@Override
 	public void onSurfaceCreated(final GL10 pGL10, final EGLConfig pEGLConfig) {
+		Log.d("MyClass", "Renderer_onSurfaceCreated");
 		Cocos2dxRenderer.nativeInit(this.mScreenWidth, this.mScreenHeight);
 		this.mLastTickInNanoSeconds = System.nanoTime();
 	}
 
 	@Override
 	public void onSurfaceChanged(final GL10 pGL10, final int pWidth, final int pHeight) {
+		Log.d("MyClass", "Renderer_onSurfaceChanged");
 		Cocos2dxRenderer.nativeOnSurfaceChanged(pWidth, pHeight);
 	}
 
@@ -125,6 +130,7 @@ public class Cocos2dxRenderer implements GLSurfaceView.Renderer {
 	private static native void nativeOnResume();
 
 	public void handleActionDown(final int pID, final float pX, final float pY) {
+		
 		Cocos2dxRenderer.nativeTouchesBegin(pID, pX, pY);
 	}
 

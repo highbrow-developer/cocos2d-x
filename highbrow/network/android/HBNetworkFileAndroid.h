@@ -10,7 +10,6 @@
 #define cocos2d_libs_HBNetworkFileAndroid_h
 
 #include "HBNetworkFile.h"
-#import "AFNetworking.h"
 
 NS_CC_BEGIN
 

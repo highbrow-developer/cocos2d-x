@@ -34,6 +34,7 @@ import java.util.concurrent.Semaphore;
 import android.content.Context;
 import android.media.AudioManager;
 import android.media.SoundPool;
+import android.os.Vibrator;
 import android.util.Log;
 
 public class Cocos2dxSound {

@@ -76,7 +76,14 @@ void Application::setAnimationInterval(double interval)
 //////////////////////////////////////////////////////////////////////////
 Application* Application::getInstance()
 {
-    CCAssert(sm_pSharedApplication, "");
+    LOGD("@lucy:test_sm_pSharedApplication before");
+    if (sm_pSharedApplication == nullptr) {
+        LOGD("@lucy:test_sm_pSharedApplication is null");
+    }
+    else{
+        LOGD("@lucy:test_sm_pSharedApplication is not null");
+    }
+    (sm_pSharedApplication, "");
     return sm_pSharedApplication;
 }
 

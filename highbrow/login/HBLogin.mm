@@ -39,12 +39,13 @@
     NSLog(@"%@", data);
     
     NSError *error;
-    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:data options:nil error:&error];
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:data options:NULL error:&error];
 
     if (! jsonData) {
         NSLog(@"JSON Write Error: %@", error.localizedDescription);
     } else {
-        _callback((const char*)[jsonData bytes]);
+        const char* jsonText = (const char*)[jsonData bytes];
+        _callback(jsonText);
     }
 }
 

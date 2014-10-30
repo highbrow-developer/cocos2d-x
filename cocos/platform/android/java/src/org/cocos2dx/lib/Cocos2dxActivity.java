@@ -156,7 +156,6 @@ public abstract class Cocos2dxActivity extends Activity implements Cocos2dxHelpe
 	// Methods
 	// ===========================================================
 	public void init() {
-		
     	// FrameLayout
         ViewGroup.LayoutParams framelayout_params =
             new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
@@ -173,7 +172,6 @@ public abstract class Cocos2dxActivity extends Activity implements Cocos2dxHelpe
 
         // ...add to FrameLayout
         mFrameLayout.addView(edittext);
-
         // Cocos2dxGLSurfaceView
         this.mGLSurfaceView = this.onCreateView();
 
