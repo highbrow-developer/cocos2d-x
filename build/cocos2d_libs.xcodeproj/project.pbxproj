@@ -1759,6 +1759,7 @@
 		9CA4527619A6D94200E93F55 /* HBMenuItemImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBMenuItemImage.h; sourceTree = "<group>"; };
 		9CA527C11998526500914695 /* HBMacros.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HBMacros.cpp; sourceTree = "<group>"; };
 		9CA527C21998526500914695 /* HBMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBMacros.h; sourceTree = "<group>"; };
+		9CABDDCA1A01E5B00075751C /* highbros2d-x.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "highbros2d-x.h"; path = "../highbros2d-x.h"; sourceTree = "<group>"; };
 		9CBDDF6D19B70EBC000FA72E /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleOpenSource.framework; path = ../highbrow/external/GoogleOpenSource.framework; sourceTree = "<group>"; };
 		9CBDDF6E19B70EBC000FA72E /* GooglePlayGames.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlayGames.framework; path = ../highbrow/external/GooglePlayGames.framework; sourceTree = "<group>"; };
 		9CBDDF6F19B70EBC000FA72E /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlus.framework; path = ../highbrow/external/GooglePlus.framework; sourceTree = "<group>"; };
@@ -2079,6 +2080,7 @@
 		1551A334158F2AB200E66CFE = {
 			isa = PBXGroup;
 			children = (
+				9CABDDCA1A01E5B00075751C /* highbros2d-x.h */,
 				DFB6F07319FA2A85006D7E4E /* 2d */,
 				9CA527A31998526400914695 /* highbrow */,
 				46A15FCC1807A544005B8026 /* AUTHORS */,
