@@ -303,7 +303,11 @@ Node* ClippingNode::getStencil() const
 void ClippingNode::setStencil(Node *stencil)
 {
     CC_SAFE_RETAIN(stencil);
-    CC_SAFE_RELEASE(_stencil);
+    //CC_SAFE_RELEASE(_stencil);
+    if (_stencil != nullptr) {
+        _stencil->removeFromParent();
+        _stencil = nullptr;
+    }
     _stencil = stencil;
 }
 

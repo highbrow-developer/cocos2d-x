@@ -360,7 +360,6 @@ float Director::getDeltaTime() const
 }
 void Director::setOpenGLView(GLView *openGLView)
 {
-    log("@lucy:test_director getInstance");
     CCASSERT(openGLView, "opengl view should not be null");
 
     if (_openGLView != openGLView)
@@ -1249,7 +1248,6 @@ void DisplayLinkDirector::startAnimation()
     {
         CCLOG("cocos2d: DisplayLinkDirector: Error on gettimeofday");
     }
-    log("@lucy:test_director Application");
     _invalid = false;
     Application::getInstance()->setAnimationInterval(_animationInterval);
     
@@ -1280,7 +1278,6 @@ void DisplayLinkDirector::stopAnimation()
 
 void DisplayLinkDirector::setAnimationInterval(double interval)
 {
-    log("@lucy:test_director Application");
     _animationInterval = interval;
     if (! _invalid)
     {
