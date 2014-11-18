@@ -14,7 +14,7 @@
 
 NS_CC_BEGIN
 
-#define display_init(resolution)        HBMacros::setDesignResolution(resolution)
+#define display_init(resolution, isFull)        HBMacros::setDesignResolution(resolution, isFull)
 
 /*  화면 사이즈   */
 #define display_size                    Size(Director::getInstance()->getWinSize())
@@ -64,7 +64,7 @@ NS_CC_BEGIN
 class HBMacros : public Ref {
 public:
     /*  디자인 해상도  */
-    static void setDesignResolution(Size resolution) {
+    static void setDesignResolution(Size resolution, bool isFull) {
         
         auto director   = Director::getInstance();
         auto glview     = director->getOpenGLView();
@@ -96,8 +96,17 @@ public:
             director->setContentScaleFactor(resource_320.size.height / resolution.height);
         }
         
-        resolution = Size(size_frame.width * (resolution.height / size_frame.height), resolution.height);//Size(director->getContentScaleFactor() * size_frame.width, resolution.height);//692.0f
-        glview->setDesignResolutionSize(resolution.width, resolution.height, ResolutionPolicy::NO_BORDER);
+        //resolution = Size(size_frame.width * (resolution.height / size_frame.height), resolution.height);//Size(director->getContentScaleFactor() * size_frame.width, resolution.height);//692.0f
+        //glview->setDesignResolutionSize(resolution.width, resolution.height, ResolutionPolicy::NO_BORDER);
+        if(isFull)
+        {
+            glview->setDesignResolutionSize(resolution.width, resolution.height, ResolutionPolicy::EXACT_FIT);
+        }
+        else
+        {
+            glview->setDesignResolutionSize(resolution.width, resolution.height, ResolutionPolicy::SHOW_ALL);
+        }
+        
         
         director->setOpenGLView(glview);
     }

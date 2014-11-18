@@ -884,6 +884,7 @@
 		DFB6F14119FA2C1C006D7E4E /* CCTransitionProgress.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DFB6F0F219FA2A85006D7E4E /* CCTransitionProgress.cpp */; };
 		DFB6F14219FA2C1C006D7E4E /* CCTweenFunction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DFB6F0F419FA2A85006D7E4E /* CCTweenFunction.cpp */; };
 		DFB6F1911A007DA1006D7E4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1551A342158F2AB200E66CFE /* Foundation.framework */; };
+		DFD903B21A09C6A8001AFB55 /* Singleton.h in Headers */ = {isa = PBXBuildFile; fileRef = DFD903B11A09C28A001AFB55 /* Singleton.h */; };
 		DFF21AF819EF5251009440D8 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AAF541C180E3B6A000584C8 /* libcurl.a */; };
 /* End PBXBuildFile section */
 
@@ -2000,6 +2001,8 @@
 		DFB6F0F419FA2A85006D7E4E /* CCTweenFunction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCTweenFunction.cpp; sourceTree = "<group>"; };
 		DFB6F0F519FA2A85006D7E4E /* CCTweenFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTweenFunction.h; sourceTree = "<group>"; };
 		DFB6F1871A007370006D7E4E /* libsqlcipher.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsqlcipher.a; sourceTree = "<group>"; };
+		DFD903B11A09C28A001AFB55 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		DFD903B31A09C81B001AFB55 /* highbros2d-x.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "highbros2d-x.h"; path = "../highbros2d-x.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2080,7 +2083,11 @@
 		1551A334158F2AB200E66CFE = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				9CABDDCA1A01E5B00075751C /* highbros2d-x.h */,
+=======
+				DFD903B31A09C81B001AFB55 /* highbros2d-x.h */,
+>>>>>>> 5a3e1beeaf8b8ceb86dc879a6d7dd0f0582776cf
 				DFB6F07319FA2A85006D7E4E /* 2d */,
 				9CA527A31998526400914695 /* highbrow */,
 				46A15FCC1807A544005B8026 /* AUTHORS */,
@@ -3778,6 +3785,7 @@
 		9CA527A31998526400914695 /* highbrow */ = {
 			isa = PBXGroup;
 			children = (
+				DFD903B01A09C28A001AFB55 /* util */,
 				DFB6F16D1A007370006D7E4E /* libs */,
 				9CBDDF7619B71494000FA72E /* external */,
 				9CBDDFB119B71494000FA72E /* login */,
@@ -4109,6 +4117,14 @@
 			path = ios;
 			sourceTree = "<group>";
 		};
+		DFD903B01A09C28A001AFB55 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				DFD903B11A09C28A001AFB55 /* Singleton.h */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -4116,6 +4132,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFD903B21A09C6A8001AFB55 /* Singleton.h in Headers */,
 				9CBDDFD319B72163000FA72E /* HBHttpClient.h in Headers */,
 				9CBDDFD419B72163000FA72E /* HBHttpResponse.h in Headers */,
 				9CBDDFD519B72163000FA72E /* HBJson.h in Headers */,

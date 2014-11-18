@@ -29,16 +29,15 @@
 #include "highbrow/network/HBHttpResponse.h"
 #include "highbrow/network/HBHttpClient.h"
 
-
-
-
 /*  action  */
 #include "highbrow/ui/actions/HBAction.h"
 
 
-
 /*  login   */
 #include "highbrow/login/HBLogin.h"
+
+/*  network  */
+#include "highbrow/util/Singleton.h"
 
 
 #endif
